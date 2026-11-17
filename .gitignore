@@ -1,0 +1,13 @@
+# Keep private files and secrets out of this public repo
+originals/
+private/
+notes/
+backups/
+*.sqlite
+*.db
+.env
+.env.*
+*.key
+*.pem
+__pycache__/
+.DS_Store

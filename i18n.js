@@ -1,4 +1,4 @@
-/* Human-reviewed UI localization. Original source excerpts remain in their source language. */
+/* Bilingual labels, translations, and reviewed research summaries. Source excerpts remain unchanged. */
 window.MERCURY_I18N = {
   "strings": {
     "zh": {
@@ -7,8 +7,8 @@ window.MERCURY_I18N = {
       "navCatalog": "目录",
       "navAbout": "关于",
       "heroTitle": "朱砂 · 水银",
-    "heroCinnabar": "朱砂",
-    "heroMercury": "水银",
+      "heroCinnabar": "朱砂",
+      "heroMercury": "水银",
       "heroDesc": "从中国西南的矿坑与炉灶，到药物、颜料和跨地域贸易。试着让散落在史籍中的技术知识重新变得可搜索、可追溯、可关联。",
       "heroExplore": "探索史料　↗",
       "heroSources": "了解数据来源",
@@ -93,8 +93,8 @@ window.MERCURY_I18N = {
       "navCatalog": "Catalogue",
       "navAbout": "About",
       "heroTitle": "Cinnabar · Mercury",
-    "heroCinnabar": "Cinnabar",
-    "heroMercury": "Mercury",
+      "heroCinnabar": "Cinnabar",
+      "heroMercury": "Mercury",
       "heroDesc": "From mines and furnaces in southwest China to medicine, pigments, and trade networks. Explore historical technologies through searchable, traceable sources.",
       "heroExplore": "Explore sources ↗",
       "heroSources": "About the sources",
@@ -203,14 +203,18 @@ window.MERCURY_I18N = {
       "《天工開物·朱》": "Tiangong Kaiwu, “Zhu”",
       "《嶺外代答》卷七": "Lingwai Daida, vol. 7",
       "《本草綱目·金石之三》": "Bencao Gangmu, “Minerals III”",
-      "民國《貴州通志·前事志》": "Guizhou Gazetteer (Republican ed.), Earlier Events"
+      "民國《貴州通志·前事志》": "Guizhou Gazetteer (Republican ed.), Earlier Events",
+      "Physical Geography": "《自然地理》（原书英文题名）",
+      "The global roots of pre-1900 legacy mercury": "1900年前遗留汞污染的全球源头（译名）"
     },
     "author": {
       "田雯（篇章作者）": "Tian Wen (section author)",
       "宋應星": "Song Yingxing",
       "周去非": "Zhou Qufei",
       "李時珍": "Li Shizhen",
-      "民國貴州省續修通志局編": "Guizhou Provincial Gazetteer Compilation Office (Republican era)"
+      "民國貴州省續修通志局編": "Guizhou Provincial Gazetteer Compilation Office (Republican era)",
+      "Mary Somerville": "玛丽·萨默维尔",
+      "Saúl Guerrero and Larissa Schneider": "Saúl Guerrero 与 Larissa Schneider"
     },
     "when": {
       "康熙時期，成文年待考": "Kangxi reign; date uncertain",
@@ -240,18 +244,21 @@ window.MERCURY_I18N = {
       "全球": "Global"
     },
     "publication": {
+      "2023": "2023年",
       "乾隆六年（1741）刊本；田雯篇章作於康熙時期": "1741 (Qianlong 6) edition; Tian Wen’s account dates to the Kangxi reign",
       "明崇禎十年（1637）": "Ming Chongzhen 10 (1637)",
       "南宋（約1178）": "Southern Song (c. 1178)",
       "明萬曆二十四年（1596）刊行": "Ming Wanli 24 (1596) edition",
-      "民國時期編纂，1949年刊行；所摘文書為1902–1904年": "Compiled in the Republican era; published 1949; documents dated 1902–1904"
+      "民國時期編纂，1949年刊行；所摘文書為1902–1904年": "Compiled in the Republican era; published 1949; documents dated 1902–1904",
+      "1850 edition": "1850年版"
     },
     "reference": {
       "卷43「水銀説」「硃砂説」": "Vol. 43, “On Mercury” and “On Cinnabar”",
       "《天工開物》「朱」": "Tiangong Kaiwu, “Zhu”",
       "卷七「金石門」": "Vol. 7, “Metals and Minerals”",
       "「丹砂」「水銀」條": "Entries on cinnabar and mercury",
-      "「前事志」四十二至四十三；李經羲為萬山廠事、礦權爭議": "Earlier Events, sections 42–43; Li Jingxi on Wanshan and mining rights"
+      "「前事志」四十二至四十三；李經羲為萬山廠事、礦權爭議": "Earlier Events, sections 42–43; Li Jingxi on Wanshan and mining rights",
+      "Chapter XV, section on quicksilver": "第十五章水银部分"
     },
     "status": {
       "網上轉錄待核原版": "Online transcription; not checked against original",
@@ -330,7 +337,20 @@ window.MERCURY_I18N = {
       "矿权": "mining rights",
       "英法公司": "Anglo-French company",
       "煤铁": "coal and iron",
-      "殖民": "colonialism"
+      "殖民": "colonialism",
+      "quicksilver": "水银",
+      "mercury": "汞",
+      "vermilion": "银朱",
+      "trade": "贸易",
+      "medicine": "医药",
+      "global": "全球",
+      "silver": "白银",
+      "environment": "环境",
+      "concession": "矿权特许",
+      "China": "中国",
+      "Europe": "欧洲",
+      "Almaden": "阿尔马登",
+      "Peru": "秘鲁"
     }
   },
   "notes": {

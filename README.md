@@ -26,6 +26,17 @@
 - `index.html`：同时显示双语的页面布局及搜索、筛选、收藏逻辑。
 - `data/records.csv`：逐条史料的原文、中文标题（`title`）、英文标题（`en_title`）和英文研究概要（`en_summary`）。
 
+## 图像馆 / Image gallery
+
+导航中的 **图像 / Images** 页面根据上传的 `Optional Supporting Materials.pdf` 建立了四条图像资料索引：
+
+1. 卜弥格 Michael Boym 的贵州地图（约 1652–1655；梵蒂冈图书馆 Borg. cin. 531，fol. 17r）。
+2. 清代约 1820 年广州画师的 `Putting in Mercury`（大英图书馆 Add.Or.2363）。
+3. 文俶 `金石昆蟲草木狀` 中朱砂、炼汞及汞粉的三幅图（1617–1620；台湾国家图书馆藏号 06921）。
+4. 万山传统炼汞现代照片（Li et al. 2023, *Industrial Archaeology Review* 45.2, fig. 4）——由于重印许可有待确认，**只展示书目信息与出版者链接，不公开复制摄影作品**。
+
+`assets/historical-figures.svg` 是从用户提供的三组历史图像提取、压缩后生成的**低分辨率联系图**（sprite）；网页用 CSS 显示各组的独立缩略图。网页与 `assets/FIGURE_CREDITS.md` 保存完整馆藏出处。馆藏数字图像可能另有使用条件，在二次出版或大规模复制前须核实。
+
 ## 数据更新
 
 1. 编辑 `data/records.csv`（UTF-8 编码），为新增记录设置唯一且永久不变的 `id`。

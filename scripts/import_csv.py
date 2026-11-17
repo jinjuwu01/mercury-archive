@@ -14,8 +14,18 @@ for row in rows:
     ids.add(row["id"])
     row["year"] = int(row["year"])
     row["tags"] = [v.strip() for v in row.get("tags", "").split(";") if v.strip()]
-    row["scan_available"] = False
-    row["record_unit"] = "section_excerpt"
+    paths = [v.strip() for v in (row.pop("image_paths", "") or "").split(";") if v.strip()]
+    labels_zh = [v.strip() for v in (row.pop("image_labels_zh", "") or "").split(";")]
+    labels_en = [v.strip() for v in (row.pop("image_labels_en", "") or "").split(";")]
+    if paths and (len(paths) != len(labels_zh) or len(paths) != len(labels_en)):
+        raise ValueError("Image labels must match the number of image paths: " + row["id"])
+    if paths:
+        row["images"] = [
+            {"src": src, "label_zh": z, "label_en": e}
+            for src, z, e in zip(paths, labels_zh, labels_en)
+        ]
+    row["scan_available"] = bool(paths)
+    row["record_unit"] = "illustrated_source" if paths else "section_excerpt"
     row["review_level"] = row.get("review_level") or "not_facs_checked"
     if row.get("public_access") == "metadata_only_pending_rights":
         row["excerpt"] = ""

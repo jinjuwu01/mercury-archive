@@ -10,6 +10,17 @@
 
 在仓库 **Settings → Pages** 中将 Source 设为 **Deploy from a branch**，选择 `main` 和 `/(root)`，保存即可。入口为根目录的 `index.html`，无需构建、数据库服务器或 API Key。
 
+## 中英文双语 / Chinese–English interface
+
+网站右上角有 **中文 / English** 语言切换按钮。浏览器会记住该设备上的语言选择；切换时不会清空当前搜索、筛选或收藏。
+
+- `i18n.js`：所有界面翻译、分类与时期英文名称、18 条史料的英文研究备注，以及 About 页英文介绍。修改英文界面时编辑此文件。
+- `index.html`：网站布局、语言切换逻辑与中文界面结构。界面中的 `data-i18n` 属性对应 `i18n.js` 的翻译键。
+- `data/records.csv`：史料中文标题（`title`）、英文标题（`en_title`）、英文研究概要（`en_summary`）及原文摘录（`excerpt`）。
+- 英文模式下**仅界面、研究说明和已翻译的元数据切换语言**，不改变史料原文。尚未录入英文翻译的新增档案字段会回退显示原文。
+
+为了维护学术可核查性，史料中文原文保持原样，英文 research summary 不视作逐字译文。
+
 ## 数据更新
 
 1. 编辑 `data/records.csv`（UTF-8 编码），为新增记录设置唯一且永久不变的 `id`。
@@ -19,7 +30,8 @@
 
 ## 文件结构
 
-- `index.html`：静态网站
+- `index.html`：静态网站与语言切换逻辑
+- `i18n.js`：中英文界面与研究备注翻译
 - `data/records.csv`：主编辑数据
 - `data/records.js`：网页读取的 JavaScript 数据
 - `data/records.json`：标准 JSON 导出

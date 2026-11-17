@@ -652,5 +652,65 @@
     "record_unit": "section_excerpt",
     "lang": "en",
     "source_checked_on": "2026-11-17"
+  },
+  {
+    "id": "MRA-0019",
+    "title": "文俶《金石昆蟲草木狀》：辰州丹砂、取水銀煉砂與水銀粉",
+    "en_title": "Wen Shu’s Illustrations of Cinnabar and Mercury",
+    "year": 1618,
+    "period": "明代",
+    "when": "1617–1620 年間",
+    "topic": "图像史料与技术",
+    "place": "辰州；明代中國",
+    "excerpt": "圖像題名：辰州丹砂；取水銀煉砂；水銀粉。",
+    "en_summary": "Three illustrations from Wen Shu’s early-seventeenth-century manuscript show Chenzhou cinnabar, the extraction of mercury, and the preparation of mercury powder. These images provide evidence of how minerals and mercury-related processes were visually represented in late-Ming China, rather than a tested technical recipe.",
+    "notes": "據研究者提供的三幅高清圖像建立索引。題名及形象可用於分析晚明朱砂、煉汞與粉末製備的視覺表述；尚需與國家圖書館館藏原件逐頁核對。",
+    "tags": [
+      "文俶",
+      "金石昆蟲草木狀",
+      "辰州丹砂",
+      "水銀",
+      "朱砂",
+      "取水銀煉砂",
+      "水銀粉",
+      "明代",
+      "圖像史料",
+      "mercury",
+      "cinnabar",
+      "Wen Shu"
+    ],
+    "status": "圖像索引，原版頁碼待核",
+    "source_title": "《金石昆蟲草木狀》",
+    "author": "文俶",
+    "publication": "明萬曆45–48年（1617–1620）彩繪底稿本",
+    "source_url": "https://rbook.ncl.edu.tw/NCLSearch/Selection/Details/38",
+    "provider": "臺灣國家圖書館",
+    "reference": "27卷12冊；特藏編號06921；辰州丹砂、取水銀煉砂、水銀粉圖",
+    "kind": "历史文献摘录",
+    "rights": "原作為明代繪畫；數位圖像的轉載條款須遵守臺灣國家圖書館規定。",
+    "scan_available": true,
+    "review_level": "user_supplied_images_not_original_checked",
+    "public_access": "metadata_excerpt",
+    "record_unit": "illustrated_source",
+    "lang": "zh-Hant",
+    "source_checked_on": "2026-11-17",
+    "image_paths": "assets/wenshu-chenzhou-cinnabar.svg;assets/wenshu-taking-mercury.svg;assets/wenshu-mercury-powder.svg",
+    "images": [
+      {
+        "src": "assets/wenshu-chenzhou-cinnabar.svg",
+        "label_zh": "辰州丹砂",
+        "label_en": "Chenzhou cinnabar"
+      },
+      {
+        "src": "assets/wenshu-taking-mercury.svg",
+        "label_zh": "取水銀煉砂",
+        "label_en": "Extracting mercury from cinnabar"
+      },
+      {
+        "src": "assets/wenshu-mercury-powder.svg",
+        "label_zh": "水銀粉",
+        "label_en": "Mercury powder"
+      }
+    ]
   }
 ]

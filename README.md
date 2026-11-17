@@ -34,6 +34,8 @@
 - 取水銀煉砂 / Extracting mercury from cinnabar
 - 水銀粉 / Mercury powder
 
+三张图现在**直接显示在 `MRA-0019` 的普通 Search 检索结果卡片中**，不再使用单独的“新收录的历史文献”板块。首页 Hg 旁保留“辰州丹砂”。为避免浏览器限制 SVG 中嵌入的图像，网页通过 `assets/wenshu-visible.css` 直接加载 WebP 图片；点击图片仍可查看单张大图。
+
 三张高分辨率图像由研究者提供、优化后分别保存在 `assets/wenshu-chenzhou-cinnabar.svg`、`assets/wenshu-taking-mercury.svg` 与 `assets/wenshu-mercury-powder.svg`；网页上的图像可点击在新标签中打开大图。首页 Hg 标志旁也显示“辰州丹砂”。原文图像与研究概要应区分；史料图像不是现代实验指南。
 
 馆藏：文俶，《金石昆蟲草木狀》，明萬曆 45–48 年（1617–1620），27 卷 12 冊，臺北國家圖書館特藏編號 **06921**。<https://rbook.ncl.edu.tw/NCLSearch/Selection/Details/38>。有关馆藏原件与数字图像使用条件，请查阅 `assets/FIGURE_CREDITS.md`。

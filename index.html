@@ -41,6 +41,25 @@
 @media(max-width:650px){.topbar{gap:7px}.brand{gap:7px}.brand-title{font-size:12px}.brand-sub{font-size:8px}.topnav{gap:0}.nav-item{font-size:11px;padding:8px 6px}.section-head h2 .bi-en{font-size:15px}.hero-desc .bi-en{font-size:11px}.record-top{align-items:flex-start}.record-num{line-height:1.5}}
 @media(max-width:390px){.brand-sub{display:none}.brand-title{font-size:11px}.brand{gap:4px}.topnav .nav-item{font-size:10px;padding:6px 4px}}
 .catalog-titles{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}.catalog-titles .catalog-en{font:italic 11px/1.45 Georgia,serif;color:#8a948a}.card-summary div[lang=en]{margin-top:4px}.detail-note p{margin:0 0 8px}.detail-note .note-translation{margin-top:8px}.record-date{max-width:48%;text-align:right}
+/* Keep both languages readable on narrow screens. */
+@media(max-width:650px){
+.site-header{height:auto;min-height:72px}
+.topbar{flex-wrap:wrap;align-items:center;padding-top:9px;padding-bottom:9px;row-gap:6px}
+.topnav{order:3;width:100%;display:flex;justify-content:space-between}
+.topnav .nav-item{flex:1;text-align:center;font-size:11px;padding:9px 6px;white-space:nowrap}
+.brand{flex:1}
+.section-head{display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+.section-head p{display:block;width:100%;max-width:none}
+.hero-text{padding:43px 0}
+}
+@media(max-width:520px){
+.filters{display:block}
+.filter-head{display:flex}
+.filter-group{border-top:1px solid #e7e4db;padding:13px 0}
+.filter-foot{margin-top:8px}
+.results-head{align-items:flex-start;flex-wrap:wrap}
+.mini-select{max-width:205px}
+}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>

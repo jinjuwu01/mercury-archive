@@ -60,13 +60,35 @@
 .results-head{align-items:flex-start;flex-wrap:wrap}
 .mini-select{max-width:205px}
 }
+
+/* Historical picture gallery. The three archival images are cropped from one lightweight contact sheet. */
+.gallery-title-en{font:italic 17px/1.5 Georgia,serif;color:#788579;margin:5px 0 0}
+.section-head .gallery-title-en{max-width:none}
+.figure-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:22px}
+.figure-card{background:#fffefa;border:1px solid #e2dfd4;border-radius:9px;overflow:hidden;display:flex;flex-direction:column}
+.figure-art{aspect-ratio:300/230;width:100%;background-color:#efe9dc;background-image:url('assets/historical-figures.svg');background-repeat:no-repeat;background-size:300% 100%;border-bottom:1px solid #e7dfcf}
+.figure-panel-1{background-position:0% 50%}.figure-panel-2{background-position:50% 50%}.figure-panel-3{background-position:100% 50%}
+.figure-body{padding:21px 23px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.figure-index{font-size:11px;letter-spacing:.12em;color:var(--red);font-weight:750}
+.figure-body h3{font:600 20px/1.4 "Songti SC","STSong","Noto Serif CJK SC",Georgia,serif;margin:0}
+.figure-body p{font-size:12px;color:#516157;line-height:1.85;margin:0}
+.figure-body .figure-en{font:italic 12px/1.8 Georgia,serif;color:#718078}
+.figure-body .figure-source{font:11px/1.7 Georgia,"Songti SC",serif;color:#7b8179;margin-top:4px}
+.figure-link{font-size:12px;color:var(--red);text-decoration:none;margin-top:auto;padding-top:6px;font-weight:700;line-height:1.7}
+.figure-link:hover{text-decoration:underline}
+.figure-gallery-note{color:#7d857d;font-size:11px;line-height:1.9;margin-top:22px}
+.figure-art.figure-restricted{background:#e8e8df;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;color:#7e887d;background-image:none;padding:20px;text-align:center}
+.figure-restricted-icon{font:72px Georgia,serif;color:#b9bcb2;line-height:1}
+.figure-restricted strong{font-size:13px}.figure-restricted span:last-child{font:italic 12px Georgia,serif}
+.figure-body .figure-rights{font-style:italic;color:#986d60}
+@media(max-width:720px){.figure-gallery{grid-template-columns:1fr;gap:17px}.figure-body{padding:19px}.gallery-title-en{font-size:15px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>
 <body>
 <header class="site-header"><div class="container topbar">
  <a href="#home" class="brand" data-nav="home" aria-label="回到首页"><div class="mark">Hg</div><div><div class="brand-title" data-i18n="brand">朱砂 · 水银档案</div><div class="brand-sub">CINNABAR & MERCURY ARCHIVE</div></div></a>
- <nav class="topnav" aria-label="Main navigation"><button class="nav-item active" data-nav="search" data-i18n="navSearch">检索</button><button class="nav-item" data-nav="catalog" data-i18n="navCatalog">目录</button><button class="nav-item" data-nav="about" data-i18n="navAbout">关于</button></nav><span class="trial-pill">试验版 · PILOT V0.1</span>
+ <nav class="topnav" aria-label="Main navigation"><button class="nav-item active" data-nav="search" data-i18n="navSearch">检索</button><button class="nav-item" data-nav="catalog" data-i18n="navCatalog">目录</button><button class="nav-item" data-nav="gallery">图像 / Images</button><button class="nav-item" data-nav="about" data-i18n="navAbout">关于</button></nav><span class="trial-pill">试验版 · PILOT V0.1</span>
 </div></header>
 <section class="hero" id="home"><div class="container"><div class="hero-text"><div class="eyebrow">帝国间的水银 · MERCURY ACROSS EMPIRES</div><h1 class="serif"><span>朱砂</span><span class="mercury-dot"> · </span><span>水银</span></h1><p class="hero-english">Cinnabar, Mercury &amp; Historical Worlds</p><p class="hero-desc" data-i18n="heroDesc">从中国西南的矿坑与炉灶，到药物、颜料和跨地域贸易。试着让散落在史籍中的技术知识重新变得可搜索、可追溯、可关联。</p><div class="hero-actions"><button class="btn-primary" data-nav="search" data-i18n="heroExplore">探索史料　↗</button><button class="btn-ghost-light" data-nav="about" data-i18n="heroSources">了解数据来源</button></div></div><div class="seal" aria-hidden="true"><strong>Hg</strong><small>80 · 200.59</small></div></div></section>
 <div class="stats-line"><div class="container stats-inner"><div class="stat"><div class="stat-number" id="stat-records">—</div><div class="stat-label" data-i18n="statRecords">可检索的条目 · EXCERPTS</div></div><div class="stat"><div class="stat-number" id="stat-works">—</div><div class="stat-label" data-i18n="statWorks">不同著作／资料 · SOURCES</div></div><div class="stat"><div class="stat-number">1178–2023</div><div class="stat-label" data-i18n="statCoverage">样本年代 · COVERAGE</div></div><div class="stat"><div class="stat-number">2</div><div class="stat-label" data-i18n="statLanguages">检索语言 · LANGUAGES</div></div></div></div>
@@ -78,6 +100,67 @@
  <div><div class="results-head"><div class="result-count"><span data-i18n="resultPrefix">找到</span> <strong id="resultsCount">0</strong> <span data-i18n="resultSuffix">条相关记录</span></div><div class="tools"><select class="mini-select" id="sortSelect" aria-label="排序"><option value="relevance">相关度 / 编号</option><option value="old">年代：从早到晚</option><option value="new">年代：从晚到早</option><option value="title">标题排序</option></select><button class="icon-button" id="downloadResults" aria-label="导出当前筛选结果 CSV" title="导出当前结果 CSV">⇩</button></div></div><div class="cards" id="resultsList"></div><button class="load-more" id="loadMore" data-i18n="loadMore">加载更多记录 ↓</button></div></div>
 </section>
 <section id="section-catalog" class="section"><div class="section-head"><div><div class="section-kicker">按来源浏览 · BROWSE BY SOURCE</div><h2 data-i18n="catalogTitle">史料目录</h2></div><p data-i18n="catalogIntro">按著作与馆藏来源整理。每条记录链接到书中的相关篇章，不虚构原件扫描页码。</p></div><p class="intro-inline" data-i18n="catalogMore">这里的“条目”是从文献中选出的主题性摘录，而不是完整卷宗。将来可逐步扩展为文献—页码—原件影像三级目录。</p><div id="catalogList"></div></section>
+<section id="section-gallery" class="section">
+  <div class="section-head">
+    <div><div class="section-kicker">图像资料 · VISUAL SOURCES</div><h2>朱砂与水银的历史图像</h2><p class="gallery-title-en" lang="en">Historical Images of Cinnabar and Mercury</p></div>
+    <p>以下图像选自你提供的研究材料。每组附中英文图注、馆藏信息及来源链接；图像并非本站的独立版权作品。<span class="bi-en" lang="en">Illustrations from the submitted research materials, with bilingual captions and original collection references.</span></p>
+  </div>
+  <div class="figure-gallery">
+    <article class="figure-card">
+      <div class="figure-art figure-panel-1" role="img" aria-label="卜弥格约1652至1655年贵州地图，包含标记水银的拉丁文与汞符号 / Boym's Guizhou map showing mercury markings"></div>
+      <div class="figure-body">
+        <div class="figure-index">01 · 1652–1655</div>
+        <h3 lang="zh-CN">卜弥格《贵州图》中的水银矿产标识</h3>
+        <p class="figure-en" lang="en">Mercury Symbols on Michael Boym’s Map of Guizhou</p>
+        <p>地图以拉丁文 <em>Arg. viu.</em>（<em>argentum vivum</em>，意为“活银”）标识水银，并以汞的炼金术符号 ☿ 标注铜仁、思州等地。</p>
+        <p class="figure-en" lang="en">The map identifies mercury as a Guizhou mineral resource, using “Arg. viu.” and the alchemical symbol ☿ around Tongren and Sizhou.</p>
+        <p class="figure-source">Michael Boym, “Kueycieu,” in <em>Magni Catay</em>, ca. 1652–1655, fol. 17r, Borg. cin. 531. Biblioteca Apostolica Vaticana.</p>
+        <a class="figure-link" href="https://digi.vatlib.it/view/MSS_Borg.cin.531" target="_blank" rel="noopener noreferrer">查看梵蒂冈图书馆原件 / View Vatican Library source ↗</a>
+      </div>
+    </article>
+    <article class="figure-card">
+      <div class="figure-art figure-panel-2" role="img" aria-label="清代约1820年广州画师所绘银朱制作中倒入水银的工序 / Putting in Mercury, vermilion production ca. 1820"></div>
+      <div class="figure-body">
+        <div class="figure-index">02 · c. 1820</div>
+        <h3 lang="zh-CN">《中国银朱制造图》：放入水银</h3>
+        <p class="figure-en" lang="en">“Putting in Mercury,” Manufacture of Vermilion in China</p>
+        <p>约 1820 年广州画师创作，描绘清代银朱制作时将水银放入容器的工序。</p>
+        <p class="figure-en" lang="en">A Cantonese watercolour showing mercury being placed into processing vessels during Qing-era vermilion manufacture.</p>
+        <p class="figure-source">Unknown Cantonese artist, <em>Manufacture of Vermilion in China</em>, “Putting in Mercury,” ca. 1820, opaque watercolour, Add.Or.2363. British Library.</p>
+        <a class="figure-link" href="https://searcharchives.bl.uk/catalog/040-003271830" target="_blank" rel="noopener noreferrer">查看大英图书馆馆藏 / View British Library record ↗</a>
+      </div>
+    </article>
+    <article class="figure-card">
+      <div class="figure-art figure-panel-3" role="img" aria-label="文俶金石昆虫草木状的三幅图：辰州朱砂、取水银、制作汞粉 / Three Ming illustrations of cinnabar, mercury extraction, mercury powder"></div>
+      <div class="figure-body">
+        <div class="figure-index">03 · 1617–1620</div>
+        <h3 lang="zh-CN">文俶《金石昆虫草木状》：朱砂与炼汞</h3>
+        <p class="figure-en" lang="en">Cinnabar and Mercury in Wen Shu’s Illustrated Materia Medica</p>
+        <p>三幅图分别描绘辰州朱砂、从朱砂提炼水银，以及水银相关粉末的制作。</p>
+        <p class="figure-en" lang="en">Three Ming illustrations depict Chenzhou cinnabar, mercury extraction, and the preparation of mercury-based powder.</p>
+        <p class="figure-source">Wen Shu 文俶, <em>Jinshi Kunchong Caomu Zhuang</em> 金石昆蟲草木狀, 1617–1620, manuscript no. 06921. National Central Library, Taipei.</p>
+        <a class="figure-link" href="https://rbook.ncl.edu.tw/NCLSearch/Selection/Details/38" target="_blank" rel="noopener noreferrer">查看台湾国家图书馆馆藏 / View National Central Library source ↗</a>
+      </div>
+    </article>
+    <article class="figure-card">
+      <div class="figure-art figure-restricted" role="img" aria-label="万山传统炼汞现代照片因版权审核暂不公开 / Contemporary Wanshan smelting photographs withheld pending permission">
+        <span class="figure-restricted-icon" aria-hidden="true">☿</span>
+        <strong>图片转载权限待核实</strong>
+        <span lang="en">Image reproduction permission pending</span>
+      </div>
+      <div class="figure-body">
+        <div class="figure-index">04 · 2023</div>
+        <h3 lang="zh-CN">贵州万山传统炼汞的现代照片</h3>
+        <p class="figure-en" lang="en">Traditional Mercury Smelting in Wanshan, Guizhou</p>
+        <p>你提供的材料收录了一组六幅现代照片，展示万山传统炼汞过程。由于发表于 2023 年的论文中，公开复制这组照片需要进一步确认授权。</p>
+        <p class="figure-en" lang="en">A six-panel photographic sequence of traditional mercury smelting at Wanshan. The images are not reproduced here until publication rights are confirmed.</p>
+        <p class="figure-source">Li et al., “Archaeological Investigation and Industrial Heritage Study of the Wanshan Mercury Mining Site in Guizhou Province, China,” <em>Industrial Archaeology Review</em> 45, no. 2 (2023): 74–84, fig. 4 (p. 78). Photo: Chen Shikun / Wanshan Mercury Mine Industrial Heritage Museum.</p>
+        <p class="figure-rights">现代照片的署名与版权须按出版者及摄影者要求核实 / Attribution and reuse rights require verification.</p>
+      </div>
+    </article>
+  </div>
+  <p class="figure-gallery-note">图像缩略图用于学术索引与辨识，完整馆藏与高清版本请点击原始来源。/ Thumbnails are for reference; follow the source links for collection records and available high-resolution images.</p>
+</section>
 <section id="section-about" class="section"><div class="section-head"><div><div class="section-kicker">来源、方法与局限 · SOURCES · METHODS · LIMITS</div><h2 data-i18n="aboutTitle">关于试验数据库</h2></div></div><div class="method-grid"><article class="method-card"><h3>这是怎样的数据库？</h3><p>这是为 <em>Mercury across Empires</em> 研究设计的可扩展静态网站试验版。它使用真实、可点击来源的历史文献摘录，演示检索、分面筛选、跨语言关键词关联、阅读和导出。</p><div class="callout"><strong>数据边界：</strong>这些短文并非完整档案 OCR。本站没有下载、复制或展示档案馆受限影像；摘录来自公开电子转录，仍需与原书影像校核。英译摘要是研究性概述，不是逐字译文。</div><h3>资料从哪里来？</h3><p>包含宋、明、清时期文献，晚清矿业交涉材料、19世纪英文地理著述，以及一条现代研究文献书目。每条记录保留出处、原文链接和核查状态。</p><p>史料中的数字、日期、技术与药性主张属于历史记载，不代表已被独立证实，也不构成实验或医疗建议。</p></article><article class="method-card"><h3>怎么扩充自己的资料？</h3><ol><li>在 <code>data/records.csv</code> 追加一行，填写编号、馆藏、标题、时期、短摘录和原件网址。</li><li>运行 <code>python scripts/import_csv.py</code> 重建前端搜索数据。</li><li>将新的原始 PDF 与图片放进自己私人的 <code>originals/</code> 文件夹，不上传至公开仓库。</li><li>日后可将扫描页、OCR、人工校订和页码放入单独的 <code>pages</code> 表，保持原记录 ID 不变。</li></ol><div class="method-code">mercury-archive/
 ├── index.html
 ├── data/
@@ -159,10 +242,10 @@ function citation(r){const zh=r.author+'，'+r.source_title+'，'+r.reference+'�
 function openRecord(id,changeHash=true){let r=RECORDS.find(x=>x.id===id);if(!r)return;$('#detailOverlay').dataset.recordId=id;$('#modalId').textContent=r.id+' · '+tr('kind',r.kind)+' · '+tr('topic',r.topic);$('#modalTitle').textContent=rec(r,'title');$('#modalEn').textContent=r.en_title;const field=(a,b)=>`<div class="meta-row"><div class="meta-k">${esc(a)}</div><div class="meta-v">${esc(b)}</div></div>`;$('#modalMain').innerHTML=`<div class="detail-grid"><div><div class="detail-h">${txt('sourceExcerpt')}</div><div class="detail-excerpt" lang="${r.lang||'zh'}">${r.excerpt?esc(r.excerpt):`<span style="font:13px sans-serif;color:#7f8279">${txt('noExcerpt')}</span>`}</div><div class="detail-h">${txt('researchSummary')}</div><p class="detail-english" lang="en">${esc(r.en_summary)}</p><div class="detail-h">${txt('editorialNote')}</div><div class="detail-note"><p lang="zh-CN">${esc(r.notes)}</p><p lang="en" class="note-translation">${esc(I18N.notes[r.id]||'')}</p></div><div class="detail-h">${txt('keywords')}</div><div class="tags">${r.tags.map(t=>`<span class="tag">${esc(tag(t))}</span>`).join('')}</div><div class="detail-h" style="margin-top:28px">${txt('privateNote')}</div><textarea id="privateNote" class="note-input" placeholder="${esc(txt('privatePlaceholder'))}">${esc(privateNotes[r.id]||'')}</textarea><p class="private-note-caption">${txt('privateCaption')}</p></div><aside class="metadata">${field(txt('metaSource'),tr('source_title',r.source_title))}${field(txt('metaAuthor'),tr('author',r.author))}${field(txt('metaPublication'),tr('publication',r.publication))}${field(txt('metaWhen'),tr('when',r.when))}${field(txt('metaPlace'),tr('place',r.place))}${field(txt('metaReference'),tr('reference',r.reference))}${field(txt('metaStatus'),tr('status',r.status))}${field(txt('metaRights'),tr('rights',r.rights))}${field(txt('metaChecked'),r.source_checked_on)}${field(txt('metaScan'),txt('metaScanUnavailable'))}</aside></div>`;$('#modalSourceLink').href=r.source_url;$('#privateNote').addEventListener('input',e=>{privateNotes[r.id]=e.target.value;try{localStorage.setItem('mercury-archive-private-notes-v1',JSON.stringify(privateNotes))}catch(x){}});$('#copyCitation').onclick=()=>copyText(citation(r),txt('copySuccess'));$('#detailOverlay').classList.add('open');document.body.style.overflow='hidden';$('#closeModal').focus();if(changeHash)history.replaceState(null,'','#record='+encodeURIComponent(id))}
 function closeRecord(){if(!$('#detailOverlay').classList.contains('open'))return;$('#detailOverlay').classList.remove('open');document.body.style.overflow='';history.replaceState(null,'','#'+state.view)}
 async function copyText(s,msg){try{await navigator.clipboard.writeText(s);notify(msg)}catch(e){const ta=document.createElement('textarea');ta.value=s;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');notify(msg)}catch(x){notify(txt('copyFailed'))}ta.remove()}}
-function nav(view){state.view=view==='catalog'||view==='about'?view:'search';document.querySelectorAll('.section').forEach(s=>s.classList.toggle('active',s.id==='section-'+state.view));document.querySelectorAll('[data-nav]').forEach(el=>el.classList.toggle('active',el.dataset.nav===state.view));history.replaceState(null,'','#'+state.view);if(view==='home'){window.scrollTo({top:0,behavior:'smooth'})}else{document.querySelector('.content-area').scrollIntoView({behavior:'smooth',block:'start'})}}
+function nav(view){state.view=['catalog','gallery','about'].includes(view)?view:'search';document.querySelectorAll('.section').forEach(s=>s.classList.toggle('active',s.id==='section-'+state.view));document.querySelectorAll('[data-nav]').forEach(el=>el.classList.toggle('active',el.dataset.nav===state.view));history.replaceState(null,'','#'+state.view);if(view==='home'){window.scrollTo({top:0,behavior:'smooth'})}else{document.querySelector('.content-area').scrollIntoView({behavior:'smooth',block:'start'})}}
 function csvCell(s){const a=String(s??'');return /[",\r\n]/.test(a)?'"'+a.replace(/"/g,'""')+'"':a}
 function exportCSV(){const a=filtered();const cols=['id','title','source_title','author','when','period','topic','place','excerpt','en_summary','source_url','status','private_note'];const lines=['\uFEFF'+cols.join(','),...a.map(r=>cols.map(k=>csvCell(k==='private_note'?(privateNotes[r.id]||''):r[k])).join(','))];const url=URL.createObjectURL(new Blob([lines.join('\r\n')],{type:'text/csv;charset=utf-8;'}));const el=document.createElement('a');el.href=url;el.download='mercury_archive_filtered.csv';document.body.appendChild(el);el.click();el.remove();setTimeout(()=>URL.revokeObjectURL(url),5000);notify(txt('exported')+' '+a.length+' '+txt('exportedSuffix'))}
-function init(){if(!RECORDS.length){$('#resultsList').textContent=txt('dataMissing');return}$('#stat-records').textContent=RECORDS.length;$('#stat-works').textContent=sourceGroups().length;for(const sel of ['#periodSelect','#kindSelect'])for(const opt of $(sel).options)if(!opt.hasAttribute('value'))opt.setAttribute('value',opt.textContent);applyBilingual();document.querySelectorAll('[data-nav]').forEach(el=>el.addEventListener('click',e=>{e.preventDefault();nav(el.dataset.nav)}));document.querySelectorAll('[data-query]').forEach(el=>el.addEventListener('click',()=>{state.query=el.dataset.query;$('#searchInput').value=state.query;nav('search');state.visible=8;render()}));$('#searchInput').addEventListener('input',e=>{state.query=e.target.value;state.visible=8;render()});$('#searchSubmit').addEventListener('click',()=>{state.query=$('#searchInput').value;render()});$('#searchInput').addEventListener('keydown',e=>{if(e.key==='Enter')render()});$('#periodSelect').addEventListener('change',e=>{state.period=e.target.value;state.visible=8;render()});$('#kindSelect').addEventListener('change',e=>{state.kind=e.target.value;state.visible=8;render()});$('#sortSelect').addEventListener('change',e=>{state.sort=e.target.value;render()});$('#bookmarksOnly').addEventListener('change',e=>{state.bookmarksOnly=e.target.checked;render()});$('#resetFilters').addEventListener('click',()=>{state.query='';state.period='';state.kind='';state.topics.clear();state.bookmarksOnly=false;state.visible=8;$('#searchInput').value='';$('#periodSelect').value='';$('#kindSelect').value='';$('#bookmarksOnly').checked=false;document.querySelectorAll('[data-topic]').forEach(x=>x.checked=false);render()});$('#loadMore').addEventListener('click',()=>{state.visible+=8;render()});$('#downloadResults').addEventListener('click',exportCSV);document.addEventListener('click',e=>{let open=e.target.closest('[data-open]'),star=e.target.closest('[data-star]');if(open){openRecord(open.dataset.open);return}if(star){let id=star.dataset.star;bookmarks.has(id)?bookmarks.delete(id):bookmarks.add(id);save();render()}});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeRecord();if(e.key==='/'&&!['INPUT','TEXTAREA'].includes(document.activeElement.tagName)&&!$('#detailOverlay').classList.contains('open')){e.preventDefault();nav('search');$('#searchInput').focus()}if(e.key==='Enter'&&document.activeElement?.hasAttribute('data-open'))openRecord(document.activeElement.dataset.open)});$('#closeModal').addEventListener('click',closeRecord);$('#detailOverlay').addEventListener('click',e=>{if(e.target.id==='detailOverlay')closeRecord()});save();const h=decodeURIComponent(location.hash||'');if(h.startsWith('#record='))openRecord(h.slice(8),false);else if(h==='#catalog'||h==='#about')nav(h.slice(1));}
+function init(){if(!RECORDS.length){$('#resultsList').textContent=txt('dataMissing');return}$('#stat-records').textContent=RECORDS.length;$('#stat-works').textContent=sourceGroups().length;for(const sel of ['#periodSelect','#kindSelect'])for(const opt of $(sel).options)if(!opt.hasAttribute('value'))opt.setAttribute('value',opt.textContent);applyBilingual();document.querySelectorAll('[data-nav]').forEach(el=>el.addEventListener('click',e=>{e.preventDefault();nav(el.dataset.nav)}));document.querySelectorAll('[data-query]').forEach(el=>el.addEventListener('click',()=>{state.query=el.dataset.query;$('#searchInput').value=state.query;nav('search');state.visible=8;render()}));$('#searchInput').addEventListener('input',e=>{state.query=e.target.value;state.visible=8;render()});$('#searchSubmit').addEventListener('click',()=>{state.query=$('#searchInput').value;render()});$('#searchInput').addEventListener('keydown',e=>{if(e.key==='Enter')render()});$('#periodSelect').addEventListener('change',e=>{state.period=e.target.value;state.visible=8;render()});$('#kindSelect').addEventListener('change',e=>{state.kind=e.target.value;state.visible=8;render()});$('#sortSelect').addEventListener('change',e=>{state.sort=e.target.value;render()});$('#bookmarksOnly').addEventListener('change',e=>{state.bookmarksOnly=e.target.checked;render()});$('#resetFilters').addEventListener('click',()=>{state.query='';state.period='';state.kind='';state.topics.clear();state.bookmarksOnly=false;state.visible=8;$('#searchInput').value='';$('#periodSelect').value='';$('#kindSelect').value='';$('#bookmarksOnly').checked=false;document.querySelectorAll('[data-topic]').forEach(x=>x.checked=false);render()});$('#loadMore').addEventListener('click',()=>{state.visible+=8;render()});$('#downloadResults').addEventListener('click',exportCSV);document.addEventListener('click',e=>{let open=e.target.closest('[data-open]'),star=e.target.closest('[data-star]');if(open){openRecord(open.dataset.open);return}if(star){let id=star.dataset.star;bookmarks.has(id)?bookmarks.delete(id):bookmarks.add(id);save();render()}});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeRecord();if(e.key==='/'&&!['INPUT','TEXTAREA'].includes(document.activeElement.tagName)&&!$('#detailOverlay').classList.contains('open')){e.preventDefault();nav('search');$('#searchInput').focus()}if(e.key==='Enter'&&document.activeElement?.hasAttribute('data-open'))openRecord(document.activeElement.dataset.open)});$('#closeModal').addEventListener('click',closeRecord);$('#detailOverlay').addEventListener('click',e=>{if(e.target.id==='detailOverlay')closeRecord()});save();const h=decodeURIComponent(location.hash||'');if(h.startsWith('#record='))openRecord(h.slice(8),false);else if(h==='#catalog'||h==='#about'||h==='#gallery')nav(h.slice(1));}
 init();
 })();
 </script>

@@ -1,4 +1,4 @@
-/* Bilingual labels, translations, and reviewed research summaries. Source excerpts remain unchanged. */
+/* Simultaneous Chinese-English UI and research annotations. Original source language is unchanged. */
 window.MERCURY_I18N = {
   "strings": {
     "zh": {
@@ -184,7 +184,8 @@ window.MERCURY_I18N = {
       "医药与知识": "Medicine & knowledge",
       "矿权与政治": "Mining rights & politics",
       "全球贸易": "Global trade",
-      "研究文献": "Research literature"
+      "研究文献": "Research literature",
+      "图像史料与技术": "Illustrated sources & technical knowledge"
     },
     "period": {
       "宋代": "Song dynasty",
@@ -205,7 +206,8 @@ window.MERCURY_I18N = {
       "《本草綱目·金石之三》": "Bencao Gangmu, “Minerals III”",
       "民國《貴州通志·前事志》": "Guizhou Gazetteer (Republican ed.), Earlier Events",
       "Physical Geography": "《自然地理》（原书英文题名）",
-      "The global roots of pre-1900 legacy mercury": "1900年前遗留汞污染的全球源头（译名）"
+      "The global roots of pre-1900 legacy mercury": "1900年前遗留汞污染的全球源头（译名）",
+      "《金石昆蟲草木狀》": "Jinshi Kunchong Caomu Zhuang (Illustrations of Minerals, Insects, and Plants)"
     },
     "author": {
       "田雯（篇章作者）": "Tian Wen (section author)",
@@ -214,7 +216,8 @@ window.MERCURY_I18N = {
       "李時珍": "Li Shizhen",
       "民國貴州省續修通志局編": "Guizhou Provincial Gazetteer Compilation Office (Republican era)",
       "Mary Somerville": "玛丽·萨默维尔",
-      "Saúl Guerrero and Larissa Schneider": "Saúl Guerrero 与 Larissa Schneider"
+      "Saúl Guerrero and Larissa Schneider": "Saúl Guerrero 与 Larissa Schneider",
+      "文俶": "Wen Shu"
     },
     "when": {
       "康熙時期，成文年待考": "Kangxi reign; date uncertain",
@@ -224,7 +227,8 @@ window.MERCURY_I18N = {
       "光緒二十八年（1902）": "Guangxu 28 (1902)",
       "光緒三十年（1904）": "Guangxu 30 (1904)",
       "1850年出版版本": "1850 edition",
-      "2023年發表": "Published 2023"
+      "2023年發表": "Published 2023",
+      "1617–1620 年間": "1617–1620"
     },
     "place": {
       "貴州：馬蹄關、用砂壩、洋水、熱水": "Guizhou: Matiguan, Yongshaba, Yangshui, Reshui",
@@ -241,7 +245,8 @@ window.MERCURY_I18N = {
       "中國（藥物知識）": "China (medical knowledge)",
       "貴州銅仁、萬山": "Tongren and Wanshan, Guizhou",
       "西班牙、中國、日本、墨西哥、秘魯": "Spain, China, Japan, Mexico, Peru",
-      "全球": "Global"
+      "全球": "Global",
+      "辰州；明代中國": "Chenzhou; Ming China"
     },
     "publication": {
       "2023": "2023年",
@@ -250,7 +255,8 @@ window.MERCURY_I18N = {
       "南宋（約1178）": "Southern Song (c. 1178)",
       "明萬曆二十四年（1596）刊行": "Ming Wanli 24 (1596) edition",
       "民國時期編纂，1949年刊行；所摘文書為1902–1904年": "Compiled in the Republican era; published 1949; documents dated 1902–1904",
-      "1850 edition": "1850年版"
+      "1850 edition": "1850年版",
+      "明萬曆45–48年（1617–1620）彩繪底稿本": "Ming Wanli 45–48 (1617–1620), illustrated manuscript"
     },
     "reference": {
       "卷43「水銀説」「硃砂説」": "Vol. 43, “On Mercury” and “On Cinnabar”",
@@ -258,19 +264,22 @@ window.MERCURY_I18N = {
       "卷七「金石門」": "Vol. 7, “Metals and Minerals”",
       "「丹砂」「水銀」條": "Entries on cinnabar and mercury",
       "「前事志」四十二至四十三；李經羲為萬山廠事、礦權爭議": "Earlier Events, sections 42–43; Li Jingxi on Wanshan and mining rights",
-      "Chapter XV, section on quicksilver": "第十五章水银部分"
+      "Chapter XV, section on quicksilver": "第十五章水银部分",
+      "27卷12冊；特藏編號06921；辰州丹砂、取水銀煉砂、水銀粉圖": "27 juan in 12 fascicles, special collection no. 06921; three cinnabar and mercury images"
     },
     "status": {
       "網上轉錄待核原版": "Online transcription; not checked against original",
       "轉錄有疑字，急待原版核對": "Uncertain transcription; original urgently needs checking",
       "轉錄待核原版與文書脈絡": "Transcription and document context unverified",
       "電子文本待與初版對核": "Digital text not checked against first edition",
-      "書目資料已核，未收錄全文": "Bibliographic metadata checked; full text not included"
+      "書目資料已核，未收錄全文": "Bibliographic metadata checked; full text not included",
+      "圖像索引，原版頁碼待核": "Illustrated-source index; original folio locations pending verification"
     },
     "rights": {
       "原作公有領域；請保留轉錄提供者署名與連結": "Historical work is in the public domain; credit and link to the transcription provider",
       "現代網站轉錄；公開重發前核查文本權利": "Modern online transcription; permission must be checked before republication",
-      "現代論文僅收書目與自撰摘要": "Modern article: metadata and original research summary only"
+      "現代論文僅收書目與自撰摘要": "Modern article: metadata and original research summary only",
+      "原作為明代繪畫；數位圖像的轉載條款須遵守臺灣國家圖書館規定。": "Ming-period original artworks; reuse of digitized images subject to National Central Library terms."
     },
     "tags": {
       "朱砂": "cinnabar",
@@ -350,7 +359,14 @@ window.MERCURY_I18N = {
       "China": "中国",
       "Europe": "欧洲",
       "Almaden": "阿尔马登",
-      "Peru": "秘鲁"
+      "Peru": "秘鲁",
+      "文俶": "Wen Shu",
+      "金石昆蟲草木狀": "Illustrations of Minerals, Insects, and Plants",
+      "辰州丹砂": "Chenzhou cinnabar",
+      "取水銀煉砂": "Mercury extraction",
+      "水銀粉": "Mercury powder",
+      "圖像史料": "Illustrated source",
+      "明代": "Ming period"
     }
   },
   "notes": {
@@ -371,7 +387,8 @@ window.MERCURY_I18N = {
     "MRA-0015": "Bibliographic details and a research summary are provided; the modern online transcription is withheld pending rights review.",
     "MRA-0016": "Bibliographic details and a research summary are provided; the modern online transcription is withheld pending rights review.",
     "MRA-0017": "A view of nineteenth-century European geography, not direct statistical evidence of Chinese mercury exports.",
-    "MRA-0018": "Bibliographic metadata and an original summary of a modern article; the paper’s full text is not reproduced. Useful for comparative methods and regional analysis."
+    "MRA-0018": "Bibliographic metadata and an original summary of a modern article; the paper’s full text is not reproduced. Useful for comparative methods and regional analysis.",
+    "MRA-0019": "This illustrated-source record indexes three high-resolution images supplied by the researcher. Study the mineral forms, furnace scenes, and the depiction of mercury-related substances alongside other late-Ming texts. Original manuscript folios have not yet been independently verified."
   },
   "aboutEn": "<article class=\"method-card\"><h3>What is this archive?</h3><p>An extensible pilot developed for the <em>Mercury across Empires</em> research project. It demonstrates keyword search, thematic filters, cross-language discovery, and source-linked records drawn from verifiable online historical texts.</p><div class=\"callout\"><strong>Scope and limits:</strong> These records are selected excerpts, not full-document OCR. The website does not reproduce restricted archival scans. Transcriptions still need verification against original editions. English summaries are research descriptions, not literal translations.</div><h3>Where do the sources come from?</h3><p>They include Song, Ming, and Qing historical texts, late-Qing mining disputes, a nineteenth-century English geography work, and modern scholarship. Each record includes source information, links, and review status.</p><p>Historical claims about processes, dates, quantities, toxicity, or medicine are not independently validated and must not be treated as practical or medical advice.</p></article><article class=\"method-card\"><h3>How can I add sources?</h3><ol><li>Add a row to <code>data/records.csv</code> with a stable ID, title, date, short excerpt, and source URL.</li><li>Run <code>python scripts/import_csv.py</code> to regenerate the searchable browser dataset.</li><li>Keep original PDFs and images in your private <code>originals/</code> folder; do not upload restricted material to the public repository.</li><li>Later, add a separate <code>pages</code> table for scans, OCR, verified transcription, and page numbers without changing record IDs.</li></ol><div class=\"method-code\">mercury-archive/<br>├── index.html<br>├── i18n.js<br>├── data/<br>│   ├── records.csv<br>│   ├── records.json<br>│   └── records.js<br>├── scripts/<br>│   └── import_csv.py<br>└── README.md</div><p>Pure HTML, CSS, and JavaScript; no account, database server, or API key is required. Hosted on GitHub Pages.</p></article>"
 };

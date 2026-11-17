@@ -61,27 +61,6 @@
 .mini-select{max-width:205px}
 }
 
-/* Historical picture gallery. The three archival images are cropped from one lightweight contact sheet. */
-.gallery-title-en{font:italic 17px/1.5 Georgia,serif;color:#788579;margin:5px 0 0}
-.section-head .gallery-title-en{max-width:none}
-.figure-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:22px}
-.figure-card{background:#fffefa;border:1px solid #e2dfd4;border-radius:9px;overflow:hidden;display:flex;flex-direction:column}
-.figure-art{aspect-ratio:300/230;width:100%;background-color:#efe9dc;background-image:url('assets/historical-figures.svg');background-repeat:no-repeat;background-size:contain;border-bottom:1px solid #e7dfcf}
-.figure-panel-1{background-position:0% 50%}.figure-panel-2{background-position:50% 50%}.figure-panel-3{background-position:100% 50%}
-.figure-body{padding:21px 23px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
-.figure-index{font-size:11px;letter-spacing:.12em;color:var(--red);font-weight:750}
-.figure-body h3{font:600 20px/1.4 "Songti SC","STSong","Noto Serif CJK SC",Georgia,serif;margin:0}
-.figure-body p{font-size:12px;color:#516157;line-height:1.85;margin:0}
-.figure-body .figure-en{font:italic 12px/1.8 Georgia,serif;color:#718078}
-.figure-body .figure-source{font:11px/1.7 Georgia,"Songti SC",serif;color:#7b8179;margin-top:4px}
-.figure-link{font-size:12px;color:var(--red);text-decoration:none;margin-top:auto;padding-top:6px;font-weight:700;line-height:1.7}
-.figure-link:hover{text-decoration:underline}
-.figure-gallery-note{color:#7d857d;font-size:11px;line-height:1.9;margin-top:22px}
-.figure-art.figure-restricted{background:#e8e8df;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;color:#7e887d;background-image:none;padding:20px;text-align:center}
-.figure-restricted-icon{font:72px Georgia,serif;color:#b9bcb2;line-height:1}
-.figure-restricted strong{font-size:13px}.figure-restricted span:last-child{font:italic 12px Georgia,serif}
-.figure-body .figure-rights{font-style:italic;color:#986d60}
-@media(max-width:720px){.figure-gallery{grid-template-columns:1fr;gap:17px}.figure-body{padding:19px}.gallery-title-en{font-size:15px}}
 /* Wen Shu historical illustrations, with independent high-resolution files. */
 .hero-art-pair{display:flex;align-items:center;gap:15px;margin-left:auto;flex-shrink:0}
 .hero-art-pair .seal{margin-left:0;width:122px;height:122px}.hero-art-pair .seal strong{font-size:59px}.hero-art-pair .seal small{bottom:17px}
@@ -100,7 +79,7 @@
 .featured-open{background:transparent;border:1px solid #bbaea0;border-radius:4px;color:var(--red-deep);padding:9px 13px;font-size:12px;font-weight:700}.featured-open:hover{background:#f7f0e8}
 .wenshu-detail-panels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:12px 0 24px}
 @media(max-width:980px){.hero-art-pair{gap:8px}.hero-cinnabar{width:132px}.hero-art-pair .seal{width:93px;height:93px}.hero-art-pair .seal strong{font-size:42px}.hero-art-pair .seal small{bottom:9px}}
-@media(max-width:650px){.hero .container{flex-wrap:wrap}.hero-text{padding-bottom:10px}.hero-art-pair{margin:0 auto 22px}.hero-cinnabar{width:125px}.featured-wenshu{padding:17px}.wenshu-panels{gap:7px}.wenshu-panels figcaption{font-size:10px}.featured-wenshu h3{font-size:20px}.wenshu-detail-panels{gap:7px}}
+@media(max-width:650px){.hero .container{flex-wrap:wrap}.hero-text{padding-bottom:10px}.hero-art-pair{margin:0 auto 22px}.hero-cinnabar{width:125px}.featured-wenshu{padding:17px}.wenshu-panels{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}.wenshu-panels figure{flex:0 0 76%;scroll-snap-align:start}.wenshu-panels figcaption{font-size:12px}.featured-wenshu h3{font-size:20px}.wenshu-detail-panels{gap:7px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>

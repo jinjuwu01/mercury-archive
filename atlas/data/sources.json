@@ -1,0 +1,38 @@
+[
+  {
+    "id": "schottenhammer2019",
+    "short": "Schottenhammer 2019",
+    "citation": "Angela Schottenhammer, ‘Trans-Pacific Connections: Contraband Mercury Trade in the Sixteenth to Early Eighteenth Centuries,’ in Picturing Commerce in and from the East Asian Maritime Circuits, 1550–1800, ed. Tamara H. Bentley (Amsterdam University Press, 2019), 159–194.",
+    "url": "https://doi.org/10.1017/9789048535446.006",
+    "source_type": "secondary",
+    "note_zh": "章节综述中国水银向日本和新西班牙的输出及经马尼拉的跨太平洋贸易；1613 年具体货载的细节应再核对章节原文和所引一手文献。",
+    "note_en": "Discusses Chinese mercury exported to Japan and New Spain via Asian-Pacific networks. Verify the 1613 shipment in the chapter and its cited primary documents."
+  },
+  {
+    "id": "wanshan2023",
+    "short": "Wanshan archaeology (2023)",
+    "citation": "‘Archaeological Investigation and Industrial Heritage Study of the Wanshan Mercury Mining Site in Guizhou Province, China,’ 2023, DOI: 10.1080/03090728.2023.2257579.",
+    "url": "https://doi.org/10.1080/03090728.2023.2257579",
+    "source_type": "secondary",
+    "note_zh": "考古调查确认万山地区有长期朱砂开采与炼汞遗存，但不能据此把某一批海外水银认定为万山产。",
+    "note_en": "Archaeology establishes Wanshan's long mining history, not the provenance of any particular overseas shipment."
+  },
+  {
+    "id": "tegengren1920",
+    "short": "Tegengren 1920",
+    "citation": "F. R. Tegengren, ‘The Quicksilver Deposits of China,’ Bulletin of the Geological Survey of China 2 (1920): 1–36, esp. 26.",
+    "url": "https://www.iseas.edu.sg/wp-content/uploads/2015/07/edwards_mckinnon_1984.pdf",
+    "source_type": "secondary",
+    "note_zh": "示例链接指向引述 Tegengren 的后出研究（PDF），而非 1920 年原文；提及铜仁市场及贵州至广东的可能运输路径。年代、路线需要原文复核。",
+    "note_en": "The link leads to a later publication citing Tegengren, not the 1920 original. Its discussion of Tongren and Guangdong needs verification in the original."
+  },
+  {
+    "id": "ju2026",
+    "short": "Ju Xi 2026",
+    "citation": "鞠熙：《丹砂的隐喻：武陵走廊的世界与地方》，2026 年在线版本。",
+    "url": "https://www.aisixiang.com/data/176205.html",
+    "source_type": "secondary",
+    "note_zh": "介绍万山矿业史与1899年英法资本介入。1906/1908等终止时间在不同研究中可能存在表述差异，必须回到档案校核。",
+    "note_en": "Discusses Wanshan mining and Anglo-French investment around 1899. The ending date requires archival verification."
+  }
+]

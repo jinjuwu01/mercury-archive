@@ -1,3 +1,11 @@
+# v0.4：全时段网络可视化 / All-period network explorer
+
+地图现在**默认展示所有 21 条跨年代研究联系**（而不是仅显示1613年）。读者可以切换“全部年代 / 前后20年 / 单一年份”，再利用双语路线列表、搜索框和流向与证据筛选查看不同交易。线的颜色代表贸易流向，实线/虚线/点线代表史料等级。具有相同起终点的不同年代记录在视觉上略微错开，以免完全覆盖；这是示意的可视化处理，**不意味着船舶使用不同航线，也不意味着所有时期的贸易同时发生**。
+
+The default atlas now shows all 21 dated connections as a cumulative *overview*, not a single historical year. Switch to exact-year or ±20-year windows to avoid conflating periods. Colored strokes distinguish direction, line patterns distinguish evidentiary status. Overlapping records are spatially separated for legibility, not to reconstruct actual shipping itineraries.
+
+---
+
 # Mercury across Empires — Digital Atlas / 水银跨帝国互动历史地图
 
 **Version 0.3 · November 2026 · Jinju Wu**

@@ -194,5 +194,227 @@
     "overview_note_en": "The Belgic shipment is recorded in 1875; precise mine and end buyers are unverified.",
     "overview_status_zh": "装运确证 · 矿源和销路待考",
     "overview_status_en": "Shipment documented · origins/end buyers uncertain"
+  },
+  {
+    "id": "journey1636",
+    "year": 1636,
+    "title_zh": "澳门水银进入日本",
+    "title_en": "Macao Mercury Reaches Japan",
+    "subtitle_zh": "1636年有数量与货值的澳门—长崎贸易记录",
+    "subtitle_en": "A quantified Macao–Nagasaki shipment in 1636",
+    "steps": [
+      {
+        "place_id": "macao",
+        "route_id": "r_macao_nagasaki_1636",
+        "title_zh": "01 · 澳门商贸港",
+        "title_en": "01 · Macao as trade port",
+        "text_zh": "1636年荷兰商人将水银从澳门运往日本；不应凭这条记录认定矿山位于贵州。",
+        "text_en": "In 1636 Dutch merchants moved mercury from Macao to Japan; this does not prove a Guizhou mine origin."
+      },
+      {
+        "place_id": "nagasaki",
+        "route_id": null,
+        "title_zh": "02 · 日本市场",
+        "title_en": "02 · The Japanese market",
+        "text_zh": "所引研究记载262.87担、33,864两。数量与货值均采用史料原单位。",
+        "text_en": "The cited study records 262.87 piculs and 33,864 taels, preserving the historical units."
+      }
+    ],
+    "direction": "outbound",
+    "overview_route_zh": "澳门 → 长崎",
+    "overview_route_en": "Macao → Nagasaki",
+    "overview_note_zh": "262.87担、33,864两；矿源及具体船名未能由此确认。",
+    "overview_note_en": "262.87 piculs worth 33,864 taels; original mine and vessel unknown.",
+    "overview_status_zh": "贸易记录确证 · 矿源待考",
+    "overview_status_en": "Shipment reported · mine unknown"
+  },
+  {
+    "id": "journey1639",
+    "year": 1639,
+    "title_zh": "台湾—长崎：荷兰商船",
+    "title_en": "Taiwan–Nagasaki: Dutch Trade",
+    "subtitle_zh": "De Roch号1639年7月携48箱水银",
+    "subtitle_en": "De Roch carried 48 cases in July 1639",
+    "steps": [
+      {
+        "place_id": "taiwan_coast",
+        "route_id": "r_taiwan_nagasaki_1639",
+        "title_zh": "01 · 台湾的海上网络",
+        "title_en": "01 · Taiwan maritime networks",
+        "text_zh": "1639年7月De Roch号自台湾出发，具体港口仍须核查原始日记。",
+        "text_en": "In July 1639 De Roch departed Taiwan; its precise port requires verification in the original diary."
+      },
+      {
+        "place_id": "nagasaki",
+        "route_id": null,
+        "title_zh": "02 · 长崎收货市场",
+        "title_en": "02 · Nagasaki market",
+        "text_zh": "记载48箱水银。不能把这48箱全部归为台湾产汞。",
+        "text_en": "The record reports 48 cases of mercury, not that all mercury was mined in Taiwan."
+      }
+    ],
+    "direction": "outbound",
+    "overview_route_zh": "台湾（港口待考） → 长崎",
+    "overview_route_en": "Taiwan (port uncertain) → Nagasaki",
+    "overview_note_zh": "荷兰商船载汞48箱；船舶起航地与矿源有不同精度。",
+    "overview_note_en": "48 cases on a Dutch ship; port and mine provenance remain unresolved.",
+    "overview_status_zh": "运输见载 · 出发港待考",
+    "overview_status_en": "Shipment reported · port uncertain"
+  },
+  {
+    "id": "journey1839mexico",
+    "year": 1839,
+    "title_zh": "广州水银重返墨西哥",
+    "title_en": "Canton Mercury Reaches Mexico",
+    "subtitle_zh": "来自广州的船在1839年抵马萨特兰",
+    "subtitle_en": "A Canton vessel reported at Mazatlán in 1839",
+    "steps": [
+      {
+        "place_id": "guangzhou",
+        "route_id": "r_canton_mazatlan_1839",
+        "title_zh": "01 · 1839年的广州",
+        "title_en": "01 · Canton, 1839",
+        "text_zh": "这一批来自广州，但原先出自何处矿山仍不清楚。",
+        "text_en": "The shipment came from Canton; the original mining district is unverified."
+      },
+      {
+        "place_id": "mazatlan",
+        "route_id": "r_canton_mazatlan_1839",
+        "title_zh": "02 · 马萨特兰115瓶",
+        "title_en": "02 · 115 bottles at Mazatlán",
+        "text_zh": "1839年11月16日通信报告已抵达115瓶，不等于当日到港。",
+        "text_en": "The letter of 16 Nov 1839 reports an arrival of 115 bottles, not necessarily on that day."
+      },
+      {
+        "place_id": "san_blas",
+        "route_id": "r_canton_sanblas_1839_expected",
+        "title_zh": "03 · 圣布拉斯：尚未到港",
+        "title_en": "03 · San Blas: expected only",
+        "text_zh": "Harlequin号被预计将运来更多水银；缺少证明最终抵达的记录。",
+        "text_en": "A larger Harlequin cargo was expected; its eventual arrival is not established."
+      }
+    ],
+    "direction": "outbound",
+    "overview_route_zh": "广州 → 马萨特兰",
+    "overview_route_en": "Canton → Mazatlán",
+    "overview_note_zh": "115瓶已经报告到港；Harlequin号到圣布拉斯仅是预计。",
+    "overview_note_en": "115 bottles reported arrived; Harlequin at San Blas was only anticipated.",
+    "overview_status_zh": "到港记录 · 另一船待核",
+    "overview_status_en": "Arrival reported · another ship uncertain"
+  },
+  {
+    "id": "journey1827usa",
+    "year": 1827,
+    "title_zh": "谁向中国运来水银？",
+    "title_en": "Who Brought Mercury to China?",
+    "subtitle_zh": "1827年五艘美国船的统计记录",
+    "subtitle_en": "1827 aggregate figures for five U.S. vessels",
+    "steps": [
+      {
+        "place_id": "us_merchant_region",
+        "route_id": "r_us_merchants_china_1806_1827",
+        "title_zh": "01 · 船旗不是矿源",
+        "title_en": "01 · A flag is not a mine",
+        "text_zh": "美国船运来水银，并不意味着水银一定出产美国本土；始发港也不能任意指定。",
+        "text_en": "U.S. vessels carried mercury, but the metal need not have originated in U.S. mines and loading ports are unidentified."
+      },
+      {
+        "place_id": "guangzhou",
+        "route_id": null,
+        "title_zh": "02 · 中国市场与待解问题",
+        "title_en": "02 · China and open questions",
+        "text_zh": "1827年记录为8,666担、五艘船。地图的广州节点只是示意，不是已证实卸货港。",
+        "text_en": "The 1827 report gives 8,666 piculs on five ships. Canton is merely a geographic anchor, not a proven unloading port."
+      }
+    ],
+    "direction": "inbound",
+    "overview_route_zh": "美国商船（港口未详） → 中国市场",
+    "overview_route_en": "U.S. vessels (ports unknown) → China market",
+    "overview_note_zh": "5艘美国船报告8,666担；船旗不等于产地。",
+    "overview_note_en": "Five U.S. vessels, 8,666 piculs; vessel nationality is not mine origin.",
+    "overview_status_zh": "数量统计 · 真实港口待核",
+    "overview_status_en": "Aggregate recorded · ports unknown"
+  },
+  {
+    "id": "journey1844liverpool",
+    "year": 1844,
+    "title_zh": "英国水银抵达南美海岸？",
+    "title_en": "From Liverpool to Valparaíso",
+    "subtitle_zh": "1844年的具体提单与南美接收港",
+    "subtitle_en": "A dated bill of lading for South America",
+    "steps": [
+      {
+        "place_id": "liverpool",
+        "route_id": "r_liverpool_valparaiso_1844",
+        "title_zh": "01 · 1844年利物浦提单",
+        "title_en": "01 · An 1844 bill of lading",
+        "text_zh": "1844年10月12日，Frederick Huth & Co.为125瓶水银出具装运文书。",
+        "text_en": "On 12 Oct 1844 Frederick Huth & Co. issued a bill of lading for 125 flasks."
+      },
+      {
+        "place_id": "valparaiso",
+        "route_id": null,
+        "title_zh": "02 · 智利太平洋口岸",
+        "title_en": "02 · A Chilean Pacific port",
+        "text_zh": "瓦尔帕莱索是目的地；不能把提单直接当成已送达的收货证明。",
+        "text_en": "Valparaíso is the listed destination; a bill of lading is not proof of completed delivery."
+      }
+    ],
+    "direction": "transit",
+    "overview_route_zh": "利物浦 → 瓦尔帕莱索",
+    "overview_route_en": "Liverpool → Valparaíso",
+    "overview_note_zh": "125瓶装运有提单，是否实际到达仍须另证。",
+    "overview_note_en": "125 flasks are consigned in the bill of lading; separate proof of arrival is needed.",
+    "overview_status_zh": "提单确证 · 抵港另查",
+    "overview_status_en": "Bill of lading · arrival unverified"
+  },
+  {
+    "id": "journey1680andes",
+    "year": 1680,
+    "title_zh": "安第斯：从水银矿到银矿",
+    "title_en": "Andean Mercury to Silver",
+    "subtitle_zh": "万卡韦利卡—皮斯科—阿里卡—波托西：海陆联运",
+    "subtitle_en": "Huancavelica–Pisco–Arica–Potosí: land-and-sea supply",
+    "steps": [
+      {
+        "place_id": "huancavelica",
+        "route_id": "r_huancavelica_pisco",
+        "title_zh": "01 · 万卡韦利卡矿区",
+        "title_en": "01 · Huancavelica mining",
+        "text_zh": "汞矿在山地开采和冶炼，货物需要离开山区再转海路。",
+        "text_en": "Mercury was mined and produced in the mountains before overland transport."
+      },
+      {
+        "place_id": "pisco",
+        "route_id": "r_pisco_arica",
+        "title_zh": "02 · 皮斯科出海",
+        "title_en": "02 · Shipping from Pisco",
+        "text_zh": "1640年后皮斯科也出现在资料中。地图显示运输关系，不重建详细航路。",
+        "text_en": "Pisco is attested from about 1640; the line depicts connection rather than a traced sea voyage."
+      },
+      {
+        "place_id": "arica",
+        "route_id": "r_arica_potosi",
+        "title_zh": "03 · 阿里卡换装",
+        "title_en": "03 · Transfer at Arica",
+        "text_zh": "船只在此卸货，之后继续向山地运送。",
+        "text_en": "At Arica cargo entered inland transport systems."
+      },
+      {
+        "place_id": "potosi",
+        "route_id": null,
+        "title_zh": "04 · 波托西与银汞齐法",
+        "title_en": "04 · Potosí and amalgamation",
+        "text_zh": "这些水银与波托西银矿冶炼紧密相关，为比较中国与西属美洲矿业提供线索。",
+        "text_en": "Mercury fed Potosí silver refining and offers comparative perspective on Chinese and Spanish imperial mining."
+      }
+    ],
+    "direction": "transit",
+    "overview_route_zh": "万卡韦利卡 → 皮斯科 → 阿里卡 → 波托西",
+    "overview_route_en": "Huancavelica → Pisco → Arica → Potosí",
+    "overview_note_zh": "与中国西南水银网络形成比较；精确年度运输需进一步考证。",
+    "overview_note_en": "A comparative network for Southwest China; exact voyage dates are not reconstructed.",
+    "overview_status_zh": "区域网络可靠 · 不是单次货运",
+    "overview_status_en": "Network supported · not one shipment"
   }
 ]

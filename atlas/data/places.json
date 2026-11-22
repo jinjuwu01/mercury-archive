@@ -290,5 +290,293 @@
     ],
     "description_zh": "1692年中国水银在此进行品质试验，不能视作每批经马尼拉运来的水银的终点。",
     "description_en": "Chinese mercury was tested in the Guanajuato mining district in 1692; this is not the destination of every trans-Pacific shipment."
+  },
+  {
+    "id": "taiwan_coast",
+    "name_zh": "台湾海岸（出发港待考）",
+    "name_en": "Taiwan coast (port unverified)",
+    "type": "port",
+    "lat": 23.0,
+    "lon": 120.18,
+    "start": 1600,
+    "end": 1700,
+    "geo_precision": "regional_anchor",
+    "source_ids": [
+      "schottenhammer2019"
+    ],
+    "description_zh": "1639年荷兰商船自台湾前往日本并载水银，但所引记载未在此确定具体启航港。",
+    "description_en": "A Dutch ship left Taiwan with mercury in 1639; the precise departure port is not established here."
+  },
+  {
+    "id": "mazatlan",
+    "name_zh": "马萨特兰",
+    "name_en": "Mazatlán",
+    "type": "port",
+    "lat": 23.249,
+    "lon": -106.41,
+    "start": 1800,
+    "end": 1910,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "platt2011"
+    ],
+    "description_zh": "墨西哥太平洋沿岸港口；1839年有来自广州的115瓶水银到港报告。",
+    "description_en": "Mexican Pacific port; a report of 1839 mentions 115 bottles of mercury from Canton."
+  },
+  {
+    "id": "san_blas",
+    "name_zh": "圣布拉斯",
+    "name_en": "San Blas (Mexico)",
+    "type": "port",
+    "lat": 21.54,
+    "lon": -105.29,
+    "start": 1800,
+    "end": 1910,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "platt2011"
+    ],
+    "description_zh": "1839年的通信预计另一批水银由Harlequin号运至此港；资料并不证明实际到港。",
+    "description_en": "A shipment was expected aboard Harlequin in 1839; arrival remains unverified."
+  },
+  {
+    "id": "liverpool",
+    "name_zh": "利物浦",
+    "name_en": "Liverpool",
+    "type": "port",
+    "lat": 53.408,
+    "lon": -2.991,
+    "start": 1800,
+    "end": 1910,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "platt2011"
+    ],
+    "description_zh": "1844年一份提单涉及自利物浦发往瓦尔帕莱索的125瓶水银。",
+    "description_en": "An 1844 bill of lading reports 125 flasks of quicksilver from Liverpool to Valparaíso."
+  },
+  {
+    "id": "valparaiso",
+    "name_zh": "瓦尔帕莱索",
+    "name_en": "Valparaíso",
+    "type": "port",
+    "lat": -33.047,
+    "lon": -71.614,
+    "start": 1800,
+    "end": 1910,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "platt2011"
+    ],
+    "description_zh": "智利太平洋港口，19世纪欧洲水银的接收和转运节点。",
+    "description_en": "Chilean Pacific port and a nineteenth-century import and distribution point for European mercury."
+  },
+  {
+    "id": "melaka",
+    "name_zh": "马六甲",
+    "name_en": "Melaka",
+    "type": "port",
+    "lat": 2.2,
+    "lon": 102.25,
+    "start": 1570,
+    "end": 1750,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "schottenhammer2019"
+    ],
+    "description_zh": "16–17世纪东南亚货物流通中心；文献提示水银出现在区域网络中，但不能逐批确定来源。",
+    "description_en": "Regional entrepôt in the mercury-related Southeast Asian trading network; individual cargo origins are unclear."
+  },
+  {
+    "id": "ayutthaya",
+    "name_zh": "阿瑜陀耶（暹罗）",
+    "name_en": "Ayutthaya (Siam)",
+    "type": "market",
+    "lat": 14.354,
+    "lon": 100.577,
+    "start": 1570,
+    "end": 1663,
+    "geo_precision": "regional_anchor",
+    "source_ids": [
+      "macao_siam1996"
+    ],
+    "description_zh": "葡萄牙与暹罗贸易记载将水银列入输入品，但不能由此确认每批都由马六甲发出。",
+    "description_en": "Quicksilver is listed among imports to Siam; a Melaka departure port for any specific cargo is not demonstrated."
+  },
+  {
+    "id": "pegu",
+    "name_zh": "勃固（缅甸区域）",
+    "name_en": "Pegu (Myanmar region)",
+    "type": "market",
+    "lat": 17.34,
+    "lon": 96.49,
+    "start": 1570,
+    "end": 1750,
+    "geo_precision": "regional_anchor",
+    "source_ids": [
+      "schottenhammer2019"
+    ],
+    "description_zh": "作为东南亚汞贸易研究候选区域节点，非某次有凭证的港口到港记录。",
+    "description_en": "Research anchor for regional mercury exchange, not a documented port-to-port consignment."
+  },
+  {
+    "id": "us_merchant_region",
+    "name_zh": "美国商船网络（港口未详）",
+    "name_en": "U.S. merchant network (port unknown)",
+    "type": "market",
+    "lat": 40,
+    "lon": -77,
+    "start": 1806,
+    "end": 1827,
+    "geo_precision": "schematic_region",
+    "source_ids": [
+      "you2023"
+    ],
+    "description_zh": "1806–1827年有美国商船运汞来华的统计，但文献未在此明确具体美国装货港；地理点仅为示意。",
+    "description_en": "The source reports American vessels carrying mercury to China in 1806–1827 without identifying an actual U.S. loading port; marker is schematic."
+  },
+  {
+    "id": "india_region",
+    "name_zh": "印度市场（港口待考）",
+    "name_en": "India (port unspecified)",
+    "type": "market",
+    "lat": 22,
+    "lon": 79,
+    "start": 1830,
+    "end": 1850,
+    "geo_precision": "schematic_region",
+    "source_ids": [
+      "platt2011"
+    ],
+    "description_zh": "1836年英国向印度转口水银的统计并不确定具体卸货港。",
+    "description_en": "British re-export statistics for 1836 specify India, not a particular port."
+  },
+  {
+    "id": "seville",
+    "name_zh": "塞维利亚",
+    "name_en": "Seville",
+    "type": "market",
+    "lat": 37.389,
+    "lon": -5.984,
+    "start": 1570,
+    "end": 1820,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "laris2022"
+    ],
+    "description_zh": "西班牙水银向海外发运前的重要陆路仓储和包装中心。",
+    "description_en": "Important inland warehousing and packaging center for quicksilver exported from Spain."
+  },
+  {
+    "id": "veracruz",
+    "name_zh": "韦拉克鲁斯",
+    "name_en": "Veracruz",
+    "type": "port",
+    "lat": 19.173,
+    "lon": -96.134,
+    "start": 1570,
+    "end": 1820,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "andalusia2019"
+    ],
+    "description_zh": "新西班牙接收西班牙水银的重要大西洋港口；典型线路不代表一艘具体船的航迹。",
+    "description_en": "Major Atlantic port for mercury reaching New Spain; network line does not represent a particular ship."
+  },
+  {
+    "id": "huancavelica",
+    "name_zh": "万卡韦利卡",
+    "name_en": "Huancavelica",
+    "type": "mine",
+    "lat": -12.79,
+    "lon": -74.97,
+    "start": 1570,
+    "end": 1820,
+    "geo_precision": "regional_anchor",
+    "source_ids": [
+      "laris2022"
+    ],
+    "description_zh": "安第斯大型历史汞矿，为波托西等银矿供应水银。",
+    "description_en": "Major Andean mercury-mining center supplying silver refining in places such as Potosí."
+  },
+  {
+    "id": "chincha",
+    "name_zh": "钦查港",
+    "name_en": "Chincha",
+    "type": "port",
+    "lat": -13.42,
+    "lon": -76.14,
+    "start": 1570,
+    "end": 1700,
+    "geo_precision": "regional_anchor",
+    "source_ids": [
+      "laris2022"
+    ],
+    "description_zh": "17世纪秘鲁水银向南运输时使用的沿海出口节点；坐标是现代近似值。",
+    "description_en": "Approximate modern locator for a coastal exit point used in Andean mercury transport."
+  },
+  {
+    "id": "pisco",
+    "name_zh": "皮斯科",
+    "name_en": "Pisco",
+    "type": "port",
+    "lat": -13.71,
+    "lon": -76.203,
+    "start": 1640,
+    "end": 1820,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "laris2022"
+    ],
+    "description_zh": "据历史研究，1640年后在向阿里卡的海运环节中出现的港口。",
+    "description_en": "A coastal port identified in mercury movements toward Arica after c.1640."
+  },
+  {
+    "id": "arica",
+    "name_zh": "阿里卡",
+    "name_en": "Arica",
+    "type": "port",
+    "lat": -18.479,
+    "lon": -70.311,
+    "start": 1570,
+    "end": 1820,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "laris2022"
+    ],
+    "description_zh": "安第斯水银海运后转入内陆驮运的港口节点。",
+    "description_en": "Landing port for transfer into inland Andean mercury routes."
+  },
+  {
+    "id": "potosi",
+    "name_zh": "波托西",
+    "name_en": "Potosí",
+    "type": "use",
+    "lat": -19.573,
+    "lon": -65.756,
+    "start": 1570,
+    "end": 1820,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "laris2022"
+    ],
+    "description_zh": "利用水银汞齐工艺处理银矿石的著名矿业中心。",
+    "description_en": "Major silver-mining center where mercury-based amalgamation was employed."
+  },
+  {
+    "id": "chucuito",
+    "name_zh": "丘奎托",
+    "name_en": "Chucuito",
+    "type": "market",
+    "lat": -15.896,
+    "lon": -69.89,
+    "start": 1684,
+    "end": 1820,
+    "geo_precision": "regional_anchor",
+    "source_ids": [
+      "laris2022"
+    ],
+    "description_zh": "1684年后文献记载的万卡韦利卡至波托西陆上运输网络节点。",
+    "description_en": "Regional point on a post-1684 overland mercury route toward Potosí."
   }
 ]

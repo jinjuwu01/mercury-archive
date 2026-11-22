@@ -10,6 +10,7 @@ for k, v in data.items():
 for p in data['places']:
     if not (-90 <= p['lat'] <= 90 and -180<=p['lon']<=180): issues.append(f'Coordinates out of range: {p["id"]}')
 for relation in data['connections']:
+    if not relation.get('name_zh') or not relation.get('name_en'):issues.append(f'Missing bilingual route title: {relation["id"]}')
     if relation['from'] not in ids['places'] or relation['to'] not in ids['places']: issues.append(f'Broken place link: {relation["id"]}')
     if relation['start'] > relation['end']: issues.append(f'Inverted dates: {relation["id"]}')
     if relation.get('direction') not in ['outbound','inbound','transit']:issues.append(f'Invalid direction: {relation["id"]}')
@@ -29,6 +30,7 @@ for rec in data['records']:
     for src in rec['source_ids']:
         if src not in ids['sources']:issues.append(f'Unknown record source: {rec["id"]} {src}')
 for story in data['stories']:
+    if not story.get('overview_route_zh') or not story.get('overview_route_en'):issues.append(f'Missing bilingual story preview: {story["id"]}')
     for step in story['steps']:
         if step['route_id'] and not (next((r['start'] <= story['year'] <= r['end'] for r in data['connections'] if r['id']==step['route_id']),False)):issues.append(f'Story step route not active at year {story["id"]} / {step["route_id"]}')
         if step['place_id'] not in ids['places']:issues.append(f'Unknown story place {step["place_id"]}')

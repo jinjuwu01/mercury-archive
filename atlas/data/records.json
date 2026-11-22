@@ -416,5 +416,157 @@
     "value": null,
     "currency": null,
     "status": "reported"
+  },
+  {
+    "id": "macao_nagasaki_1636",
+    "route_id": "r_macao_nagasaki_1636",
+    "year": 1636,
+    "title_zh": "澳门荷兰商人输往长崎的水银",
+    "title_en": "Dutch merchant mercury cargo from Macao to Nagasaki",
+    "note_zh": "记载262.87担，货值33,864两；谨防误将采购量当作矿山产量。",
+    "note_en": "262.87 piculs valued at 33,864 taels; not an estimate of mine output.",
+    "source_ids": [
+      "schottenhammer2019"
+    ],
+    "locator": "Schottenhammer (2019), p. 169, n. 34",
+    "quantity": 262.87,
+    "unit": "piculs",
+    "ship": null,
+    "value": 33864,
+    "currency": "taels",
+    "status": "reported"
+  },
+  {
+    "id": "taiwan_nagasaki_1639",
+    "route_id": "r_taiwan_nagasaki_1639",
+    "year": 1639,
+    "title_zh": "De Roch号运输48箱水银",
+    "title_en": "48 cases of mercury aboard De Roch",
+    "note_zh": "1639年7月从台湾赴日本，具体起运港和矿源未详。",
+    "note_en": "July 1639; port of departure within Taiwan and original mine unverified.",
+    "source_ids": [
+      "schottenhammer2019"
+    ],
+    "locator": "Schottenhammer (2019), p. 166, n. 21",
+    "quantity": 48,
+    "unit": "cases",
+    "ship": "De Roch",
+    "value": null,
+    "currency": null,
+    "status": "reported"
+  },
+  {
+    "id": "mazatlan_1839_115",
+    "route_id": "r_canton_mazatlan_1839",
+    "year": 1839,
+    "title_zh": "马萨特兰收到广州水银115瓶",
+    "title_en": "115 bottles from Canton reported at Mazatlán",
+    "note_zh": "1839年11月16日通信提及一艘来自广州的船已抵港；报告日期非确认到港日。",
+    "note_en": "The 16 Nov 1839 letter reports an arrival from Canton; it is not a confirmed sailing or arrival date.",
+    "source_ids": [
+      "platt2011"
+    ],
+    "locator": "Platt (2011), p. 46, note 11; RAL XI/38/88",
+    "quantity": 115,
+    "unit": "bottles",
+    "ship": null,
+    "value": null,
+    "currency": null,
+    "status": "reported"
+  },
+  {
+    "id": "sanblas_1839_expected",
+    "route_id": "r_canton_sanblas_1839_expected",
+    "year": 1839,
+    "title_zh": "Harlequin号预期抵达圣布拉斯",
+    "title_en": "Harlequin expected at San Blas",
+    "note_zh": "只是预计将运到港，数量未载，不能记作已完成运输。",
+    "note_en": "Expected shipment only; neither the quantity nor completion is documented here.",
+    "source_ids": [
+      "platt2011"
+    ],
+    "locator": "Platt (2011), p. 46, note 11; RAL XI/38/88",
+    "quantity": null,
+    "unit": null,
+    "ship": "Harlequin",
+    "value": null,
+    "currency": null,
+    "status": "reported"
+  },
+  {
+    "id": "liverpool_valparaiso_1844",
+    "route_id": "r_liverpool_valparaiso_1844",
+    "year": 1844,
+    "title_zh": "利物浦发瓦尔帕莱索125瓶水银",
+    "title_en": "125 flasks consigned Liverpool to Valparaíso",
+    "note_zh": "1844年10月12日提单；属于装运文书，不等于有独立到港凭证。",
+    "note_en": "Bill of lading dated 12 Oct 1844 records a consignment, not independently verified arrival.",
+    "source_ids": [
+      "platt2011"
+    ],
+    "locator": "Platt (2011), p. 43 figure caption; RAL XI/38/149A",
+    "quantity": 125,
+    "unit": "flasks",
+    "ship": null,
+    "value": null,
+    "currency": null,
+    "status": "reported"
+  },
+  {
+    "id": "us_merchants_1827",
+    "route_id": "r_us_merchants_china_1806_1827",
+    "year": 1827,
+    "title_zh": "五艘美国商船向中国运来水银",
+    "title_en": "Five U.S. vessels carried mercury to China",
+    "note_zh": "游锦香（2023）报告1827年五艘美国船携8,666担；不能推断来自美国本土矿山，更不能推断一定从纽约或波士顿装船。",
+    "note_en": "You (2023) reports five American vessels carried 8,666 piculs to China in 1827; ship flag does not establish mine origin or U.S. loading port.",
+    "source_ids": [
+      "you2023"
+    ],
+    "locator": "游锦香 (2023), p. 58, n.1",
+    "quantity": 8666,
+    "unit": "piculs",
+    "ship": null,
+    "value": null,
+    "currency": null,
+    "status": "aggregate"
+  },
+  {
+    "id": "uk_india_1836",
+    "route_id": "r_london_india_1836",
+    "year": 1836,
+    "title_zh": "英国转口印度1,120西班牙担水银",
+    "title_en": "1,120 Spanish quintals re-exported to India",
+    "note_zh": "英国转口统计；港口不明，不能假定经加尔各答卸货。",
+    "note_en": "British re-export statistics; Indian landing port not identified.",
+    "source_ids": [
+      "platt2011"
+    ],
+    "locator": "Platt (2011), p. 45, HCPP trade tables",
+    "quantity": 1120,
+    "unit": "Spanish quintals",
+    "ship": null,
+    "value": null,
+    "currency": null,
+    "status": "aggregate"
+  },
+  {
+    "id": "newalmaden_mazatlan_1846",
+    "route_id": "r_newalmaden_mazatlan_1846",
+    "year": 1848,
+    "title_zh": "加州新阿尔马登向马萨特兰输出水银",
+    "title_en": "New Almaden exports to Mazatlán",
+    "note_zh": "St. Clair的叙述涉及1846–1848早期开采及向墨西哥发运；这里年份作为阶段锚点，不当作准确出航日期。",
+    "note_en": "St. Clair describes early output and shipments to Mazatlán during 1846–1848; 1848 is an interval anchor, not a dated sailing.",
+    "source_ids": [
+      "stclair1994"
+    ],
+    "locator": "St. Clair (1994/95), p. 280",
+    "quantity": null,
+    "unit": null,
+    "ship": null,
+    "value": null,
+    "currency": null,
+    "status": "reported"
   }
 ]

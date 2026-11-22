@@ -1,4 +1,4 @@
-/* Mercury across Empires · Atlas v0.5. Bilingual, evidence-aware, dynamic Leaflet map. */
+/* Mercury across Empires · Atlas v0.6. Bilingual, evidence-aware, dynamic Leaflet map. */
 'use strict';
 const DATA_FILES = ['places','connections','sources','events','stories','records'];
 const $ = id => document.getElementById(id);
@@ -8,7 +8,7 @@ const colors={outbound:'#bb6048',inbound:'#2786a1',transit:'#866d9f'};
 const directionLabels={outbound:['中国外输','From China'],inbound:['进入中国','To China'],transit:['中转或区域联系','Transshipment / other']};
 const levelLabel={documented:['文献确证','Documented'],contextual:['间接支持','Contextual support'],hypothesis:['研究假设','Research hypothesis']};
 const typeLabel={mine:['矿区','Mining center'],port:['港口','Port'],market:['市场','Market'],use:['技术使用','Technological use']};
-const checkpoints=[1570,1572,1590,1613,1693,1704,1722,1750,1791,1800,1836,1850,1858,1875,1879,1899,1908,1910];
+const checkpoints=[1570,1572,1590,1613,1636,1639,1680,1693,1704,1722,1750,1791,1800,1827,1836,1839,1844,1848,1858,1875,1879,1899,1908,1910];
 let db={},routeLayer,pointLayer,animationLayer,routeIndex={},markerIndex={};
 function pair(obj,field){const cn=obj?.[`${field}_zh`]||'',en=obj?.[`${field}_en`]||'';return `<span lang="zh-Hans">${esc(cn)}</span><small lang="en">${esc(en)}</small>`}
 function pairInline(obj,field){return `${esc(obj?.[`${field}_zh`]||'')} / ${esc(obj?.[`${field}_en`]||'')}`}
@@ -18,7 +18,11 @@ function getRoute(id){return db.connections.find(r=>r.id===id)}
 function displayLon(lon){return lon < -55 ? lon + 360 : lon}
 function latlng(p){return [p.lat,displayLon(p.lon)]}
 function routeLatLngs(r){
-  const pts=[latlng(getPlace(r.from)),...(r.waypoints||[]).map(([lon,lat])=>[lat,displayLon(lon)]),latlng(getPlace(r.to))];
+  // Render documented Atlantic and Andean legs on the western side of the map,
+  // without turning them into an eastward voyage across Asia. Pacific legs keep
+  // the 0–360 longitude convention for crossing the date line.
+  const transportPoint=p=>[p.lat,r.basin==='atlantic'?p.lon:displayLon(p.lon)];
+  const pts=[transportPoint(getPlace(r.from)),...(r.waypoints||[]).map(([lon,lat])=>[lat,r.basin==='atlantic'?lon:displayLon(lon)]),transportPoint(getPlace(r.to))];
   // To avoid hiding independently dated events that share an origin and destination,
   // separate their schematic strokes visually. These are NOT alternative ship tracks.
   const siblings=db.connections.filter(x=>x.from===r.from&&x.to===r.to).sort((a,b)=>a.start-b.start||a.id.localeCompare(b.id));
@@ -59,7 +63,7 @@ function renderRouteBrowser(){
  div.querySelectorAll('[data-map-route]').forEach(button=>button.addEventListener('click',()=>selectRoute(button.dataset.mapRoute,true)));
  $('visible-routes-title').textContent=String(visible.length);
 }
-function mapBounds(view){if(view==='china')return [[18,100],[35,123]];if(view==='pacific')return [[3,112],[46,285]];return [[-45,-25],[66,280]]}
+function mapBounds(view){if(view==='china')return [[18,100],[35,123]];if(view==='pacific')return [[3,112],[46,285]];if(view==='atlantic')return [[-38,-115],[60,45]];if(view==='andes')return [[-25,-85],[0,-56]];return [[-52,-135],[70,290]]}
 function setView(view,animate=true){state.activeView=view;document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===view));state.map.fitBounds(mapBounds(view),{padding:[18,18],animate,duration:.6})}
 function initMap(){if(!window.L)throw Error('Leaflet failed to load. Please check your internet connection / Leaflet 地图库未加载，请检查网络。');
   state.map=L.map('map',{zoomControl:true,worldCopyJump:false,scrollWheelZoom:true,preferCanvas:false,minZoom:1,maxZoom:13,zoomSnap:.25,keyboard:true});
@@ -79,6 +83,13 @@ function renderMap(){if(!state.map)return;cancelAnimationFrame(state.animationFr
     const selected=state.selected.kind==='place'&&state.selected.id===p.id;const relevant=activeIds.has(p.id);
     const icon=L.divIcon({className:'',iconSize:[20,20],iconAnchor:[10,10],html:`<div class="point-pin ${esc(p.type)} ${selected?'active':''} ${relevant?'':'dim'}"></div>`});
     const m=L.marker(latlng(p),{icon,keyboard:true,riseOnHover:true,title:pairInline(p,'name')}).addTo(pointLayer);
+    // Duplicate markers are representations of the SAME location on a wrapped
+    // world map, so both Atlantic and Pacific links have clickable endpoints.
+    if(p.lon < -55 && db.connections.some(r=>r.basin==='atlantic'&&(r.from===p.id||r.to===p.id))){
+      const twin=L.marker([p.lat,p.lon],{icon,keyboard:true,title:pairInline(p,'name')}).addTo(pointLayer);
+      twin.on('click',()=>selectPlace(p.id,false));
+      twin.bindTooltip(`<span lang="zh-Hans">${esc(p.name_zh)}</span><small lang="en">${esc(p.name_en)}</small>`,{permanent:relevant,offset:[13,-5],direction:'right',className:'map-place-label',opacity:1});
+    }
     const html=`<div class="popup-place"><b>${esc(p.name_zh)}</b><small>${esc(p.name_en)}</small><p>${esc(p.description_zh)}</p><small>${esc(p.description_en)}</small></div>`;
     m.bindPopup(html,{maxWidth:290});if(relevant||selected){m.bindTooltip(`<span lang="zh-Hans">${esc(p.name_zh)}</span><small lang="en">${esc(p.name_en)}</small>`,{permanent:true,offset:[13,-5],direction:'right',className:'map-place-label',opacity:1})}m.on('click',()=>selectPlace(p.id,false));markerIndex[p.id]=m;
   }
@@ -95,9 +106,9 @@ function selectRoute(id,focus){state.selected={kind:'connection',id};renderMap()
 function selectPlace(id,focus){state.selected={kind:'place',id};renderMap();renderEvidence();if(focus&&markerIndex[id])state.map.flyTo(latlng(getPlace(id)),Math.max(state.map.getZoom(),5),{duration:.8})}
 function setYear(y){state.year=Math.max(1570,Math.min(1910,Number(y)));$('year-range').value=String(state.year);$('year-label').textContent=String(state.year);document.querySelectorAll('[data-year]').forEach(b=>b.classList.toggle('active',Number(b.dataset.year)===state.year));updateTimeModeUI();renderMap();renderEvidence();}
 function renderStoryCards(){
-  const labels={outbound:['中国外输','From China'],inbound:['进入中国','To China']};
+  const labels={outbound:['中国外输','From China'],inbound:['进入中国','To China'],transit:['全球中转','Global circulation']};
   $('story-cards').innerHTML=db.stories.map(st=>{
-    const direction=st.direction==='inbound'?'inbound':'outbound';
+    const direction=st.direction==='inbound'?'inbound':st.direction==='transit'?'transit':'outbound';
     const tag=labels[direction];
     return `<button type="button" class="journey-card ${direction}" data-story-id="${esc(st.id)}" aria-pressed="false" aria-label="${esc(st.title_zh)} / ${esc(st.title_en)}">
       <span class="journey-card-top"><span class="journey-card-year">${esc(st.year)}</span><span class="journey-card-direction">${esc(tag[0])}<small>${esc(tag[1])}</small></span></span>
@@ -144,7 +155,7 @@ function selectStep(i){
   state.selected={kind:step.route_id?'connection':'place',id:step.route_id||step.place_id};
   renderStory();renderMap();renderEvidence();
   const p=getPlace(step.place_id);
-  if(p)state.map.flyTo(latlng(p),Math.max(3.5,Math.min(6,state.map.getZoom())),{duration:.8});
+  if(p){const sr=step.route_id?getRoute(step.route_id):null;const focus=sr?.basin==='atlantic'?[p.lat,p.lon]:latlng(p);state.map.flyTo(focus,Math.max(3.5,Math.min(6,state.map.getZoom())),{duration:.8});}
   if(step.route_id&&routeIndex[step.route_id])startRouteAnimation(step.route_id);
 }
 function sourceList(ids){
@@ -196,7 +207,7 @@ function download(name,mime,data){const blob=new Blob([data],{type:mime}),a=docu
 function csvQuote(s){return '"'+String(s??'').replaceAll('"','""')+'"'}
 function exportCsv(){const keys=['id','from','to','start','end','evidence','direction','status','kind','name_zh','name_en','description_zh','description_en','source_ids'];download('mercury-atlas-connections.csv','text/csv;charset=utf-8','\ufeff'+[keys.join(','),...db.connections.map(r=>keys.map(k=>csvQuote(k==='source_ids'?r.source_ids.join(';'):r[k])).join(','))].join('\r\n'))}
 function exportRecordsCsv(){const keys=['id','year','route_id','title_zh','title_en','ship','quantity','unit','value','currency','status','locator','note_zh','note_en','source_ids'];download('mercury-atlas-shipment-records.csv','text/csv;charset=utf-8','\ufeff'+[keys.join(','),...db.records.map(r=>keys.map(k=>csvQuote(k==='source_ids'?r.source_ids.join(';'):r[k])).join(','))].join('\r\n'))}
-function exportJson(){download('mercury-atlas-complete.json','application/json;charset=utf-8',JSON.stringify({metadata:{title:'Mercury across Empires',version:'0.5',description:'Historical connections are categorized as documented, contextual, hypothesis. Lines are schematic.'},...db},null,2))}
+function exportJson(){download('mercury-atlas-complete.json','application/json;charset=utf-8',JSON.stringify({metadata:{title:'Mercury across Empires',version:'0.6',description:'Historical connections are categorized as documented, contextual, hypothesis. Lines are schematic.'},...db},null,2))}
 function bindEvents(){document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>switchPage(b.dataset.page)));$('year-range').addEventListener('input',e=>{stopTimeline();if(state.timeMode==='all')state.timeMode='year';setYear(e.target.value)});document.querySelectorAll('[data-year]').forEach(b=>b.addEventListener('click',()=>{stopTimeline();state.timeMode='year';setYear(b.dataset.year)}));document.querySelectorAll('[data-time-mode]').forEach(b=>b.addEventListener('click',()=>{stopTimeline();setTimeMode(b.dataset.timeMode)}));$('route-search').addEventListener('input',e=>{state.routeQuery=e.target.value;renderRouteBrowser()});$('play-time').addEventListener('click',toggleTimeline);$('story-play').addEventListener('click',toggleStory);$('story-prev').addEventListener('click',()=>{stopStory();selectStep(state.step-1)});$('story-next').addEventListener('click',()=>{stopStory();selectStep(state.step+1)});document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));
   $('story-cards').addEventListener('click',e=>{
     const card=e.target.closest('[data-story-id]');

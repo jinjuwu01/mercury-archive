@@ -513,5 +513,444 @@
         21
       ]
     ]
+  },
+  {
+    "id": "r_macao_nagasaki_1636",
+    "from": "macao",
+    "to": "nagasaki",
+    "start": 1636,
+    "end": 1636,
+    "evidence": "documented",
+    "kind": "material",
+    "source_ids": [
+      "schottenhammer2019"
+    ],
+    "name_zh": "1636：澳门 → 长崎（262.87担）",
+    "name_en": "1636: Macao → Nagasaki (262.87 piculs)",
+    "description_zh": "Schottenhammer（2019，第169页）引述荷兰商人1636年自澳门运262.87担中国水银到长崎，价值33,864两。这一数字是历史记载原单位；具体航迹待考。",
+    "description_en": "Schottenhammer (2019, p. 169) records 262.87 piculs of Chinese mercury taken by Dutch merchants from Macao to Nagasaki in 1636, valued at 33,864 taels. The line is not a reconstructed track.",
+    "waypoints": [],
+    "direction": "outbound"
+  },
+  {
+    "id": "r_taiwan_nagasaki_1639",
+    "from": "taiwan_coast",
+    "to": "nagasaki",
+    "start": 1639,
+    "end": 1639,
+    "evidence": "documented",
+    "kind": "material",
+    "source_ids": [
+      "schottenhammer2019"
+    ],
+    "name_zh": "1639：台湾 → 长崎（48箱）",
+    "name_en": "1639: Taiwan → Nagasaki (48 cases)",
+    "description_zh": "Schottenhammer（2019，第166页）引荷兰日记：De Roch号于1639年7月自台湾赴日本，船载水银48箱。具体台湾出发港、矿源待考。",
+    "description_en": "A Dutch journal cited in Schottenhammer (2019, p. 166) notes De Roch sailing from Taiwan to Japan in July 1639 with 48 cases of mercury; precise port and mine origin are unknown.",
+    "waypoints": [],
+    "direction": "outbound"
+  },
+  {
+    "id": "r_canton_mazatlan_1839",
+    "from": "guangzhou",
+    "to": "mazatlan",
+    "start": 1839,
+    "end": 1839,
+    "evidence": "documented",
+    "kind": "material",
+    "source_ids": [
+      "platt2011"
+    ],
+    "name_zh": "1839：广州 → 马萨特兰（115瓶）",
+    "name_en": "1839: Canton → Mazatlán (115 bottles)",
+    "description_zh": "1839年11月16日墨西哥通信报告：一艘来自广州的船抵马萨特兰，载水银115瓶。船名未提供，记载日是报告日期，不一定是到港日。Platt（2011）注11，RAL XI/38/88。",
+    "description_en": "A Mexican letter dated 16 Nov 1839 reports a Canton vessel arriving at Mazatlán with 115 bottles of quicksilver. No ship name given; the letter date is not necessarily the arrival date. Platt (2011), n.11, RAL XI/38/88.",
+    "waypoints": [
+      [
+        145,
+        28
+      ],
+      [
+        179,
+        35
+      ],
+      [
+        -148,
+        32
+      ]
+    ],
+    "direction": "outbound"
+  },
+  {
+    "id": "r_canton_sanblas_1839_expected",
+    "from": "guangzhou",
+    "to": "san_blas",
+    "start": 1839,
+    "end": 1839,
+    "evidence": "hypothesis",
+    "kind": "material",
+    "source_ids": [
+      "platt2011"
+    ],
+    "name_zh": "1839：广州 → 圣布拉斯（仅预期到港）",
+    "name_en": "1839: Canton → San Blas (expected, not confirmed)",
+    "description_zh": "同一通信预计Harlequin号还将载更多中国水银抵达圣布拉斯，但没有证明这批货确实到港；不得与马萨特兰115瓶的已抵达记录合并。",
+    "description_en": "The same letter expected a larger Harlequin consignment at San Blas; arrival is unverified. This is distinct from the documented 115-bottle Mazatlán arrival.",
+    "waypoints": [
+      [
+        150,
+        30
+      ],
+      [
+        178,
+        33
+      ],
+      [
+        -142,
+        28
+      ]
+    ],
+    "direction": "outbound",
+    "status": "anticipated"
+  },
+  {
+    "id": "r_liverpool_valparaiso_1844",
+    "from": "liverpool",
+    "to": "valparaiso",
+    "start": 1844,
+    "end": 1844,
+    "evidence": "documented",
+    "kind": "material",
+    "source_ids": [
+      "platt2011"
+    ],
+    "name_zh": "1844：利物浦 → 瓦尔帕莱索（125瓶）",
+    "name_en": "1844: Liverpool → Valparaíso (125 flasks)",
+    "description_zh": "Platt（2011）刊载／引述1844年10月12日Frederick Huth & Co.开具的提单，载125瓶水银运往瓦尔帕莱索。属欧洲—南美贸易，而非中国水银。",
+    "description_en": "Platt (2011) reproduces/describes a bill of lading dated 12 Oct 1844 from Frederick Huth & Co. for 125 flasks to Valparaíso. This is European–South American commerce, not Chinese mercury.",
+    "waypoints": [
+      [
+        -25,
+        38
+      ],
+      [
+        -47,
+        9
+      ]
+    ],
+    "direction": "transit",
+    "basin": "atlantic"
+  },
+  {
+    "id": "r_melakka_ayutthaya_1600",
+    "from": "melaka",
+    "to": "ayutthaya",
+    "start": 1590,
+    "end": 1663,
+    "evidence": "hypothesis",
+    "kind": "material",
+    "source_ids": [
+      "macao_siam1996",
+      "schottenhammer2019"
+    ],
+    "name_zh": "马六甲 → 暹罗（转运路径待证）",
+    "name_en": "Melaka → Siam (transshipment unverified)",
+    "description_zh": "文献支持暹罗输入水银，并涉及马六甲区域贸易，但不能证明某批水银从马六甲实际装船至阿瑜陀耶。此线为研究问题。",
+    "description_en": "Sources identify mercury imports into Siam and Melaka as a regional hub, but do not prove a particular Melaka–Ayutthaya consignment; exploratory link only.",
+    "waypoints": [],
+    "direction": "transit"
+  },
+  {
+    "id": "r_melakka_pegu_1600",
+    "from": "melaka",
+    "to": "pegu",
+    "start": 1590,
+    "end": 1663,
+    "evidence": "hypothesis",
+    "kind": "material",
+    "source_ids": [
+      "schottenhammer2019"
+    ],
+    "name_zh": "马六甲 → 勃固（区域联系待证）",
+    "name_en": "Melaka → Pegu (regional link unverified)",
+    "description_zh": "早期近代东南亚水银贸易涉及缅甸区域，但目前没有单次马六甲—勃固水银货运证据。",
+    "description_en": "Mercury circulated in early modern Southeast Asian markets including areas of Burma; a specific Melaka-to-Pegu mercury journey is not established.",
+    "waypoints": [],
+    "direction": "transit"
+  },
+  {
+    "id": "r_us_merchants_china_1806_1827",
+    "from": "us_merchant_region",
+    "to": "guangzhou",
+    "start": 1806,
+    "end": 1827,
+    "evidence": "hypothesis",
+    "kind": "material",
+    "source_ids": [
+      "you2023"
+    ],
+    "name_zh": "1806–1827：美国商船 → 中国（港口未详）",
+    "name_en": "1806–1827: U.S. merchant vessels → China (ports unknown)",
+    "description_zh": "游锦香（2023，第58页）报告1806年起美国商船输汞来华，1827年五艘美国船带来8,666担水银。但此文段未确认装货港、实际矿源或每船卸货港：美国点及广州点皆为地理示意，不能理解为实证港口航线。",
+    "description_en": "You (2023, p.58) reports U.S. vessels bringing mercury to China from 1806; five vessels carried 8,666 piculs in 1827. U.S. loading ports, original mines and Chinese landing ports are not verified; geographic anchors are schematic.",
+    "waypoints": [
+      [
+        -140,
+        44
+      ],
+      [
+        176,
+        41
+      ],
+      [
+        135,
+        30
+      ]
+    ],
+    "direction": "inbound"
+  },
+  {
+    "id": "r_london_india_1836",
+    "from": "london",
+    "to": "india_region",
+    "start": 1836,
+    "end": 1836,
+    "evidence": "contextual",
+    "kind": "material",
+    "source_ids": [
+      "platt2011"
+    ],
+    "name_zh": "1836：英国 → 印度（1,120西班牙担）",
+    "name_en": "1836: Britain → India (1,120 Spanish quintals)",
+    "description_zh": "Platt（2011）依据英国贸易统计载1836年转口至印度1,120 Spanish quintals；具体卸货港、上游产矿及途中航迹未详。",
+    "description_en": "Platt (2011) summarizes 1836 British re-exports of 1,120 Spanish quintals to India. The destination port and upstream provenance are not specified.",
+    "waypoints": [
+      [
+        27,
+        35
+      ],
+      [
+        52,
+        16
+      ]
+    ],
+    "direction": "transit"
+  },
+  {
+    "id": "r_newalmaden_mazatlan_1846",
+    "from": "new_almaden",
+    "to": "mazatlan",
+    "start": 1846,
+    "end": 1848,
+    "evidence": "contextual",
+    "kind": "material",
+    "source_ids": [
+      "stclair1994"
+    ],
+    "name_zh": "1846–1848：新阿尔马登 → 马萨特兰",
+    "name_en": "1846–1848: New Almaden → Mazatlán",
+    "description_zh": "St. Clair（1994/95，第280页）指出1846–1848年新阿尔马登生产开始后向墨西哥马萨特兰输出水银；未给本地图一艘具体船的离抵港日期。",
+    "description_en": "St. Clair (1994/95, p.280) describes early New Almaden production and quicksilver shipments to Mazatlán between 1846 and 1848; no individual ship dates are inferred.",
+    "waypoints": [],
+    "direction": "transit"
+  },
+  {
+    "id": "r_almaden_seville_1570",
+    "from": "almaden",
+    "to": "seville",
+    "start": 1570,
+    "end": 1800,
+    "evidence": "contextual",
+    "kind": "material",
+    "source_ids": [
+      "laris2022",
+      "andalusia2019"
+    ],
+    "name_zh": "阿尔马登 → 塞维利亚（陆路供应）",
+    "name_en": "Almadén → Seville (overland supply)",
+    "description_zh": "西班牙王室将阿尔马登水银通过马车与驮运网络送至塞维利亚仓储。时段为研究范围，不意味着每一年有同等产量。",
+    "description_en": "Spanish mercury from Almadén reached Seville overland for packing and storage. This is a long-term network relation, not continuous annual cargo data.",
+    "waypoints": [],
+    "direction": "transit"
+  },
+  {
+    "id": "r_seville_cadiz_1570",
+    "from": "seville",
+    "to": "cadiz",
+    "start": 1570,
+    "end": 1800,
+    "evidence": "contextual",
+    "kind": "material",
+    "source_ids": [
+      "andalusia2019"
+    ],
+    "name_zh": "塞维利亚 → 加的斯（帝国中转）",
+    "name_en": "Seville → Cádiz (imperial transfer)",
+    "description_zh": "水银经塞维利亚仓储后可送往加的斯等大西洋出口港；各时期所用港口变化，非固定单次运输。",
+    "description_en": "Mercury could move via Seville to Cádiz and other Atlantic ports; ports varied over time. This is a network leg, not a fixed voyage.",
+    "waypoints": [],
+    "direction": "transit"
+  },
+  {
+    "id": "r_cadiz_veracruz_1570",
+    "from": "cadiz",
+    "to": "veracruz",
+    "start": 1570,
+    "end": 1800,
+    "evidence": "contextual",
+    "kind": "material",
+    "source_ids": [
+      "andalusia2019",
+      "unesco_mercury2011"
+    ],
+    "name_zh": "加的斯 → 韦拉克鲁斯（新西班牙供应）",
+    "name_en": "Cádiz → Veracruz (New Spain supply)",
+    "description_zh": "西班牙水银经加的斯等港出口，经大西洋流往新西班牙韦拉克鲁斯。这是一条有历史背景的总括线路，不能据此断言每船实际停靠细节。",
+    "description_en": "Spanish mercury moved to New Spain via Cádiz and other Atlantic ports, with Veracruz an important arrival port. This summarizes a historical supply network, not a single ship track.",
+    "waypoints": [
+      [
+        -24,
+        35
+      ],
+      [
+        -58,
+        24
+      ]
+    ],
+    "direction": "transit",
+    "basin": "atlantic"
+  },
+  {
+    "id": "r_huancavelica_chincha",
+    "from": "huancavelica",
+    "to": "chincha",
+    "start": 1570,
+    "end": 1639,
+    "evidence": "contextual",
+    "kind": "material",
+    "source_ids": [
+      "laris2022"
+    ],
+    "name_zh": "万卡韦利卡 → 钦查（陆路驮运）",
+    "name_en": "Huancavelica → Chincha (overland transport)",
+    "description_zh": "Laris Pardo（2022）综述汞从安第斯矿区通过山路及驮运抵沿海钦查的网络。地理连线为节点关系，非古道测绘。",
+    "description_en": "Laris Pardo (2022) discusses overland transport from the Andean mercury district to the coastal port of Chincha; not a surveyed historical road.",
+    "waypoints": [],
+    "direction": "transit",
+    "basin": "atlantic"
+  },
+  {
+    "id": "r_huancavelica_pisco",
+    "from": "huancavelica",
+    "to": "pisco",
+    "start": 1640,
+    "end": 1683,
+    "evidence": "contextual",
+    "kind": "material",
+    "source_ids": [
+      "laris2022"
+    ],
+    "name_zh": "1640后：万卡韦利卡 → 皮斯科",
+    "name_en": "After 1640: Huancavelica → Pisco",
+    "description_zh": "1640年前后皮斯科作为替代或增加的出海港进入该网络；路线为历史结构概括。",
+    "description_en": "Pisco appears as an outlet from c.1640 in the Andean mercury network; schematic relationship only.",
+    "waypoints": [],
+    "direction": "transit",
+    "basin": "atlantic"
+  },
+  {
+    "id": "r_chincha_arica",
+    "from": "chincha",
+    "to": "arica",
+    "start": 1570,
+    "end": 1639,
+    "evidence": "contextual",
+    "kind": "material",
+    "source_ids": [
+      "laris2022"
+    ],
+    "name_zh": "钦查 → 阿里卡（海运）",
+    "name_en": "Chincha → Arica (coastal shipping)",
+    "description_zh": "水银从秘鲁沿海向南经海运抵达阿里卡，再进入内陆供应网络。早期大致时间范围待细化。",
+    "description_en": "Mercury traveled by coastal sea route toward Arica before proceeding inland; the date range is approximate.",
+    "waypoints": [],
+    "direction": "transit",
+    "basin": "atlantic"
+  },
+  {
+    "id": "r_pisco_arica",
+    "from": "pisco",
+    "to": "arica",
+    "start": 1640,
+    "end": 1683,
+    "evidence": "contextual",
+    "kind": "material",
+    "source_ids": [
+      "laris2022"
+    ],
+    "name_zh": "1640后：皮斯科 → 阿里卡（海运）",
+    "name_en": "After 1640: Pisco → Arica (coastal shipping)",
+    "description_zh": "Laris Pardo（2022）明确称1640年起亦使用皮斯科，经海路运输水银至阿里卡。",
+    "description_en": "Laris Pardo (2022) describes shipments by sea via Pisco to Arica from c.1640.",
+    "waypoints": [],
+    "direction": "transit",
+    "basin": "atlantic"
+  },
+  {
+    "id": "r_arica_potosi",
+    "from": "arica",
+    "to": "potosi",
+    "start": 1570,
+    "end": 1683,
+    "evidence": "contextual",
+    "kind": "material",
+    "source_ids": [
+      "laris2022"
+    ],
+    "name_zh": "阿里卡 → 波托西（陆路运输）",
+    "name_en": "Arica → Potosí (inland transport)",
+    "description_zh": "阿里卡港的水银通过安第斯山地内陆运输进入波托西银矿体系，具体驮运道路与季节须另查。",
+    "description_en": "From Arica, mercury traveled inland across the Andes toward Potosí; the exact routes and seasons require further research.",
+    "waypoints": [],
+    "direction": "transit",
+    "basin": "atlantic"
+  },
+  {
+    "id": "r_huancavelica_chucuito_1684",
+    "from": "huancavelica",
+    "to": "chucuito",
+    "start": 1684,
+    "end": 1800,
+    "evidence": "contextual",
+    "kind": "material",
+    "source_ids": [
+      "laris2022"
+    ],
+    "name_zh": "1684后：万卡韦利卡 → 丘奎托（陆路）",
+    "name_en": "After 1684: Huancavelica → Chucuito (overland)",
+    "description_zh": "Laris Pardo（2022）称1684年后正式化经丘奎托连接万卡韦利卡与波托西的陆路路线。",
+    "description_en": "Laris Pardo (2022) notes a formalized overland Huancavelica–Potosí route via Chucuito after 1684.",
+    "waypoints": [],
+    "direction": "transit",
+    "basin": "atlantic"
+  },
+  {
+    "id": "r_chucuito_potosi_1684",
+    "from": "chucuito",
+    "to": "potosi",
+    "start": 1684,
+    "end": 1800,
+    "evidence": "contextual",
+    "kind": "material",
+    "source_ids": [
+      "laris2022"
+    ],
+    "name_zh": "1684后：丘奎托 → 波托西（陆路）",
+    "name_en": "After 1684: Chucuito → Potosí (overland)",
+    "description_zh": "经丘奎托的陆路转运连接波托西，是1684年后安第斯水银路线的比较案例。",
+    "description_en": "The route via Chucuito linked mercury supplies to Potosí and is useful as an alternative to coastal shipping.",
+    "waypoints": [],
+    "direction": "transit",
+    "basin": "atlantic"
   }
 ]

@@ -79,5 +79,41 @@
     "source_type": "secondary",
     "note_zh": "上传论文，44页讨论1836年由英国转口至中国的3280西班牙担（quintals）及1838—39年广州英商销售；西班牙矿源与中国卸货港不可逐批确定。",
     "note_en": "Supplied article, p. 44: 3,280 Spanish quintals re-exported from Britain to China in 1836, and Canton merchant correspondence in 1838–39. Exact mine origin and discharge port are not established."
+  },
+  {
+    "id": "macao_siam1996",
+    "short": "Macao–Siam trade (1996)",
+    "citation": "“European Trade between Macao and Siam, from Its Beginnings to 1663,” Journal of the Siam Society 84, no. 2 (1996).",
+    "url": "",
+    "source_type": "secondary",
+    "note_zh": "文中列有对暹罗输入水银与朱砂等货物，但不等于证实某一批来自马六甲。",
+    "note_en": "Article lists quicksilver and vermilion among Siamese imports, but does not identify a specific Melaka shipment."
+  },
+  {
+    "id": "laris2022",
+    "short": "Laris Pardo 2022",
+    "citation": "Jorge Alejandro Laris Pardo, “La cadena del mercurio en la Monarquía Hispánica a partir de su historiografía,” Relaciones Estudios de Historia y Sociedad 43, no. 170 (2022): 71–98.",
+    "url": "https://www.scielo.org.mx/scielo.php?pid=S0185-39292022000200071&script=sci_arttext",
+    "source_type": "secondary",
+    "note_zh": "描述万卡韦利卡—钦查／皮斯科—阿里卡—波托西的海陆联运，以及1684年后的丘奎托陆路路线。",
+    "note_en": "Discusses Huancavelica–Chincha/Pisco–Arica–Potosí and the post-1684 overland alternative via Chucuito."
+  },
+  {
+    "id": "andalusia2019",
+    "short": "Seville archive (2019)",
+    "citation": "Archivo Histórico Provincial de Sevilla, “El azogue de Indias en las Reales Atarazanas de Sevilla” (2019).",
+    "url": "https://www.juntadeandalucia.es/organismos/culturapatrimoniohistoricoydeporte/areas/cultura/archivos/archivos-consejeria/archivo-historico-provincial-sevilla/ahps-recomienda/paginas/documento-ahps-sep-2019.html",
+    "source_type": "secondary",
+    "note_zh": "官方档案馆说明阿尔马登—塞维利亚—加的斯／桑卢卡尔—西属美洲的物流结构；不能把全时段归于单一船舶。",
+    "note_en": "Archival overview of Almadén, Seville, Cádiz/Sanlúcar and the overseas chain; not a single-vessel manifest."
+  },
+  {
+    "id": "unesco_mercury2011",
+    "short": "UNESCO Almadén–Idrija (2011)",
+    "citation": "UNESCO World Heritage, Mercury Heritage: Almadén and Idrija, nomination dossier 1313rev (2011).",
+    "url": "https://whc.unesco.org/uploads/nominations/1313rev.pdf",
+    "source_type": "secondary",
+    "note_zh": "讨论阿尔马登汞矿及其输入新西班牙的路线、港口与矿业体系。",
+    "note_en": "Describes Almadén mercury and colonial supply via Spanish ports to New Spain."
   }
 ]

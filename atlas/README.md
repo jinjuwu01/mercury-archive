@@ -1,3 +1,11 @@
+## v0.6 扩展 / Expanded networks
+
+新增东亚（1636澳门—长崎、1639台湾—长崎）、太平洋（1839广州—马萨特兰、1846–48新阿尔马登—马萨特兰）、欧洲—南美（1844利物浦—瓦尔帕莱索）、早期美国船运华贸易、欧洲转口印度、东南亚研究假设，以及西班牙／安第斯矿区海陆联运。另有多条双语故事卡。
+
+New Japanese, Pacific, Atlantic, Southeast Asian and Andean network links, with uncertainty labels and linked references. No historical PDF is distributed. Individual shipments, bills of lading, aggregate estimates and inferred network legs remain separately classified. The newly added endpoints on the western hemisphere can be viewed in both Atlantic and Pacific map worlds.
+
+---
+
 # v0.5：全时段网络可视化 / All-period network explorer
 
 地图现在**默认展示所有 21 条跨年代研究联系**（而不是仅显示1613年）。读者可以切换“全部年代 / 前后20年 / 单一年份”，再利用双语路线列表、搜索框和流向与证据筛选查看不同交易。线的颜色代表贸易流向，实线/虚线/点线代表史料等级。具有相同起终点的不同年代记录在视觉上略微错开，以免完全覆盖；这是示意的可视化处理，**不意味着船舶使用不同航线，也不意味着所有时期的贸易同时发生**。

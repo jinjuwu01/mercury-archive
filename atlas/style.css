@@ -36,3 +36,35 @@
 .route-browser-text{flex:1;min-width:0;line-height:1.3}.route-browser-text [lang]{display:block}.route-browser-text>[lang="zh-Hans"]{font-weight:700}.route-browser-text>small{font-size:9px;color:#6f8a81}.route-browser-meta{margin-top:5px!important;display:block!important;color:#8c958d!important;font-size:9px!important}.route-empty{grid-column:1/-1;margin:12px;font-size:11px;color:#86958d}
 @media(max-width:1300px){.route-browser-grid{grid-template-columns:1fr}}
 @media(max-width:740px){.time-mode>span{width:100%;margin:0}.time-mode button{padding:7px 8px;font-size:11px}.time-mode button small{font-size:9px}.route-browser-grid{grid-template-columns:1fr}.route-browser-head{flex-wrap:wrap}.route-browser-head input{max-width:none;width:100%}.route-browser-grid{max-height:260px}}
+
+/* v0.5 — visible, bilingual story overview (replaces the hidden dropdown) */
+.story-overview{max-width:1700px;margin:0 auto 17px;background:var(--white);border:1px solid var(--line);border-radius:13px;padding:18px 22px 15px;box-shadow:var(--shadow)}
+.story-overview-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-end;margin-bottom:14px}
+.story-overview-head h2{font-size:20px;line-height:1.2;margin:4px 0 0;color:var(--navy)}
+.story-overview-head h2 small{display:block;font-size:12px;margin-top:5px;color:#63827b}
+.story-overview-head p{font-size:12px;line-height:1.4;text-align:right;color:#355f57;margin:0;font-weight:700}
+.story-overview-head p span{display:block;color:#8a9b93;font-size:11px;font-weight:400;margin-top:3px}
+.story-overview-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.journey-card{--journey-accent:#bf5d48;display:flex;flex-direction:column;align-items:stretch;text-align:left;gap:2px;min-width:0;border:1px solid #dce6df;border-left:5px solid var(--journey-accent);border-radius:11px;background:#fdfefc;padding:13px 16px 12px;box-shadow:0 1px 6px rgba(16,42,45,.035);color:var(--navy);cursor:pointer;transition:border-color .2s,background-color .2s,box-shadow .2s,transform .2s}
+.journey-card.inbound{--journey-accent:#2484a4}
+.journey-card:hover{border-color:var(--journey-accent);background:#f7faf8;transform:translateY(-1px)}
+.journey-card.active{background:#fff9f4;border-color:var(--journey-accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--journey-accent) 22%,transparent),0 5px 16px rgba(25,61,64,.075)}
+.journey-card.inbound.active{background:#f0f9fd}
+.journey-card-top{display:flex;gap:8px;justify-content:space-between;align-items:start;margin-bottom:5px}
+.journey-card-year{font:700 19px Georgia,serif;color:var(--journey-accent);line-height:1.2}
+.journey-card-direction{display:flex;align-items:baseline;gap:6px;white-space:nowrap;border-radius:5px;background:color-mix(in srgb,var(--journey-accent) 9%,white);color:var(--journey-accent);padding:2px 7px;font-size:11px;font-weight:750}
+.journey-card-direction small{display:inline;color:inherit;font-size:10px;opacity:.85}
+.journey-card-title{font-weight:750;font-size:15px;line-height:1.4;color:#183a39}
+.journey-card-title-en{font-size:12px;color:#56716d;line-height:1.35;margin-bottom:6px}
+.journey-card-path{font-size:12px;font-weight:700;color:#3a5f59;line-height:1.5}
+.journey-card-path-en{font-size:11px;color:#68847b;line-height:1.4}
+.journey-card-note{font-size:11px;color:#5b6c68;line-height:1.4;margin-top:7px}
+.journey-card-note-en{font-size:10px;color:#86958f;line-height:1.4}
+.journey-card-footer{border-top:1px solid #e5eae5;margin-top:auto;padding-top:9px;display:flex;justify-content:space-between;align-items:end;gap:12px}
+.journey-card-evidence{font-size:10px;color:#6d766b;font-weight:650}.journey-card-evidence small{font-size:9px;color:#94a19a;margin-top:1px}
+.journey-card-cta{font-size:11px;font-weight:750;color:var(--journey-accent);white-space:nowrap;text-align:right}.journey-card-cta small{color:#8b9d95;font-size:9px}
+.story-overview-caveat{font-size:10px;color:#687b74;margin:11px 0 0;line-height:1.5}.story-overview-caveat span{color:#9ba69e;display:block;font-size:10px}
+.story-current-label{display:block;margin:8px 0 12px;color:#a56a43}
+@media(min-width:1750px){.story-overview{width:calc(100% - 110px)}}
+@media(max-width:1100px){.story-overview{margin-left:16px;margin-right:16px}}
+@media(max-width:740px){.story-overview{margin:0 11px 12px;padding:15px 13px}.story-overview-head{display:block;margin-bottom:12px}.story-overview-head p{text-align:left;margin-top:10px}.story-overview-grid{grid-template-columns:1fr;gap:8px}.journey-card{padding:11px 13px}.journey-card-title{font-size:14px}.journey-card-note{font-size:10px;margin-top:5px}.journey-card-footer{margin-top:8px}}

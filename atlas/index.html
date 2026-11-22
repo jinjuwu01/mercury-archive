@@ -7,7 +7,7 @@
   <meta name="description" content="Mercury across Empires — 水银跨帝国：1570–1910 年朱砂水银的生产、贸易和历史证据互动地图 / Interactive bilingual historical atlas.">
   <title>水银跨帝国 · Mercury across Empires — Digital Atlas</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
-  <link rel="stylesheet" href="./style.css?v=4">
+  <link rel="stylesheet" href="./style.css?v=5">
 </head>
 <body>
   <header class="masthead">
@@ -24,8 +24,16 @@
     <section id="page-atlas" class="page active">
       <div class="hero">
         <div><span class="eyebrow">DIGITAL HUMANITIES · 1570—1910</span><h1>一滴水银的环球旅行 <span>The Journey of a Drop of Mercury</span></h1><p>既追踪中国水银销往美洲与欧洲，也追踪欧洲、加州水银进入中国：每条路线都附史料与不确定性。<span>Explore two-way mercury commerce: exports from China and imports from Europe and California, with verifiable sources and uncertainty labels.</span></p></div>
-        <div class="hero-label"><b>RESEARCH PROTOTYPE · V0.4</b><span>基于证据的历史地图<br>Evidence-aware historical atlas</span></div>
+        <div class="hero-label"><b>RESEARCH PROTOTYPE · V0.5</b><span>基于证据的历史地图<br>Evidence-aware historical atlas</span></div>
       </div>
+      <section class="story-overview" aria-labelledby="story-overview-title">
+        <div class="story-overview-head">
+          <div><span class="smallcaps">FOUR GUIDED JOURNEYS</span><h2 id="story-overview-title">路线总览 <small>Explore four mercury journeys</small></h2></div>
+          <p>4 条核心故事线 · 中国外输 2 条 · 进入中国 2 条<span>Four featured journeys · Two outbound · Two inbound</span></p>
+        </div>
+        <div class="story-overview-grid" id="story-cards" role="group" aria-label="选择历史路线 / Choose a historical journey"></div>
+        <p class="story-overview-caveat">各卡片展示的是历史证据所支持的贸易联系或研究中的路径重建，并非完整复原的航海轨迹。<span>Routes may include inferred links and are not reconstructed vessel tracks. Open a journey to inspect the evidence for each step.</span></p>
+      </section>
       <section class="timeline-wrap" aria-label="历史时间轴 / Historical timeline">
         <div class="timeline-title"><span class="smallcaps">TIME EXPLORER</span><b>历史时期 <small>Historical period</small></b><span id="year-context" class="year-context">中国水银外输 / China exports</span><span class="current-year" id="year-label">1613</span></div>
         <div class="time-mode" role="group" aria-label="地图的时间范围 / Map time scope"><button type="button" data-time-mode="all" class="active" aria-pressed="true">全部年代 <small>All periods</small></button><button type="button" data-time-mode="window" aria-pressed="false">前后20年 <small>±20 years</small></button><button type="button" data-time-mode="year" aria-pressed="false">单一年份 <small>Exact year</small></button><span>先看整个网络，再看具体年份 <small>Overview first, then zoom into historical time</small></span></div>
@@ -35,7 +43,7 @@
       </section>
       <div class="atlas-layout">
         <aside class="story-panel panel">
-          <div class="panel-heading"><span class="smallcaps">01 / INTERACTIVE JOURNEY</span><h2>水银的旅程 <small>Follow the mercury</small></h2><p id="story-subtitle">1613 年复合叙事，每一站的证据等级不同。<span>A composite 1613 narrative.</span></p><label for="story-picker" class="smallcaps">选择故事 / Choose an episode</label><select id="story-picker" class="story-picker" aria-label="历史故事 / Historical story"></select></div>
+          <div class="panel-heading"><span class="smallcaps">01 / INTERACTIVE JOURNEY</span><h2>水银的旅程 <small>Follow the mercury</small></h2><p id="story-subtitle">1613 年复合叙事，每一站的证据等级不同。<span>A composite 1613 narrative.</span></p><span class="smallcaps story-current-label">当前故事 / Selected journey</span></div>
           <div id="story-steps" class="story-steps" role="list"></div>
           <div class="step-controls"><button id="story-prev" type="button">← 上一站 <small>Previous</small></button><button id="story-next" type="button">下一站 <small>Next →</small></button></div>
           <div class="direction-section"><b>水银流向 <small>Trade direction</small></b><select id="direction-filter" aria-label="水银流向 / Trade direction"><option value="all">全部方向 / All directions</option><option value="outbound">中国外输 / From China</option><option value="inbound">进入中国 / To China</option><option value="transit">中转网络 / Transshipment</option></select></div><div class="direction-legend"><b>流向颜色 <small>Direction colors</small></b><span><i class="direction-swab outbound"></i> 中国外输 / Exports</span><span><i class="direction-swab inbound"></i> 进入中国 / Imports</span><span><i class="direction-swab transit"></i> 中转 / Transit</span></div><div class="legend-section"><b>证据线型 <small>Evidence styles</small></b><label><input type="checkbox" id="show-documented" checked><span class="key-line documented"></span><span>文献确证 <small>Documented</small></span></label><label><input type="checkbox" id="show-contextual" checked><span class="key-line contextual"></span><span>间接支持 <small>Contextual</small></span></label><label><input type="checkbox" id="show-hypothesis" checked><span class="key-line hypothesis"></span><span>研究假设 <small>Hypothesis</small></span></label></div>
@@ -65,6 +73,6 @@
   </main>
   <footer class="site-footer"><span>© Jinju Wu · Mercury across Empires</span><span>1570—1910 · Research prototype v0.4</span></footer>
   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous" defer></script>
-  <script src="./app.js?v=4" defer></script>
+  <script src="./app.js?v=5" defer></script>
 </body>
 </html>

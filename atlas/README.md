@@ -1,4 +1,4 @@
-# v0.4：全时段网络可视化 / All-period network explorer
+# v0.5：全时段网络可视化 / All-period network explorer
 
 地图现在**默认展示所有 21 条跨年代研究联系**（而不是仅显示1613年）。读者可以切换“全部年代 / 前后20年 / 单一年份”，再利用双语路线列表、搜索框和流向与证据筛选查看不同交易。线的颜色代表贸易流向，实线/虚线/点线代表史料等级。具有相同起终点的不同年代记录在视觉上略微错开，以免完全覆盖；这是示意的可视化处理，**不意味着船舶使用不同航线，也不意味着所有时期的贸易同时发生**。
 
@@ -76,3 +76,8 @@ See `AI_WORKFLOW.md` for AI-supported but human-reviewed source extraction.
 - 数据分别存储于 data/places.json, data/connections.json, data/records.json, data/events.json, data/stories.json, data/sources.json。
 
 运行：`python3 -m http.server 8000`，打开 http://localhost:8000。数据校验：`python3 scripts/validate_data.py`。
+
+
+## v0.5: 路线总览 / Visible story cards
+
+四条导览故事现以始终可见的中文／英文卡片列在时间轴和地图之前，不再隐藏于下拉菜单。卡片包含年代、流向、关键节点、研究证据说明；点击任一卡片会选择该故事，更新历史年份与地图标记，并将地图滚动到可见位置。概览数据保存在 `data/stories.json` 的 `overview_*` 字段，可随史料校核继续更新。

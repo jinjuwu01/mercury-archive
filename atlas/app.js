@@ -1,4 +1,4 @@
-/* Mercury across Empires · Atlas v0.4. Bilingual, evidence-aware, dynamic Leaflet map. */
+/* Mercury across Empires · Atlas v0.5. Bilingual, evidence-aware, dynamic Leaflet map. */
 'use strict';
 const DATA_FILES = ['places','connections','sources','events','stories','records'];
 const $ = id => document.getElementById(id);
@@ -94,9 +94,31 @@ function startRouteAnimation(routeId){const r=getRoute(routeId);if(!r||!routeInd
 function selectRoute(id,focus){state.selected={kind:'connection',id};renderMap();renderEvidence();if(focus&&routeIndex[id])state.map.fitBounds(routeIndex[id].getBounds(),{padding:[60,60],maxZoom:6,animate:true,duration:.5})}
 function selectPlace(id,focus){state.selected={kind:'place',id};renderMap();renderEvidence();if(focus&&markerIndex[id])state.map.flyTo(latlng(getPlace(id)),Math.max(state.map.getZoom(),5),{duration:.8})}
 function setYear(y){state.year=Math.max(1570,Math.min(1910,Number(y)));$('year-range').value=String(state.year);$('year-label').textContent=String(state.year);document.querySelectorAll('[data-year]').forEach(b=>b.classList.toggle('active',Number(b.dataset.year)===state.year));updateTimeModeUI();renderMap();renderEvidence();}
+function renderStoryCards(){
+  const labels={outbound:['中国外输','From China'],inbound:['进入中国','To China']};
+  $('story-cards').innerHTML=db.stories.map(st=>{
+    const direction=st.direction==='inbound'?'inbound':'outbound';
+    const tag=labels[direction];
+    return `<button type="button" class="journey-card ${direction}" data-story-id="${esc(st.id)}" aria-pressed="false" aria-label="${esc(st.title_zh)} / ${esc(st.title_en)}">
+      <span class="journey-card-top"><span class="journey-card-year">${esc(st.year)}</span><span class="journey-card-direction">${esc(tag[0])}<small>${esc(tag[1])}</small></span></span>
+      <span class="journey-card-title" lang="zh-Hans">${esc(st.title_zh)}</span><span class="journey-card-title-en" lang="en">${esc(st.title_en)}</span>
+      <span class="journey-card-path" lang="zh-Hans">${esc(st.overview_route_zh||'')}</span><span class="journey-card-path-en" lang="en">${esc(st.overview_route_en||'')}</span>
+      <span class="journey-card-note" lang="zh-Hans">${esc(st.overview_note_zh||'')}</span><span class="journey-card-note-en" lang="en">${esc(st.overview_note_en||'')}</span>
+      <span class="journey-card-footer"><span class="journey-card-evidence">${esc(st.overview_status_zh||'')}<small>${esc(st.overview_status_en||'')}</small></span><span class="journey-card-cta">查看旅程 ↗<small>Explore</small></span></span>
+    </button>`;
+  }).join('');
+  syncStoryCards();
+}
+function syncStoryCards(){
+  document.querySelectorAll('[data-story-id]').forEach(card=>{
+    const selected=card.dataset.storyId===state.storyId;
+    card.classList.toggle('active',selected);
+    card.setAttribute('aria-pressed',String(selected));
+  });
+}
 function renderStory(){
   const story=currentStory();
-  $('story-picker').value=story.id;
+  syncStoryCards();
   $('story-subtitle').innerHTML=`${esc(story.subtitle_zh)}<span>${esc(story.subtitle_en)}</span>`;
   $('story-steps').innerHTML=story.steps.map((step,i)=>`<button type="button" class="story-step ${state.step===i?'current':''}" data-step="${i}" aria-current="${state.step===i?'step':'false'}"><span class="step-num">${String(i+1).padStart(2,'0')}</span><span>${pair(step,'title')}</span></button>`).join('');
   document.querySelectorAll('[data-step]').forEach(b=>b.addEventListener('click',()=>selectStep(Number(b.dataset.step))));
@@ -174,14 +196,19 @@ function download(name,mime,data){const blob=new Blob([data],{type:mime}),a=docu
 function csvQuote(s){return '"'+String(s??'').replaceAll('"','""')+'"'}
 function exportCsv(){const keys=['id','from','to','start','end','evidence','direction','status','kind','name_zh','name_en','description_zh','description_en','source_ids'];download('mercury-atlas-connections.csv','text/csv;charset=utf-8','\ufeff'+[keys.join(','),...db.connections.map(r=>keys.map(k=>csvQuote(k==='source_ids'?r.source_ids.join(';'):r[k])).join(','))].join('\r\n'))}
 function exportRecordsCsv(){const keys=['id','year','route_id','title_zh','title_en','ship','quantity','unit','value','currency','status','locator','note_zh','note_en','source_ids'];download('mercury-atlas-shipment-records.csv','text/csv;charset=utf-8','\ufeff'+[keys.join(','),...db.records.map(r=>keys.map(k=>csvQuote(k==='source_ids'?r.source_ids.join(';'):r[k])).join(','))].join('\r\n'))}
-function exportJson(){download('mercury-atlas-complete.json','application/json;charset=utf-8',JSON.stringify({metadata:{title:'Mercury across Empires',version:'0.4',description:'Historical connections are categorized as documented, contextual, hypothesis. Lines are schematic.'},...db},null,2))}
+function exportJson(){download('mercury-atlas-complete.json','application/json;charset=utf-8',JSON.stringify({metadata:{title:'Mercury across Empires',version:'0.5',description:'Historical connections are categorized as documented, contextual, hypothesis. Lines are schematic.'},...db},null,2))}
 function bindEvents(){document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>switchPage(b.dataset.page)));$('year-range').addEventListener('input',e=>{stopTimeline();if(state.timeMode==='all')state.timeMode='year';setYear(e.target.value)});document.querySelectorAll('[data-year]').forEach(b=>b.addEventListener('click',()=>{stopTimeline();state.timeMode='year';setYear(b.dataset.year)}));document.querySelectorAll('[data-time-mode]').forEach(b=>b.addEventListener('click',()=>{stopTimeline();setTimeMode(b.dataset.timeMode)}));$('route-search').addEventListener('input',e=>{state.routeQuery=e.target.value;renderRouteBrowser()});$('play-time').addEventListener('click',toggleTimeline);$('story-play').addEventListener('click',toggleStory);$('story-prev').addEventListener('click',()=>{stopStory();selectStep(state.step-1)});$('story-next').addEventListener('click',()=>{stopStory();selectStep(state.step+1)});document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));
-  $('story-picker').addEventListener('change',e=>chooseStory(e.target.value));
+  $('story-cards').addEventListener('click',e=>{
+    const card=e.target.closest('[data-story-id]');
+    if(!card)return;
+    chooseStory(card.dataset.storyId);
+    $('map').scrollIntoView({behavior:'smooth',block:'center'});
+  });
   $('direction-filter').addEventListener('change',e=>{state.direction=e.target.value;renderMap();renderEvidence()});
   $('reset-map').addEventListener('click',()=>setView('global'));
   for(const lev of Object.keys(state.show))$('show-'+lev).addEventListener('change',e=>{state.show[lev]=e.target.checked;renderMap()});
   $('ledger-search').addEventListener('input',renderLedger);$('ledger-filter').addEventListener('change',renderLedger);$('ledger-direction').addEventListener('change',renderLedger);$('export-csv').addEventListener('click',exportCsv);$('export-json').addEventListener('click',exportJson);$('export-records').addEventListener('click',exportRecordsCsv);
   window.addEventListener('hashchange',()=>{let page=location.hash.slice(1);if(['atlas','ledger','about'].includes(page)&&page!==state.page)switchPage(page)});
 }
-async function main(){try{const entries=await Promise.all(DATA_FILES.map(async name=>{const response=await fetch(`./data/${name}.json`);if(!response.ok)throw Error(`${name}.json — HTTP ${response.status}`);return [name,await response.json()]}));db=Object.fromEntries(entries);initMap();bindEvents();updateTimeModeUI();$('story-picker').innerHTML=db.stories.map(st=>`<option value="${esc(st.id)}">${esc(st.title_zh)} / ${esc(st.title_en)}</option>`).join('');renderStory();state.selected={kind:null,id:null};setYear(1613);renderLedger();const p=location.hash.slice(1);if(['atlas','ledger','about'].includes(p))switchPage(p);}catch(e){console.error(e);$('error').hidden=false;$('error').textContent='地图数据加载失败 / Could not load map: '+e.message+'。请刷新页面；若问题持续，请在 GitHub 报告。 / Reload the page or report the issue on GitHub.';if($('map-loading'))$('map-loading').textContent='地图暂时不可用 / Map unavailable';}}
+async function main(){try{const entries=await Promise.all(DATA_FILES.map(async name=>{const response=await fetch(`./data/${name}.json`);if(!response.ok)throw Error(`${name}.json — HTTP ${response.status}`);return [name,await response.json()]}));db=Object.fromEntries(entries);initMap();bindEvents();updateTimeModeUI();renderStoryCards();renderStory();state.selected={kind:null,id:null};setYear(1613);renderLedger();const p=location.hash.slice(1);if(['atlas','ledger','about'].includes(p))switchPage(p);}catch(e){console.error(e);$('error').hidden=false;$('error').textContent='地图数据加载失败 / Could not load map: '+e.message+'。请刷新页面；若问题持续，请在 GitHub 报告。 / Reload the page or report the issue on GitHub.';if($('map-loading'))$('map-loading').textContent='地图暂时不可用 / Map unavailable';}}
 main();

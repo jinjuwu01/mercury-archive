@@ -47,7 +47,14 @@
         "text_zh": "水银用于银矿冶炼，但1613年这批货物是否去过帕丘卡尚无证据。故事在问题中结束。",
         "text_en": "Mercury served silver refining, but there is no evidence that the 1613 cargo reached Pachuca. The story ends with a question."
       }
-    ]
+    ],
+    "direction": "outbound",
+    "overview_route_zh": "中国西南（矿源未证） → 马尼拉 → 阿卡普尔科",
+    "overview_route_en": "Southwest China (origin unverified) → Manila → Acapulco",
+    "overview_note_zh": "1613年中国水银抵达美洲；万山与这批货物的关系尚不能确证。",
+    "overview_note_en": "A Chinese mercury arrival is documented in 1613; its connection to Wanshan is unproven.",
+    "overview_status_zh": "复合叙事 · 含待证环节",
+    "overview_status_en": "Composite · some links inferred"
   },
   {
     "id": "journey1704",
@@ -81,7 +88,14 @@
         "text_zh": "本文记载这批水银运往伦敦；真实航迹并未重建。",
         "text_en": "The article reports London as the destination; the historic track has not been reconstructed."
       }
-    ]
+    ],
+    "direction": "outbound",
+    "overview_route_zh": "贵州？ → 广州 → 伦敦",
+    "overview_route_en": "Guizhou? → Canton → London",
+    "overview_note_zh": "1704年广州采购有记录，但水银的具体矿山来源待考。",
+    "overview_note_en": "A 1704 Canton purchase is recorded; its mine of origin is unknown.",
+    "overview_status_zh": "采购确证 · 矿源待考",
+    "overview_status_en": "Purchase documented · origin uncertain"
   },
   {
     "id": "journey1836",
@@ -123,7 +137,14 @@
         "text_zh": "1838—39年广州有销售线索；1836年抵华货物不一定在广州卸货。",
         "text_en": "There are Canton sales records for 1838–39, but the 1836 consignment’s exact landing port is unknown."
       }
-    ]
+    ],
+    "direction": "inbound",
+    "overview_route_zh": "欧洲市场 → 英国转口 → 中国（卸货港待考）",
+    "overview_route_en": "European trade → British re-export → China (port unknown)",
+    "overview_note_zh": "1836年英国向中国转口水银有统计，但不能据此确定全部上游路径。",
+    "overview_note_en": "British re-exports to China are recorded for 1836; upstream legs remain uncertain.",
+    "overview_status_zh": "转口记录确证 · 路径待考",
+    "overview_status_en": "Re-export documented · route uncertain"
   },
   {
     "id": "journey1875",
@@ -165,6 +186,13 @@
         "text_zh": "加州产品在中国用于朱红颜料等用途；具体收货作坊尚无证据。",
         "text_en": "California mercury served China’s vermilion trade, but the receiving workshop is unverified."
       }
-    ]
+    ],
+    "direction": "inbound",
+    "overview_route_zh": "加州矿区 → 旧金山 → 香港 → 中国市场",
+    "overview_route_en": "California mines → San Francisco → Hong Kong → China",
+    "overview_note_zh": "1875年 Belgic 号有装运记录；具体矿山及最终收货方待核。",
+    "overview_note_en": "The Belgic shipment is recorded in 1875; precise mine and end buyers are unverified.",
+    "overview_status_zh": "装运确证 · 矿源和销路待考",
+    "overview_status_en": "Shipment documented · origins/end buyers uncertain"
   }
 ]

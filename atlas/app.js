@@ -1,4 +1,4 @@
-/* Mercury across Empires · Atlas v0.6. Bilingual, evidence-aware, dynamic Leaflet map. */
+/* Mercury across Empires · Atlas v0.7. Bilingual, evidence-aware, dynamic Leaflet map. */
 'use strict';
 const DATA_FILES = ['places','connections','sources','events','stories','records'];
 const $ = id => document.getElementById(id);
@@ -106,16 +106,15 @@ function selectRoute(id,focus){state.selected={kind:'connection',id};renderMap()
 function selectPlace(id,focus){state.selected={kind:'place',id};renderMap();renderEvidence();if(focus&&markerIndex[id])state.map.flyTo(latlng(getPlace(id)),Math.max(state.map.getZoom(),5),{duration:.8})}
 function setYear(y){state.year=Math.max(1570,Math.min(1910,Number(y)));$('year-range').value=String(state.year);$('year-label').textContent=String(state.year);document.querySelectorAll('[data-year]').forEach(b=>b.classList.toggle('active',Number(b.dataset.year)===state.year));updateTimeModeUI();renderMap();renderEvidence();}
 function renderStoryCards(){
-  const labels={outbound:['中国外输','From China'],inbound:['进入中国','To China'],transit:['全球中转','Global circulation']};
+  const labels={outbound:['中国外输','From China'],inbound:['进入中国','To China'],transit:['区域中转','Regional trade']};
   $('story-cards').innerHTML=db.stories.map(st=>{
     const direction=st.direction==='inbound'?'inbound':st.direction==='transit'?'transit':'outbound';
     const tag=labels[direction];
-    return `<button type="button" class="journey-card ${direction}" data-story-id="${esc(st.id)}" aria-pressed="false" aria-label="${esc(st.title_zh)} / ${esc(st.title_en)}">
-      <span class="journey-card-top"><span class="journey-card-year">${esc(st.year)}</span><span class="journey-card-direction">${esc(tag[0])}<small>${esc(tag[1])}</small></span></span>
-      <span class="journey-card-title" lang="zh-Hans">${esc(st.title_zh)}</span><span class="journey-card-title-en" lang="en">${esc(st.title_en)}</span>
-      <span class="journey-card-path" lang="zh-Hans">${esc(st.overview_route_zh||'')}</span><span class="journey-card-path-en" lang="en">${esc(st.overview_route_en||'')}</span>
-      <span class="journey-card-note" lang="zh-Hans">${esc(st.overview_note_zh||'')}</span><span class="journey-card-note-en" lang="en">${esc(st.overview_note_en||'')}</span>
-      <span class="journey-card-footer"><span class="journey-card-evidence">${esc(st.overview_status_zh||'')}<small>${esc(st.overview_status_en||'')}</small></span><span class="journey-card-cta">查看旅程 ↗<small>Explore</small></span></span>
+    const tooltip=[st.overview_route_zh,st.overview_status_zh].filter(Boolean).join(' · ');
+    return `<button type="button" class="journey-option ${direction}" data-story-id="${esc(st.id)}" aria-pressed="false" aria-label="${esc(st.year+' · '+st.title_zh+' / '+st.title_en+' · '+tag[0]+' / '+tag[1])}" title="${esc(tooltip)}">
+      <span class="journey-option-year">${esc(st.year)}</span>
+      <span class="journey-option-text"><strong lang="zh-Hans">${esc(st.title_zh)}</strong><small lang="en">${esc(st.title_en)}</small></span>
+      <span class="journey-option-arrow" aria-hidden="true">↗</span>
     </button>`;
   }).join('');
   syncStoryCards();
@@ -130,7 +129,10 @@ function syncStoryCards(){
 function renderStory(){
   const story=currentStory();
   syncStoryCards();
-  $('story-subtitle').innerHTML=`${esc(story.subtitle_zh)}<span>${esc(story.subtitle_en)}</span>`;
+  $('story-current-title').innerHTML=`${esc(story.title_zh)}<small lang="en">${esc(story.title_en)}</small>`;
+  $('story-current-route').innerHTML=`<strong lang="zh-Hans">${esc(story.overview_route_zh||'')}</strong><small lang="en">${esc(story.overview_route_en||'')}</small>`;
+  $('story-current-status').innerHTML=`<span lang="zh-Hans">${esc(story.overview_status_zh||'')}</span><small lang="en">${esc(story.overview_status_en||'')}</small>`;
+  $('story-subtitle').innerHTML=`${esc(story.subtitle_zh)}<span lang="en">${esc(story.subtitle_en)}</span>`;
   $('story-steps').innerHTML=story.steps.map((step,i)=>`<button type="button" class="story-step ${state.step===i?'current':''}" data-step="${i}" aria-current="${state.step===i?'step':'false'}"><span class="step-num">${String(i+1).padStart(2,'0')}</span><span>${pair(step,'title')}</span></button>`).join('');
   document.querySelectorAll('[data-step]').forEach(b=>b.addEventListener('click',()=>selectStep(Number(b.dataset.step))));
   $('story-prev').disabled=state.step===0;
@@ -207,13 +209,15 @@ function download(name,mime,data){const blob=new Blob([data],{type:mime}),a=docu
 function csvQuote(s){return '"'+String(s??'').replaceAll('"','""')+'"'}
 function exportCsv(){const keys=['id','from','to','start','end','evidence','direction','status','kind','name_zh','name_en','description_zh','description_en','source_ids'];download('mercury-atlas-connections.csv','text/csv;charset=utf-8','\ufeff'+[keys.join(','),...db.connections.map(r=>keys.map(k=>csvQuote(k==='source_ids'?r.source_ids.join(';'):r[k])).join(','))].join('\r\n'))}
 function exportRecordsCsv(){const keys=['id','year','route_id','title_zh','title_en','ship','quantity','unit','value','currency','status','locator','note_zh','note_en','source_ids'];download('mercury-atlas-shipment-records.csv','text/csv;charset=utf-8','\ufeff'+[keys.join(','),...db.records.map(r=>keys.map(k=>csvQuote(k==='source_ids'?r.source_ids.join(';'):r[k])).join(','))].join('\r\n'))}
-function exportJson(){download('mercury-atlas-complete.json','application/json;charset=utf-8',JSON.stringify({metadata:{title:'Mercury across Empires',version:'0.6',description:'Historical connections are categorized as documented, contextual, hypothesis. Lines are schematic.'},...db},null,2))}
+function exportJson(){download('mercury-atlas-complete.json','application/json;charset=utf-8',JSON.stringify({metadata:{title:'Mercury across Empires',version:'0.7',description:'Historical connections are categorized as documented, contextual, hypothesis. Lines are schematic.'},...db},null,2))}
 function bindEvents(){document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>switchPage(b.dataset.page)));$('year-range').addEventListener('input',e=>{stopTimeline();if(state.timeMode==='all')state.timeMode='year';setYear(e.target.value)});document.querySelectorAll('[data-year]').forEach(b=>b.addEventListener('click',()=>{stopTimeline();state.timeMode='year';setYear(b.dataset.year)}));document.querySelectorAll('[data-time-mode]').forEach(b=>b.addEventListener('click',()=>{stopTimeline();setTimeMode(b.dataset.timeMode)}));$('route-search').addEventListener('input',e=>{state.routeQuery=e.target.value;renderRouteBrowser()});$('play-time').addEventListener('click',toggleTimeline);$('story-play').addEventListener('click',toggleStory);$('story-prev').addEventListener('click',()=>{stopStory();selectStep(state.step-1)});$('story-next').addEventListener('click',()=>{stopStory();selectStep(state.step+1)});document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));
   $('story-cards').addEventListener('click',e=>{
     const card=e.target.closest('[data-story-id]');
     if(!card)return;
     chooseStory(card.dataset.storyId);
-    $('map').scrollIntoView({behavior:'smooth',block:'center'});
+    if(window.matchMedia('(max-width: 740px)').matches){
+      document.querySelector('.story-panel').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});
+    }
   });
   $('direction-filter').addEventListener('change',e=>{state.direction=e.target.value;renderMap();renderEvidence()});
   $('reset-map').addEventListener('click',()=>setView('global'));

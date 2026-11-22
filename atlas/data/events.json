@@ -1,5 +1,77 @@
 [
-  {"id":"ev1613","year":1613,"place_id":"acapulco","source_ids":["schottenhammer2019"],"evidence":"documented","title_zh":"1613年：一批水银抵达新西班牙","title_en":"1613: A mercury shipment reaches New Spain","text_zh":"1613年关于圣安德烈斯号抵达阿卡普尔科的记载，是跨太平洋运输的一个具体切入点。需进一步核对原始档案、计量单位与货物出处。","text_en":"A record concerning the San Andrés arriving at Acapulco in 1613 provides a concrete entry point. The original archive, units, and cargo provenance still warrant close checking."},
-  {"id":"ev1899","year":1899,"place_id":"wanshan","source_ids":["ju2026"],"evidence":"contextual","title_zh":"1899年前后：英法资本介入万山矿业","title_en":"Around 1899: Anglo-French capital at Wanshan","text_zh":"万山矿业进入新的跨国资本与矿权交涉时期。具体契约、控制范围与终止年份有待档案细化。","text_en":"Wanshan enters a period of transnational investment and concession negotiation. Contracts, territorial scope, and ending dates require archival work."},
-  {"id":"ev1920","year":1905,"place_id":"tongren","source_ids":["tegengren1920"],"evidence":"contextual","title_zh":"20世纪初：贵州水银的区域市场","title_en":"Early 20th c.: A Guizhou mercury market","text_zh":"以20世纪初为时间锚点展示铜仁市场这一后出记述，1905不是某一确定交易发生的年份。","text_en":"1905 is a display anchor for early twentieth-century accounts, not the date of a known transaction."}
+  {
+    "id": "ev1613",
+    "year": 1613,
+    "place_id": "acapulco",
+    "source_ids": [
+      "schottenhammer2019"
+    ],
+    "evidence": "documented",
+    "title_zh": "1613年：一批水银抵达新西班牙",
+    "title_en": "1613: A mercury shipment reaches New Spain",
+    "text_zh": "1613年关于圣安德烈斯号抵达阿卡普尔科的记载，是跨太平洋运输的一个具体切入点。需进一步核对原始档案、计量单位与货物出处。",
+    "text_en": "A record concerning the San Andrés arriving at Acapulco in 1613 provides a concrete entry point. The original archive, units, and cargo provenance still warrant close checking."
+  },
+  {
+    "id": "ev1899",
+    "year": 1899,
+    "place_id": "wanshan",
+    "source_ids": [
+      "ju2026"
+    ],
+    "evidence": "contextual",
+    "title_zh": "1899年前后：英法资本介入万山矿业",
+    "title_en": "Around 1899: Anglo-French capital at Wanshan",
+    "text_zh": "万山矿业进入新的跨国资本与矿权交涉时期。具体契约、控制范围与终止年份有待档案细化。",
+    "text_en": "Wanshan enters a period of transnational investment and concession negotiation. Contracts, territorial scope, and ending dates require archival work."
+  },
+  {
+    "id": "ev1920",
+    "year": 1905,
+    "place_id": "tongren",
+    "source_ids": [
+      "tegengren1920"
+    ],
+    "evidence": "contextual",
+    "title_zh": "20世纪初：贵州水银的区域市场",
+    "title_en": "Early 20th c.: A Guizhou mercury market",
+    "text_zh": "以20世纪初为时间锚点展示铜仁市场这一后出记述，1905不是某一确定交易发生的年份。",
+    "text_en": "1905 is a display anchor for early twentieth-century accounts, not the date of a known transaction."
+  },
+  {
+    "id": "e1704",
+    "place_id": "guangzhou",
+    "year": 1704,
+    "source_ids": [
+      "you2023"
+    ],
+    "title_zh": "肯特号采购400担水银",
+    "title_en": "Kent: 400 piculs purchased",
+    "text_zh": "表一：1704年、每担43两，合17,200两。",
+    "text_en": "Table 1: 1704, 43 taels per picul, total 17,200 taels."
+  },
+  {
+    "id": "e1836",
+    "place_id": "london",
+    "year": 1836,
+    "source_ids": [
+      "platt2011"
+    ],
+    "title_zh": "英国对中国转口3280西班牙担",
+    "title_en": "3,280 Spanish quintals re-exported to China",
+    "text_zh": "卸货口岸与矿山来源未能逐批证实。",
+    "text_en": "Landing ports and individual mine origins are not verified."
+  },
+  {
+    "id": "e1875",
+    "place_id": "sanfrancisco",
+    "year": 1875,
+    "source_ids": [
+      "sinn2013"
+    ],
+    "title_zh": "Belgic号装运2656瓶水银",
+    "title_en": "Belgic: 2,656 flasks",
+    "text_zh": "Sinn第180页表4.4，申报货值$133,868。",
+    "text_en": "Sinn Table 4.4, p. 180: declared value $133,868."
+  }
 ]

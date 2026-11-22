@@ -1,11 +1,294 @@
 [
-  {"id":"wanshan","name_zh":"万山","name_en":"Wanshan","type":"mine","lat":27.51,"lon":109.20,"start":1570,"end":1910,"geo_precision":"regional_anchor","source_ids":["wanshan2023"],"description_zh":"贵州东部的重要历史朱砂、水银矿区。地图使用现代区域定位点；矿井位置和历史行政边界有待细化。","description_en":"A major historical cinnabar and mercury-mining area in eastern Guizhou. The point is an approximate modern geographic anchor, not a historical mine entrance."},
-  {"id":"tongren","name_zh":"铜仁","name_en":"Tongren","type":"market","lat":27.73,"lon":109.19,"start":1800,"end":1910,"geo_precision":"city_center","source_ids":["tegengren1920"],"description_zh":"后出研究将铜仁描述为贵州水银的重要集散市场。该说法不能自动前推到所有明清时期。","description_en":"Later accounts describe Tongren as a mercury market; do not project this function uncritically backward across all Ming–Qing centuries."},
-  {"id":"guangzhou","name_zh":"广州","name_en":"Guangzhou / Canton","type":"port","lat":23.13,"lon":113.26,"start":1570,"end":1910,"geo_precision":"city_center","source_ids":["tegengren1920","schottenhammer2019"],"description_zh":"中国南部的贸易港口。在本图中是探索中国内地与海外贸易关系的候选汇集点，不代表每次水银输出都经广州。","description_en":"Southern Chinese trading port and possible network hub. Not every Chinese mercury shipment can be traced through Canton."},
-  {"id":"macao","name_zh":"澳门","name_en":"Macao","type":"port","lat":22.20,"lon":113.54,"start":1570,"end":1910,"geo_precision":"city_center","source_ids":["schottenhammer2019"],"description_zh":"16–17 世纪欧亚贸易网络中的重要节点；在初版暂不绘制未经核实的具体水银运输边。","description_en":"An important node in early modern maritime trade; no unverified specific mercury shipment is asserted here."},
-  {"id":"manila","name_zh":"马尼拉","name_en":"Manila","type":"port","lat":14.60,"lon":120.98,"start":1571,"end":1910,"geo_precision":"city_center","source_ids":["schottenhammer2019"],"description_zh":"菲律宾的跨太平洋贸易枢纽。研究记载中国水银通过菲律宾进入新西班牙。","description_en":"A trans-Pacific commercial hub. Scholarship documents mercury exported from China via the Philippines to New Spain."},
-  {"id":"acapulco","name_zh":"阿卡普尔科","name_en":"Acapulco","type":"port","lat":16.85,"lon":-99.82,"start":1571,"end":1910,"geo_precision":"city_center","source_ids":["schottenhammer2019"],"description_zh":"新西班牙的太平洋港口。1613年有载运水银的马尼拉航船抵达，是初版中的主要史料锚点。","description_en":"Pacific port in New Spain. A mercury-bearing galleon arrival in 1613 serves as this prototype's principal documentary anchor."},
-  {"id":"pachuca","name_zh":"帕丘卡","name_en":"Pachuca","type":"use","lat":20.12,"lon":-98.74,"start":1570,"end":1910,"geo_precision":"city_center","source_ids":["schottenhammer2019"],"description_zh":"新西班牙银矿技术史的重要地点；水银齐化法在此发展。图中不主张1613年某批中国水银必然抵达这里。","description_en":"Site associated with the development of patio silver amalgamation. No claim is made that the documented 1613 shipment reached this specific city."},
-  {"id":"nagasaki","name_zh":"长崎","name_en":"Nagasaki","type":"port","lat":32.75,"lon":129.88,"start":1570,"end":1910,"geo_precision":"city_center","source_ids":["schottenhammer2019"],"description_zh":"日本贸易网络的候选研究节点。中国向日本输出水银已见于研究，但具体港口和货运关系仍需逐条考证。","description_en":"Candidate node in Japan-focused research; exact port-to-port mercury links need additional evidence."},
-  {"id":"new_almaden","name_zh":"新阿尔马登","name_en":"New Almaden","type":"mine","lat":37.18,"lon":-121.83,"start":1845,"end":1910,"geo_precision":"regional_anchor","source_ids":[],"description_zh":"加利福尼亚历史汞矿，用于未来比较研究；本初版没有确证该矿的某批水银运往中国。","description_en":"Historical California mercury mine included for future comparison; no specific shipment to China is established in this prototype."}
+  {
+    "id": "wanshan",
+    "name_zh": "万山",
+    "name_en": "Wanshan",
+    "type": "mine",
+    "lat": 27.51,
+    "lon": 109.2,
+    "start": 1570,
+    "end": 1910,
+    "geo_precision": "regional_anchor",
+    "source_ids": [
+      "wanshan2023"
+    ],
+    "description_zh": "贵州东部的重要历史朱砂、水银矿区。地图使用现代区域定位点；矿井位置和历史行政边界有待细化。",
+    "description_en": "A major historical cinnabar and mercury-mining area in eastern Guizhou. The point is an approximate modern geographic anchor, not a historical mine entrance."
+  },
+  {
+    "id": "tongren",
+    "name_zh": "铜仁",
+    "name_en": "Tongren",
+    "type": "market",
+    "lat": 27.73,
+    "lon": 109.19,
+    "start": 1800,
+    "end": 1910,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "tegengren1920"
+    ],
+    "description_zh": "后出研究将铜仁描述为贵州水银的重要集散市场。该说法不能自动前推到所有明清时期。",
+    "description_en": "Later accounts describe Tongren as a mercury market; do not project this function uncritically backward across all Ming–Qing centuries."
+  },
+  {
+    "id": "guangzhou",
+    "name_zh": "广州",
+    "name_en": "Guangzhou / Canton",
+    "type": "port",
+    "lat": 23.13,
+    "lon": 113.26,
+    "start": 1570,
+    "end": 1910,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "tegengren1920",
+      "schottenhammer2019"
+    ],
+    "description_zh": "中国南部的贸易港口。在本图中是探索中国内地与海外贸易关系的候选汇集点，不代表每次水银输出都经广州。",
+    "description_en": "Southern Chinese trading port and possible network hub. Not every Chinese mercury shipment can be traced through Canton."
+  },
+  {
+    "id": "macao",
+    "name_zh": "澳门",
+    "name_en": "Macao",
+    "type": "port",
+    "lat": 22.2,
+    "lon": 113.54,
+    "start": 1570,
+    "end": 1910,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "schottenhammer2019"
+    ],
+    "description_zh": "16–17 世纪欧亚贸易网络中的重要节点；在初版暂不绘制未经核实的具体水银运输边。",
+    "description_en": "An important node in early modern maritime trade; no unverified specific mercury shipment is asserted here."
+  },
+  {
+    "id": "manila",
+    "name_zh": "马尼拉",
+    "name_en": "Manila",
+    "type": "port",
+    "lat": 14.6,
+    "lon": 120.98,
+    "start": 1571,
+    "end": 1910,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "schottenhammer2019"
+    ],
+    "description_zh": "菲律宾的跨太平洋贸易枢纽。研究记载中国水银通过菲律宾进入新西班牙。",
+    "description_en": "A trans-Pacific commercial hub. Scholarship documents mercury exported from China via the Philippines to New Spain."
+  },
+  {
+    "id": "acapulco",
+    "name_zh": "阿卡普尔科",
+    "name_en": "Acapulco",
+    "type": "port",
+    "lat": 16.85,
+    "lon": -99.82,
+    "start": 1571,
+    "end": 1910,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "schottenhammer2019"
+    ],
+    "description_zh": "新西班牙的太平洋港口。1613年有载运水银的马尼拉航船抵达，是初版中的主要史料锚点。",
+    "description_en": "Pacific port in New Spain. A mercury-bearing galleon arrival in 1613 serves as this prototype's principal documentary anchor."
+  },
+  {
+    "id": "pachuca",
+    "name_zh": "帕丘卡",
+    "name_en": "Pachuca",
+    "type": "use",
+    "lat": 20.12,
+    "lon": -98.74,
+    "start": 1570,
+    "end": 1910,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "schottenhammer2019"
+    ],
+    "description_zh": "新西班牙银矿技术史的重要地点；水银齐化法在此发展。图中不主张1613年某批中国水银必然抵达这里。",
+    "description_en": "Site associated with the development of patio silver amalgamation. No claim is made that the documented 1613 shipment reached this specific city."
+  },
+  {
+    "id": "nagasaki",
+    "name_zh": "长崎",
+    "name_en": "Nagasaki",
+    "type": "port",
+    "lat": 32.75,
+    "lon": 129.88,
+    "start": 1570,
+    "end": 1910,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "schottenhammer2019"
+    ],
+    "description_zh": "日本贸易网络的候选研究节点。中国向日本输出水银已见于研究，但具体港口和货运关系仍需逐条考证。",
+    "description_en": "Candidate node in Japan-focused research; exact port-to-port mercury links need additional evidence."
+  },
+  {
+    "id": "new_almaden",
+    "name_zh": "新阿尔马登",
+    "name_en": "New Almaden",
+    "type": "mine",
+    "lat": 37.18,
+    "lon": -121.83,
+    "start": 1845,
+    "end": 1910,
+    "geo_precision": "regional_anchor",
+    "source_ids": [],
+    "description_zh": "加利福尼亚历史汞矿，用于未来比较研究；本初版没有确证该矿的某批水银运往中国。",
+    "description_en": "Historical California mercury mine included for future comparison; no specific shipment to China is established in this prototype."
+  },
+  {
+    "id": "guizhou_region",
+    "name_zh": "贵州矿区集群",
+    "name_en": "Guizhou mining districts",
+    "type": "mine",
+    "lat": 26.8,
+    "lon": 107.8,
+    "start": 1570,
+    "end": 1910,
+    "geo_precision": "regional_anchor",
+    "source_ids": [
+      "you2023",
+      "liu2024"
+    ],
+    "description_zh": "贵州多个矿区生产朱砂与水银，不等同于任何一座具体矿场；地图以省域范围示意。",
+    "description_en": "Several Guizhou districts produced cinnabar and mercury; this regional point does not identify a particular mine."
+  },
+  {
+    "id": "fujian_coast",
+    "name_zh": "福建海商（区域）",
+    "name_en": "Fujian merchants (region)",
+    "type": "market",
+    "lat": 24.48,
+    "lon": 118.0,
+    "start": 1570,
+    "end": 1750,
+    "geo_precision": "regional_anchor",
+    "source_ids": [
+      "liu2024"
+    ],
+    "description_zh": "1572年赴马尼拉的水银商人来自福建，但资料尚不能确定具体出发港。",
+    "description_en": "Mercury-bearing merchants from Fujian reached Manila in 1572; the exact port of departure is not established."
+  },
+  {
+    "id": "london",
+    "name_zh": "伦敦",
+    "name_en": "London",
+    "type": "market",
+    "lat": 51.507,
+    "lon": -0.128,
+    "start": 1570,
+    "end": 1910,
+    "geo_precision": "regional_anchor",
+    "source_ids": [
+      "you2023",
+      "platt2011"
+    ],
+    "description_zh": "东印度公司海外采购及19世纪水银转口贸易的金融与港口中心。",
+    "description_en": "British company purchasing and nineteenth-century mercury re-export hub."
+  },
+  {
+    "id": "almaden",
+    "name_zh": "阿尔马登",
+    "name_en": "Almadén",
+    "type": "mine",
+    "lat": 38.775,
+    "lon": -4.838,
+    "start": 1570,
+    "end": 1910,
+    "geo_precision": "regional_anchor",
+    "source_ids": [
+      "platt2011"
+    ],
+    "description_zh": "西班牙汞矿；十九世纪大量经英国市场销售，但不能据此追认每批运华水银均出自这里。",
+    "description_en": "Spanish mercury mine whose output entered British networks; the origin of any particular China-bound consignment is not thereby proven."
+  },
+  {
+    "id": "cadiz",
+    "name_zh": "加的斯",
+    "name_en": "Cádiz",
+    "type": "port",
+    "lat": 36.529,
+    "lon": -6.292,
+    "start": 1570,
+    "end": 1910,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "platt2011"
+    ],
+    "description_zh": "西班牙水银经英国转口网络的重要海港。",
+    "description_en": "Spanish port connecting the Almadén mercury supply with Britain."
+  },
+  {
+    "id": "hongkong",
+    "name_zh": "香港",
+    "name_en": "Hong Kong",
+    "type": "port",
+    "lat": 22.318,
+    "lon": 114.169,
+    "start": 1841,
+    "end": 1910,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "sinn2013",
+      "stclair1994"
+    ],
+    "description_zh": "十九世纪加州水银经香港进入中国及亚洲市场的主要转口节点。",
+    "description_en": "Major nineteenth-century transshipment hub for Californian mercury bound for Chinese and other Asian markets."
+  },
+  {
+    "id": "sanfrancisco",
+    "name_zh": "旧金山",
+    "name_en": "San Francisco",
+    "type": "port",
+    "lat": 37.775,
+    "lon": -122.419,
+    "start": 1848,
+    "end": 1910,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "sinn2013",
+      "stclair1994"
+    ],
+    "description_zh": "十九世纪加州水银出口、太平洋轮船航运和跨洋商人网络的重要港口。",
+    "description_en": "Pacific port and export center for nineteenth-century California quicksilver."
+  },
+  {
+    "id": "calcutta",
+    "name_zh": "加尔各答",
+    "name_en": "Calcutta",
+    "type": "port",
+    "lat": 22.573,
+    "lon": 88.363,
+    "start": 1840,
+    "end": 1910,
+    "geo_precision": "city_center",
+    "source_ids": [
+      "sinn2013"
+    ],
+    "description_zh": "加州水银经香港转运至印度的贸易目的地之一；需逐批核对港口。",
+    "description_en": "One destination in India discussed for Californian quicksilver transshipped via Hong Kong; individual destinations require checking."
+  },
+  {
+    "id": "guanajuato",
+    "name_zh": "瓜纳华托",
+    "name_en": "Guanajuato",
+    "type": "use",
+    "lat": 21.019,
+    "lon": -101.257,
+    "start": 1570,
+    "end": 1910,
+    "geo_precision": "regional_anchor",
+    "source_ids": [
+      "schottenhammer2019",
+      "liu2024"
+    ],
+    "description_zh": "1692年中国水银在此进行品质试验，不能视作每批经马尼拉运来的水银的终点。",
+    "description_en": "Chinese mercury was tested in the Guanajuato mining district in 1692; this is not the destination of every trans-Pacific shipment."
+  }
 ]

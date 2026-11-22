@@ -1,0 +1,420 @@
+[
+  {
+    "id": "fu1572",
+    "route_id": "r_fujian_manila_1572",
+    "year": 1572,
+    "title_zh": "福建海商在马尼拉出售水银",
+    "title_en": "Fujian merchants brought mercury to Manila",
+    "note_zh": "福建商人所载有水银，具体数量及出发港不明。",
+    "note_en": "Mercury aboard a Fujian merchant vessel; no confirmed quantity or departure port.",
+    "source_ids": [
+      "liu2024"
+    ],
+    "locator": "第23–24页 / pp. 23–24",
+    "quantity": null,
+    "unit": null,
+    "ship": null,
+    "value": null,
+    "currency": null,
+    "status": "completed"
+  },
+  {
+    "id": "sanandres1613",
+    "route_id": "r_manila_acapulco",
+    "year": 1613,
+    "title_zh": "San Andrés抵达阿卡普尔科",
+    "title_en": "San Andrés arrives at Acapulco",
+    "note_zh": "1613年1月5日抵达；200 quintals水银。",
+    "note_en": "Arrived 5 Jan 1613 with 200 quintals of mercury.",
+    "source_ids": [
+      "schottenhammer2019"
+    ],
+    "locator": "第184页 / p. 184",
+    "quantity": 200,
+    "unit": "quintals",
+    "ship": "San Andrés",
+    "value": null,
+    "currency": null,
+    "status": "completed"
+  },
+  {
+    "id": "lost1693",
+    "route_id": "r_manila_acapulco_1693_lost",
+    "year": 1693,
+    "title_zh": "Santo Cristo de Burgos海上失火",
+    "title_en": "Santo Cristo de Burgos catches fire",
+    "note_zh": "前一年在广州采购53 quintals，经马尼拉转运，船在抵达阿卡普尔科前失火。",
+    "note_en": "53 quintals obtained at Canton and sent via Manila; the galleon caught fire before arrival.",
+    "source_ids": [
+      "schottenhammer2019",
+      "liu2024"
+    ],
+    "locator": "Schottenhammer 第186页；刘、罗第25页",
+    "quantity": 53,
+    "unit": "quintals",
+    "ship": "Santo Cristo de Burgos",
+    "value": null,
+    "currency": null,
+    "status": "failed"
+  },
+  {
+    "id": "report1791",
+    "route_id": "r_manila_acapulco_1791",
+    "year": 1791,
+    "title_zh": "马尼拉帆船抵达与3000担采购报告",
+    "title_en": "Galleon arrival and 3,000-picul procurement report",
+    "note_zh": "航船带来一批中国水银；3000担是所报告的采购量，不是该船已到岸重量。",
+    "note_en": "A shipment arrived, but 3,000 piculs refers to a reported Manila procurement total, not necessarily the cargo landed.",
+    "source_ids": [
+      "liu2024"
+    ],
+    "locator": "第26页 / p. 26",
+    "quantity": 3000,
+    "unit": "piculs (reported procurement)",
+    "ship": null,
+    "value": null,
+    "currency": null,
+    "status": "reported"
+  },
+  {
+    "id": "kent1704",
+    "route_id": "r_canton_london_eic",
+    "year": 1704,
+    "title_zh": "肯特号订购水银400担",
+    "title_en": "Kent: 400 piculs purchased",
+    "note_zh": "文章记载每担43两，计17,200两。",
+    "note_en": "Reported price 43 taels/picul, total 17,200 taels.",
+    "source_ids": [
+      "you2023"
+    ],
+    "locator": "表一，第56页 / Table 1, p. 56",
+    "quantity": 400,
+    "unit": "piculs",
+    "ship": "Kent",
+    "value": 17200,
+    "currency": "taels of silver",
+    "status": "completed"
+  },
+  {
+    "id": "mac1700",
+    "route_id": "r_canton_london_eic",
+    "year": 1700,
+    "title_zh": "麦士里菲尔德号购买水银64担",
+    "title_en": "Macclesfield: 64 piculs",
+    "note_zh": "表一第1700年记录。",
+    "note_en": "Recorded in the 1700 entry of Table 1.",
+    "source_ids": [
+      "you2023"
+    ],
+    "locator": "表一，第56页 / Table 1, p. 56",
+    "quantity": 64,
+    "unit": "piculs",
+    "ship": "Macclesfield",
+    "value": 2864,
+    "currency": "taels of silver",
+    "status": "completed"
+  },
+  {
+    "id": "canterbury1702",
+    "route_id": "r_canton_london_eic",
+    "year": 1702,
+    "title_zh": "坎特伯里号购买200担",
+    "title_en": "Canterbury: 200 piculs",
+    "note_zh": "英国在华购水银。",
+    "note_en": "British purchase of mercury in China.",
+    "source_ids": [
+      "you2023"
+    ],
+    "locator": "表一，第56页 / Table 1, p. 56",
+    "quantity": 200,
+    "unit": "piculs",
+    "ship": "Canterbury",
+    "value": 9200,
+    "currency": "taels of silver",
+    "status": "completed"
+  },
+  {
+    "id": "amelia1722",
+    "route_id": "r_canton_london_eic",
+    "year": 1722,
+    "title_zh": "埃梅莉亚公主号与莱尔号购买200担",
+    "title_en": "Princess Amelia and Lyle: 200 piculs",
+    "note_zh": "文献将两船合列，勿各自记作200担。",
+    "note_en": "The two vessels are combined in the source; 200 piculs is not per vessel.",
+    "source_ids": [
+      "you2023"
+    ],
+    "locator": "表一，第56页 / Table 1, p. 56",
+    "quantity": 200,
+    "unit": "piculs",
+    "ship": "Princess Amelia / Lyle",
+    "value": 8400,
+    "currency": "taels of silver",
+    "status": "completed"
+  },
+  {
+    "id": "ayles1722",
+    "route_id": "r_canton_london_eic",
+    "year": 1722,
+    "title_zh": "艾尔斯号购买100担",
+    "title_en": "Ayles: 100 piculs",
+    "note_zh": "表一记载，每担42两。",
+    "note_en": "Recorded at 42 taels per picul.",
+    "source_ids": [
+      "you2023"
+    ],
+    "locator": "表一，第56页 / Table 1, p. 56",
+    "quantity": 100,
+    "unit": "piculs",
+    "ship": "Ayles",
+    "value": 4200,
+    "currency": "taels of silver",
+    "status": "completed"
+  },
+  {
+    "id": "walpole1723",
+    "route_id": "r_canton_london_eic",
+    "year": 1723,
+    "title_zh": "沃波尔号购买152担",
+    "title_en": "Walpole: 152 piculs",
+    "note_zh": "表一记载，共6,384两。",
+    "note_en": "Recorded total 6,384 taels of silver.",
+    "source_ids": [
+      "you2023"
+    ],
+    "locator": "表一，第56页 / Table 1, p. 56",
+    "quantity": 152,
+    "unit": "piculs",
+    "ship": "Walpole",
+    "value": 6384,
+    "currency": "taels of silver",
+    "status": "completed"
+  },
+  {
+    "id": "british1836",
+    "route_id": "r_london_china_1836",
+    "year": 1836,
+    "title_zh": "英国向中国转口水银3280西班牙担",
+    "title_en": "3,280 Spanish quintals re-exported to China",
+    "note_zh": "这是英方转口目的地统计；不能据此证明每担矿源均为阿尔马登、或全在广州卸货。",
+    "note_en": "British re-export destination figure; mine provenance and the exact Chinese landing port are not verified.",
+    "source_ids": [
+      "platt2011"
+    ],
+    "locator": "第44页，图表2 / p. 44, Table 2",
+    "quantity": 3280,
+    "unit": "Spanish quintals",
+    "ship": null,
+    "value": null,
+    "currency": null,
+    "status": "completed"
+  },
+  {
+    "id": "sf1856",
+    "route_id": "r_sf_hongkong",
+    "year": 1856,
+    "title_zh": "美国对中国出口水银3409瓶",
+    "title_en": "3,409 flasks exported to China",
+    "note_zh": "表4.3“中国”总量，并非全部确证经香港。",
+    "note_en": "China-wide total; not every flask is confirmed to have landed at Hong Kong.",
+    "source_ids": [
+      "sinn2013"
+    ],
+    "locator": "表4.3，第180页 / Table 4.3, p. 180",
+    "quantity": 3409,
+    "unit": "flasks",
+    "ship": null,
+    "value": null,
+    "currency": null,
+    "status": "aggregate"
+  },
+  {
+    "id": "sf1866",
+    "route_id": "r_sf_hongkong",
+    "year": 1866,
+    "title_zh": "美国对中国出口水银9752瓶",
+    "title_en": "9,752 flasks exported to China",
+    "note_zh": "海关报刊汇总数据，货值331,464美元。",
+    "note_en": "Aggregate export report; value $331,464.",
+    "source_ids": [
+      "sinn2013"
+    ],
+    "locator": "表4.3，第180页 / Table 4.3, p. 180",
+    "quantity": 9752,
+    "unit": "flasks",
+    "ship": null,
+    "value": 331464,
+    "currency": "USD",
+    "status": "aggregate"
+  },
+  {
+    "id": "sf1875",
+    "route_id": "r_sf_hongkong",
+    "year": 1875,
+    "title_zh": "对中国出口水银16,856瓶",
+    "title_en": "16,856 flasks exported to China",
+    "note_zh": "年度出口统计；与当年单次Belgic船货数据不同。",
+    "note_en": "Annual export total; distinct from the individual Belgic consignment.",
+    "source_ids": [
+      "sinn2013"
+    ],
+    "locator": "表4.3，第180页 / Table 4.3, p. 180",
+    "quantity": 16856,
+    "unit": "flasks",
+    "ship": null,
+    "value": 928577,
+    "currency": "USD",
+    "status": "aggregate"
+  },
+  {
+    "id": "belgic1875",
+    "route_id": "r_sf_hongkong",
+    "year": 1875,
+    "title_zh": "Belgic号水银装货2,656瓶",
+    "title_en": "Belgic loaded 2,656 flasks",
+    "note_zh": "1875年11月 Belgic 号货运清单，表列总数2,656瓶、总值133,868美元。但七名货主数量逐项相加为2,654瓶，和表列总数差2瓶；本站照录总数，保留待校。具体矿山来源未知。",
+    "note_en": "Belgic manifest, November 1875: table total 2,656 flasks and $133,868. The seven listed consignment counts sum to 2,654, two short of the printed total. Both values are preserved as an unresolved discrepancy. Mine of origin unknown.",
+    "source_ids": [
+      "sinn2013"
+    ],
+    "locator": "表4.4，第180页 / Table 4.4, p. 180",
+    "quantity": 2656,
+    "unit": "flasks",
+    "ship": "Belgic",
+    "value": 133868,
+    "currency": "USD",
+    "status": "completed",
+    "shippers": [
+      {
+        "name": "S. L. Jones & Co.",
+        "flasks": 458,
+        "value_usd": 25000
+      },
+      {
+        "name": "Wing Wo Sang & Co.",
+        "flasks": 197,
+        "value_usd": 9854
+      },
+      {
+        "name": "Shing Yik & Co.",
+        "flasks": 206,
+        "value_usd": 10300
+      },
+      {
+        "name": "Hip Wo & Co.",
+        "flasks": 25,
+        "value_usd": 1224
+      },
+      {
+        "name": "Fred Iken",
+        "flasks": 400,
+        "value_usd": 20064
+      },
+      {
+        "name": "Sing Kee & Co.",
+        "flasks": 17,
+        "value_usd": 826
+      },
+      {
+        "name": "Degener & Co.",
+        "flasks": 1351,
+        "value_usd": 66600
+      }
+    ]
+  },
+  {
+    "id": "sf1879",
+    "route_id": "r_sf_hongkong",
+    "year": 1879,
+    "title_zh": "对中国出口水银36,896瓶",
+    "title_en": "36,896 flasks exported to China",
+    "note_zh": "年度出口统计，货值1,073,183美元。",
+    "note_en": "Annual figure, $1,073,183.",
+    "source_ids": [
+      "sinn2013"
+    ],
+    "locator": "表4.3，第180页 / Table 4.3, p. 180",
+    "quantity": 36896,
+    "unit": "flasks",
+    "ship": null,
+    "value": 1073183,
+    "currency": "USD",
+    "status": "aggregate"
+  },
+  {
+    "id": "belgic1879",
+    "route_id": "r_sf_hongkong",
+    "year": 1879,
+    "title_zh": "Belgic号再运4750瓶",
+    "title_en": "Belgic carried 4,750 flasks",
+    "note_zh": "1879年4月该船装载4750瓶，申报价值134,658美元。",
+    "note_en": "In April 1879 the vessel carried 4,750 flasks valued at $134,658.",
+    "source_ids": [
+      "sinn2013"
+    ],
+    "locator": "第180页正文 / p. 180",
+    "quantity": 4750,
+    "unit": "flasks",
+    "ship": "Belgic",
+    "value": 134658,
+    "currency": "USD",
+    "status": "completed"
+  },
+  {
+    "id": "sf1880",
+    "route_id": "r_sf_hongkong",
+    "year": 1880,
+    "title_zh": "对中国出口水银19,488瓶",
+    "title_en": "19,488 flasks exported to China",
+    "note_zh": "年度出口统计，货值578,190美元。",
+    "note_en": "Annual export total, $578,190.",
+    "source_ids": [
+      "sinn2013"
+    ],
+    "locator": "表4.3，第180页 / Table 4.3, p. 180",
+    "quantity": 19488,
+    "unit": "flasks",
+    "ship": null,
+    "value": 578190,
+    "currency": "USD",
+    "status": "aggregate"
+  },
+  {
+    "id": "goodale1858",
+    "route_id": "r_sf_hongkong",
+    "year": 1858,
+    "title_zh": "Goodale向香港托运水银",
+    "title_en": "Goodale shipped quicksilver to Hong Kong",
+    "note_zh": "为和兴（Wo Hang）代购水银，寄往香港 Augustine Heard & Co.，数量此处未核对。",
+    "note_en": "Goodale sent mercury purchased on Wo Hang’s account to Augustine Heard & Co. in Hong Kong; quantity not established here.",
+    "source_ids": [
+      "sinn2013"
+    ],
+    "locator": "第159页 / p. 159",
+    "quantity": null,
+    "unit": null,
+    "ship": null,
+    "value": null,
+    "currency": null,
+    "status": "completed"
+  },
+  {
+    "id": "macao1608",
+    "route_id": "r_macao_manila_1610",
+    "year": 1608,
+    "title_zh": "澳门向西属美洲运出约20担",
+    "title_en": "Macau: about 20 piculs in 1608–09",
+    "note_zh": "二手论文报道澳门水银贸易数据，确切统计口径仍需核验。",
+    "note_en": "A secondary source reports the 1608–09 figure; exact accounting basis needs primary-source verification.",
+    "source_ids": [
+      "liu2024"
+    ],
+    "locator": "第24页 / p. 24",
+    "quantity": 20,
+    "unit": "piculs",
+    "ship": null,
+    "value": null,
+    "currency": null,
+    "status": "reported"
+  }
+]

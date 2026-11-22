@@ -1,6 +1,6 @@
 # Mercury across Empires — Digital Atlas / 水银跨帝国互动历史地图
 
-**Version 0.2 · November 2026 · Jinju Wu**
+**Version 0.3 · November 2026 · Jinju Wu**
 
 Bilingual interactive historical atlas for the movement of cinnabar and mercury across Ming–Qing China and the trans-Pacific world, 1570–1910.
 
@@ -50,3 +50,21 @@ This is **not** a proven single shipment from Wanshan to the Americas. 1613 docu
 Jinju Wu — [University of Illinois Urbana-Champaign](https://ealc.illinois.edu/directory/profile/jinjuwu2).
 
 See `AI_WORKFLOW.md` for AI-supported but human-reviewed source extraction.
+
+
+## 2026-11-21 expansion · 双向水银贸易 v0.3
+
+现已增加至 **18 地点、21 条联系、20 条可核对的记录、4 条互动故事、9 条参考文献**。
+新增史料来源：Elizabeth Sinn (2013, pp. 179–181), 游锦香 (2023, pp. 54–58), 刘自强与罗琦 (2024, pp. 22–30), Tristan Platt (2011, pp. 38–49), David J. St. Clair (1994/95, pp. 278–295)。研究材料是用户提供的 PDF，未上传全文。
+
+### 重要校勘说明
+- 英国东印度公司在广州购汞 ≠ 某批汞的确切贵州矿源。
+- 1836 年英国向中国转口 3,280 Spanish quintals：统计目的地是**中国**，广州仅作近似锚点。
+- 1856–1880 年对中国出口数量是来源报道的年统计；不能全部认作香港卸货量。
+- 1875 年 *Belgic* 的 2,656 flasks 是单船数据，**不能**叠加到同年出口总数 16,856 之上。
+- 1875 年 Belgic 号表 4.4 的七名货主数量之和为 **2,654** 瓶，原表总数却写 **2,656** 瓶；数据库保留原表总数、七名货主分项及该待核差异。
+- 1693 年 Santo Cristo de Burgos 途中失火，图中路线刻意以断线显示，**未完成运输**。
+- 历史运输图上的曲线是示意连线，不是复原航迹。
+- 数据分别存储于 data/places.json, data/connections.json, data/records.json, data/events.json, data/stories.json, data/sources.json。
+
+运行：`python3 -m http.server 8000`，打开 http://localhost:8000。数据校验：`python3 scripts/validate_data.py`。

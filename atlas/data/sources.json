@@ -5,8 +5,8 @@
     "citation": "Angela Schottenhammer, ‘Trans-Pacific Connections: Contraband Mercury Trade in the Sixteenth to Early Eighteenth Centuries,’ in Picturing Commerce in and from the East Asian Maritime Circuits, 1550–1800, ed. Tamara H. Bentley (Amsterdam University Press, 2019), 159–194.",
     "url": "https://doi.org/10.1017/9789048535446.006",
     "source_type": "secondary",
-    "note_zh": "章节综述中国水银向日本和新西班牙的输出及经马尼拉的跨太平洋贸易；1613 年具体货载的细节应再核对章节原文和所引一手文献。",
-    "note_en": "Discusses Chinese mercury exported to Japan and New Spain via Asian-Pacific networks. Verify the 1613 shipment in the chapter and its cited primary documents."
+    "note_zh": "上传2019年论文集第184页明确提及1613年1月5日 San Andrés 号携200 quintals水银抵达阿卡普尔科；第186页记述1693年 Santo Cristo de Burgos 号失火，未抵达美洲。",
+    "note_en": "Supplied 2019 volume, pp. 184 and 186: San Andrés arrived 5 January 1613 with 200 quintals; Santo Cristo de Burgos caught fire in 1693 before reaching Acapulco."
   },
   {
     "id": "wanshan2023",
@@ -34,5 +34,50 @@
     "source_type": "secondary",
     "note_zh": "介绍万山矿业史与1899年英法资本介入。1906/1908等终止时间在不同研究中可能存在表述差异，必须回到档案校核。",
     "note_en": "Discusses Wanshan mining and Anglo-French investment around 1899. The ending date requires archival verification."
+  },
+  {
+    "id": "sinn2013",
+    "short": "Sinn 2013",
+    "citation": "Elizabeth Sinn, Pacific Crossing: California Gold, Chinese Migration, and the Making of Hong Kong (Hong Kong University Press, 2013), 179–181, esp. Tables 4.3–4.4.",
+    "url": "",
+    "source_type": "secondary",
+    "note_zh": "上传著作，第179–181页。表4.3为向中国出口的水银数量；表4.4列出1875年 Belgic 号装运的货主、数量、价值。只记录来源已明确支持的港口与事件。",
+    "note_en": "Supplied book, pp. 179–181. Table 4.3 reports exports to China; Table 4.4 records the November 1875 Belgic shipment. General exports and individual vessel records must not be conflated."
+  },
+  {
+    "id": "you2023",
+    "short": "游锦香 2023",
+    "citation": "游锦香：《清代前中期中英水银贸易探析》，《贵州文史丛刊》2023年第2期，54–58页，尤其表一（56页）。",
+    "url": "",
+    "source_type": "secondary",
+    "note_zh": "上传论文，表一列1700—1724年英国在华购买水银的若干订单；运输路径与货物具体矿山来源仍应和原始账簿核对。",
+    "note_en": "Supplied article, Table 1 p. 56 summarizes documented East India Company purchases 1700–1724; precise mine origins remain uncertain."
+  },
+  {
+    "id": "liu2024",
+    "short": "刘自强、罗琦 2024",
+    "citation": "刘自强、罗琦：《大帆船贸易时期拉美与中国的水银贸易》，《内蒙古民族大学学报（哲学社会科学版）》50卷3期（2024）：22–30，doi:10.14045/j.cnki.nmsx.2024.03.011。",
+    "url": "https://doi.org/10.14045/j.cnki.nmsx.2024.03.011",
+    "source_type": "secondary",
+    "note_zh": "上传论文，第23–26页记载福建海商、澳门—马尼拉联系、1693年海上失事与1791年的采购报告；须区分购买计划、装船和实际到达。",
+    "note_en": "Supplied article pp. 23–26: Fujian merchants, Macau–Manila arrangements, the 1693 lost cargo, and the 1791 purchasing report. Plans, purchases and arrivals are different evidence types."
+  },
+  {
+    "id": "stclair1994",
+    "short": "St. Clair 1994/95",
+    "citation": "David J. St. Clair, “New Almaden and California Quicksilver in the Pacific Rim Economy,” California History 73, no. 4 (Winter 1994/95): 278–295.",
+    "url": "https://www.jstor.org/stable/25177449",
+    "source_type": "secondary",
+    "note_zh": "上传论文讨论加州产汞与中国及太平洋市场的联系；并非每笔加州出口都可追溯到新阿尔马登单矿。",
+    "note_en": "Supplied article discusses Californian quicksilver in Chinese and Pacific markets; not all Californian exports can be assigned to New Almaden."
+  },
+  {
+    "id": "platt2011",
+    "short": "Platt 2011",
+    "citation": "Tristan Platt, “‘Spanish Quicksilver’: A Preliminary Note. The London Market, Global Trade and the Rothschild Monopoly (1830–1850),” The Rothschild Archive Review (2011), 38–49, esp. 44–45.",
+    "url": "",
+    "source_type": "secondary",
+    "note_zh": "上传论文，44页讨论1836年由英国转口至中国的3280西班牙担（quintals）及1838—39年广州英商销售；西班牙矿源与中国卸货港不可逐批确定。",
+    "note_en": "Supplied article, p. 44: 3,280 Spanish quintals re-exported from Britain to China in 1836, and Canton merchant correspondence in 1838–39. Exact mine origin and discharge port are not established."
   }
 ]

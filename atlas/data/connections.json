@@ -1,10 +1,517 @@
 [
-  {"id":"r_wanshan_guangzhou","from":"wanshan","to":"guangzhou","start":1590,"end":1720,"evidence":"hypothesis","kind":"material","source_ids":["wanshan2023","schottenhammer2019"],"name_zh":"万山 → 广州（待证）","name_en":"Wanshan → Canton (unverified)","description_zh":"作为复合故事的研究假设：两地分别有矿业和海外贸易证据，但没有确认某批从万山到广州的水银，更不能连结到1613年的海上货运。","description_en":"A research hypothesis bridging a mining center and a port. No specific Wanshan-to-Canton shipment—nor its link to the 1613 galleon—is established.","waypoints":[]},
-  {"id":"r_guangzhou_manila","from":"guangzhou","to":"manila","start":1590,"end":1720,"evidence":"contextual","kind":"material","source_ids":["schottenhammer2019"],"name_zh":"中国南部 → 马尼拉（网络联系）","name_en":"South China → Manila (network)","description_zh":"研究支持中国水银经菲律宾输出的总体联系；这里以广州代表中国南方港口，不把它当作已核实的逐港航程。","description_en":"Research supports Chinese mercury export via the Philippines. Canton is used as a South China anchor, not a verified departure port for every cargo.","waypoints":[[117,20]]},
-  {"id":"r_manila_acapulco","from":"manila","to":"acapulco","start":1613,"end":1613,"evidence":"documented","kind":"material","source_ids":["schottenhammer2019"],"name_zh":"1613：马尼拉 → 阿卡普尔科","name_en":"1613: Manila → Acapulco","description_zh":"Schottenhammer 引述1613年1月有关圣安德烈斯号（San Andrés）所载水银的记载。这一边表达有运输事件的文献证据，所画曲线并非船舶真实航迹。数量与档案出处应核对章节全文。","description_en":"Schottenhammer discusses the 1613 arrival of the San Andrés carrying mercury. This connection represents a documented shipment, not the vessel's real track; quantity and archival reference require checking in the full text.","waypoints":[[147,21],[175,26],[-158,27],[-132,23]]},
-  {"id":"r_acapulco_pachuca","from":"acapulco","to":"pachuca","start":1613,"end":1720,"evidence":"hypothesis","kind":"material","source_ids":["schottenhammer2019"],"name_zh":"阿卡普尔科 → 帕丘卡（待证）","name_en":"Acapulco → Pachuca (unverified)","description_zh":"帕丘卡是银汞齐法的重要场所，但没有证据表明1613年运抵阿卡普尔科的那批水银送往此地。","description_en":"Pachuca was a major amalgamation site, but the destination of the 1613 shipment after landing is unverified.","waypoints":[]},
-  {"id":"r_wanshan_tongren","from":"wanshan","to":"tongren","start":1850,"end":1910,"evidence":"contextual","kind":"material","source_ids":["tegengren1920"],"name_zh":"万山 → 铜仁（区域流通）","name_en":"Wanshan → Tongren (regional market)","description_zh":"Tegengren及引述其研究的文献涉及贵州矿产与铜仁市场的关联；此边概括区域联系，不应理解为确认的单次货运或连续年度贸易。","description_en":"Tegengren and later citations link Guizhou mercury to the Tongren market; this depicts a generalized regional relationship, not an individual shipment.","waypoints":[]},
-  {"id":"r_tongren_guangzhou","from":"tongren","to":"guangzhou","start":1850,"end":1910,"evidence":"hypothesis","kind":"material","source_ids":["tegengren1920"],"name_zh":"铜仁 → 广州（路径待考）","name_en":"Tongren → Canton (route under study)","description_zh":"文献提示贵州水银可经水路进入广东，但其具体码头和河段尚需证实。地图连线不表示真实的内河航道。","description_en":"Secondary accounts suggest movement from Guizhou toward Guangdong, but exact river legs, dates, and landing sites require verification.","waypoints":[]},
-  {"id":"r_guangzhou_nagasaki","from":"guangzhou","to":"nagasaki","start":1600,"end":1750,"evidence":"hypothesis","kind":"material","source_ids":["schottenhammer2019"],"name_zh":"中国 → 日本（具体港口待考）","name_en":"China → Japan (ports unverified)","description_zh":"研究指出中国水银曾输出日本，但首版尚不能证实广州至长崎这条具体航线。","description_en":"Chinese mercury exports to Japan are discussed in scholarship; the particular Canton–Nagasaki connection is not verified.","waypoints":[]},
-  {"id":"r_newalmaden_guangzhou","from":"new_almaden","to":"guangzhou","start":1850,"end":1910,"evidence":"hypothesis","kind":"material","source_ids":[],"name_zh":"加州 → 中国（未来档案课题）","name_en":"California → China (future research)","description_zh":"将加州汞矿与中国市场联系起来作为档案研究问题。尚未录入验证过的货单，不能据此宣称存在具体贸易记录。","description_en":"Research lead for California-to-China mercury shipments. No verified manifest has been entered yet.","waypoints":[[-142,32],[176,30],[137,24]]}
+  {
+    "id": "r_wanshan_guangzhou",
+    "from": "wanshan",
+    "to": "guangzhou",
+    "start": 1590,
+    "end": 1720,
+    "evidence": "hypothesis",
+    "kind": "material",
+    "source_ids": [
+      "wanshan2023",
+      "schottenhammer2019"
+    ],
+    "name_zh": "万山 → 广州（待证）",
+    "name_en": "Wanshan → Canton (unverified)",
+    "description_zh": "作为复合故事的研究假设：两地分别有矿业和海外贸易证据，但没有确认某批从万山到广州的水银，更不能连结到1613年的海上货运。",
+    "description_en": "A research hypothesis bridging a mining center and a port. No specific Wanshan-to-Canton shipment—nor its link to the 1613 galleon—is established.",
+    "waypoints": [],
+    "direction": "outbound"
+  },
+  {
+    "id": "r_guangzhou_manila",
+    "from": "guangzhou",
+    "to": "manila",
+    "start": 1590,
+    "end": 1720,
+    "evidence": "contextual",
+    "kind": "material",
+    "source_ids": [
+      "schottenhammer2019"
+    ],
+    "name_zh": "中国南部 → 马尼拉（网络联系）",
+    "name_en": "South China → Manila (network)",
+    "description_zh": "研究支持中国水银经菲律宾输出的总体联系；这里以广州代表中国南方港口，不把它当作已核实的逐港航程。",
+    "description_en": "Research supports Chinese mercury export via the Philippines. Canton is used as a South China anchor, not a verified departure port for every cargo.",
+    "waypoints": [
+      [
+        117,
+        20
+      ]
+    ],
+    "direction": "outbound"
+  },
+  {
+    "id": "r_manila_acapulco",
+    "from": "manila",
+    "to": "acapulco",
+    "start": 1613,
+    "end": 1613,
+    "evidence": "documented",
+    "kind": "material",
+    "source_ids": [
+      "schottenhammer2019"
+    ],
+    "name_zh": "1613：马尼拉 → 阿卡普尔科",
+    "name_en": "1613: Manila → Acapulco",
+    "description_zh": "1613年1月5日，San Andrés号将200 quintals中国水银运抵阿卡普尔科。Schottenhammer（2019）第184页引载此事件；连线为示意，不代表准确航迹。",
+    "description_en": "On 5 January 1613, the San Andrés arrived at Acapulco carrying 200 quintals of Chinese mercury (Schottenhammer 2019, p. 184). The line is schematic, not a reconstructed voyage track.",
+    "waypoints": [
+      [
+        147,
+        21
+      ],
+      [
+        175,
+        26
+      ],
+      [
+        -158,
+        27
+      ],
+      [
+        -132,
+        23
+      ]
+    ],
+    "direction": "outbound"
+  },
+  {
+    "id": "r_acapulco_pachuca",
+    "from": "acapulco",
+    "to": "pachuca",
+    "start": 1613,
+    "end": 1720,
+    "evidence": "hypothesis",
+    "kind": "material",
+    "source_ids": [
+      "schottenhammer2019"
+    ],
+    "name_zh": "阿卡普尔科 → 帕丘卡（待证）",
+    "name_en": "Acapulco → Pachuca (unverified)",
+    "description_zh": "帕丘卡是银汞齐法的重要场所，但没有证据表明1613年运抵阿卡普尔科的那批水银送往此地。",
+    "description_en": "Pachuca was a major amalgamation site, but the destination of the 1613 shipment after landing is unverified.",
+    "waypoints": [],
+    "direction": "outbound"
+  },
+  {
+    "id": "r_wanshan_tongren",
+    "from": "wanshan",
+    "to": "tongren",
+    "start": 1850,
+    "end": 1910,
+    "evidence": "contextual",
+    "kind": "material",
+    "source_ids": [
+      "tegengren1920"
+    ],
+    "name_zh": "万山 → 铜仁（区域流通）",
+    "name_en": "Wanshan → Tongren (regional market)",
+    "description_zh": "Tegengren及引述其研究的文献涉及贵州矿产与铜仁市场的关联；此边概括区域联系，不应理解为确认的单次货运或连续年度贸易。",
+    "description_en": "Tegengren and later citations link Guizhou mercury to the Tongren market; this depicts a generalized regional relationship, not an individual shipment.",
+    "waypoints": [],
+    "direction": "outbound"
+  },
+  {
+    "id": "r_tongren_guangzhou",
+    "from": "tongren",
+    "to": "guangzhou",
+    "start": 1850,
+    "end": 1910,
+    "evidence": "hypothesis",
+    "kind": "material",
+    "source_ids": [
+      "tegengren1920"
+    ],
+    "name_zh": "铜仁 → 广州（路径待考）",
+    "name_en": "Tongren → Canton (route under study)",
+    "description_zh": "文献提示贵州水银可经水路进入广东，但其具体码头和河段尚需证实。地图连线不表示真实的内河航道。",
+    "description_en": "Secondary accounts suggest movement from Guizhou toward Guangdong, but exact river legs, dates, and landing sites require verification.",
+    "waypoints": [],
+    "direction": "outbound"
+  },
+  {
+    "id": "r_guangzhou_nagasaki",
+    "from": "guangzhou",
+    "to": "nagasaki",
+    "start": 1600,
+    "end": 1750,
+    "evidence": "hypothesis",
+    "kind": "material",
+    "source_ids": [
+      "schottenhammer2019"
+    ],
+    "name_zh": "中国 → 日本（具体港口待考）",
+    "name_en": "China → Japan (ports unverified)",
+    "description_zh": "研究指出中国水银曾输出日本，但首版尚不能证实广州至长崎这条具体航线。",
+    "description_en": "Chinese mercury exports to Japan are discussed in scholarship; the particular Canton–Nagasaki connection is not verified.",
+    "waypoints": [],
+    "direction": "outbound"
+  },
+  {
+    "id": "r_sf_hongkong",
+    "from": "sanfrancisco",
+    "to": "hongkong",
+    "start": 1850,
+    "end": 1890,
+    "evidence": "documented",
+    "kind": "material",
+    "source_ids": [
+      "sinn2013",
+      "stclair1994"
+    ],
+    "name_zh": "旧金山 → 香港（加州水银贸易）",
+    "name_en": "San Francisco → Hong Kong (quicksilver trade)",
+    "description_zh": "十九世纪后半叶加州水银通过旧金山对华出口，香港是重要的进口和转运港。1858年有明确香港收货记录；其他年份的“对中国出口”统计不必然全部以香港为卸货港。参见数据库中的1856–1880年数据与1875年 Belgic 号装货。",
+    "description_en": "California quicksilver exports to China ran through the San Francisco trade, with Hong Kong a major hub. An 1858 consignment to Hong Kong is attested; the aggregate China export figures do not specify Hong Kong as the port of unloading in every case.",
+    "waypoints": [
+      [
+        -160,
+        32
+      ],
+      [
+        175,
+        30
+      ],
+      [
+        143,
+        25
+      ]
+    ],
+    "direction": "inbound"
+  },
+  {
+    "id": "r_fujian_manila_1572",
+    "from": "fujian_coast",
+    "to": "manila",
+    "start": 1572,
+    "end": 1574,
+    "evidence": "documented",
+    "direction": "outbound",
+    "kind": "material",
+    "source_ids": [
+      "liu2024"
+    ],
+    "name_zh": "福建海商 → 马尼拉（1572）",
+    "name_en": "Fujian merchants → Manila (1572)",
+    "description_zh": "1572年福建商人到马尼拉贸易时船上有水银。福建锚点仅代表商人来自该地区，不表示已经核实具体启航码头。",
+    "description_en": "Fujian merchants arrived at Manila with mercury in 1572. The regional anchor is not a verified port of departure.",
+    "waypoints": [
+      [
+        122,
+        19
+      ]
+    ]
+  },
+  {
+    "id": "r_macao_manila_1610",
+    "from": "macao",
+    "to": "manila",
+    "start": 1608,
+    "end": 1615,
+    "evidence": "contextual",
+    "direction": "outbound",
+    "kind": "material",
+    "source_ids": [
+      "schottenhammer2019",
+      "liu2024"
+    ],
+    "name_zh": "澳门 → 马尼拉（购汞协议）",
+    "name_en": "Macao → Manila (mercury procurement)",
+    "description_zh": "西葡之间曾协商澳门供应马尼拉水银，1608—09和1615年皆有贸易数量记载；不能当作每年不断的同一航次。",
+    "description_en": "Portuguese–Spanish arrangements involved Macau and Manila; limited shipments and a contract are reported, not continuous annual sailings.",
+    "waypoints": [
+      [
+        117.4,
+        18.2
+      ]
+    ]
+  },
+  {
+    "id": "r_manila_acapulco_1693_lost",
+    "from": "manila",
+    "to": "acapulco",
+    "start": 1693,
+    "end": 1693,
+    "evidence": "documented",
+    "direction": "outbound",
+    "kind": "material",
+    "source_ids": [
+      "schottenhammer2019",
+      "liu2024"
+    ],
+    "name_zh": "1693：驶往阿卡普尔科的失事货船",
+    "name_en": "1693: Galleon lost before Acapulco",
+    "description_zh": "Santo Cristo de Burgos号载中国水银从菲律宾开航，但在抵达阿卡普尔科前于海上失火。此线展示失败的运输尝试，不是已完成的进口。",
+    "description_en": "The Santo Cristo de Burgos carried Chinese mercury but caught fire at sea before reaching Acapulco. This depicts a failed attempt, not an accomplished import.",
+    "waypoints": [
+      [
+        150,
+        22
+      ],
+      [
+        177,
+        26
+      ],
+      [
+        -153,
+        25
+      ]
+    ],
+    "status": "failed"
+  },
+  {
+    "id": "r_manila_acapulco_1791",
+    "from": "manila",
+    "to": "acapulco",
+    "start": 1791,
+    "end": 1791,
+    "evidence": "documented",
+    "direction": "outbound",
+    "kind": "material",
+    "source_ids": [
+      "liu2024"
+    ],
+    "name_zh": "1791：马尼拉 → 阿卡普尔科",
+    "name_en": "1791: Manila → Acapulco",
+    "description_zh": "1791年的记述称马尼拉帆船带来中国水银，并报告马尼拉已为墨西哥采购3000担；注意采购数字不等于已抵港数量。",
+    "description_en": "A 1791 report describes a Manila galleon arriving with Chinese mercury and a separate procurement figure of 3,000 piculs. That figure must not be treated as the volume landed.",
+    "waypoints": [
+      [
+        150,
+        22
+      ],
+      [
+        177,
+        26
+      ],
+      [
+        -153,
+        25
+      ]
+    ]
+  },
+  {
+    "id": "r_guizhou_canton_1700",
+    "from": "guizhou_region",
+    "to": "guangzhou",
+    "start": 1700,
+    "end": 1750,
+    "evidence": "contextual",
+    "direction": "outbound",
+    "kind": "material",
+    "source_ids": [
+      "you2023"
+    ],
+    "name_zh": "贵州矿区 → 广州（区域贸易）",
+    "name_en": "Guizhou districts → Canton (regional trade)",
+    "description_zh": "二手研究描述贵州水银通过商人、驿道与水运进入广州。但不能将1704年的某笔英国订单直接归给贵州某座矿井。",
+    "description_en": "Secondary scholarship describes mercury from Guizhou reaching Canton through overland and river networks; no specific EIC order is assigned to an individual mine.",
+    "waypoints": [
+      [
+        110.2,
+        24.6
+      ]
+    ]
+  },
+  {
+    "id": "r_canton_london_eic",
+    "from": "guangzhou",
+    "to": "london",
+    "start": 1700,
+    "end": 1724,
+    "evidence": "documented",
+    "direction": "outbound",
+    "kind": "material",
+    "source_ids": [
+      "you2023"
+    ],
+    "name_zh": "广州 → 英国（1700—1724年交易样本）",
+    "name_en": "Canton → Britain (selected EIC purchases, 1700–1724)",
+    "description_zh": "英国东印度公司在广州购买中国水银；1704年“肯特号”订购400担，文章称运往伦敦。1700—1724是所录样本跨度，不表示逐年不断的运载。",
+    "description_en": "East India Company purchases at Canton include the Kent in 1704 (400 piculs; reported destination London). The interval covers documented examples, not continuous annual traffic.",
+    "waypoints": [
+      [
+        120,
+        10
+      ],
+      [
+        102,
+        -6
+      ],
+      [
+        72,
+        -28
+      ],
+      [
+        35,
+        -34
+      ],
+      [
+        18,
+        -4
+      ]
+    ]
+  },
+  {
+    "id": "r_almaden_cadiz",
+    "from": "almaden",
+    "to": "cadiz",
+    "start": 1830,
+    "end": 1850,
+    "evidence": "contextual",
+    "direction": "transit",
+    "kind": "material",
+    "source_ids": [
+      "platt2011"
+    ],
+    "name_zh": "阿尔马登 → 加的斯（供应网络）",
+    "name_en": "Almadén → Cádiz (supply network)",
+    "description_zh": "阿尔马登矿汞进入加的斯出口的西班牙供应系统。不是说1836年英国运往中国的每一担都出自此矿。",
+    "description_en": "Almadén output entered export networks through Cádiz, but this does not identify the mine origin of each 1836 China-bound batch.",
+    "waypoints": []
+  },
+  {
+    "id": "r_cadiz_london",
+    "from": "cadiz",
+    "to": "london",
+    "start": 1830,
+    "end": 1850,
+    "evidence": "documented",
+    "direction": "transit",
+    "kind": "material",
+    "source_ids": [
+      "platt2011"
+    ],
+    "name_zh": "加的斯 → 伦敦（西班牙水银）",
+    "name_en": "Cádiz → London (Spanish mercury)",
+    "description_zh": "Platt据英国海关资料描述西班牙水银经加的斯进入伦敦转口市场，此路线为供应网络关系。",
+    "description_en": "Platt documents Almadén mercury marketed via Cádiz and London, drawing on British customs and Rothschild records.",
+    "waypoints": [
+      [
+        0,
+        44
+      ]
+    ]
+  },
+  {
+    "id": "r_london_china_1836",
+    "from": "london",
+    "to": "guangzhou",
+    "start": 1836,
+    "end": 1839,
+    "evidence": "contextual",
+    "direction": "inbound",
+    "kind": "material",
+    "source_ids": [
+      "platt2011"
+    ],
+    "name_zh": "英国 → 中国（1836年3280担）",
+    "name_en": "Britain → China (3,280 quintals in 1836)",
+    "description_zh": "Platt第44页记载英国1836年向中国转口水银3280西班牙担，并有1838—39年广州销售的记录。英国→中国的交易有记录，但不确定1836年的卸货港是否为广州，故用虚线。",
+    "description_en": "Platt records British re-exports of 3,280 Spanish quintals to China in 1836, and Canton sales around 1838–39. Canton anchors China on the map; the 1836 landing port is unverified.",
+    "waypoints": [
+      [
+        34,
+        30
+      ],
+      [
+        75,
+        11
+      ],
+      [
+        108,
+        9
+      ]
+    ]
+  },
+  {
+    "id": "r_newalmaden_sanfrancisco",
+    "from": "new_almaden",
+    "to": "sanfrancisco",
+    "start": 1850,
+    "end": 1890,
+    "evidence": "contextual",
+    "direction": "transit",
+    "kind": "material",
+    "source_ids": [
+      "stclair1994",
+      "sinn2013"
+    ],
+    "name_zh": "新阿尔马登 → 旧金山（加州供应链）",
+    "name_en": "New Almaden → San Francisco (supply chain)",
+    "description_zh": "新阿尔马登参与加州出口水银的供应。1875年 Belgic 号全部货物的矿源不能据此均归于新阿尔马登。",
+    "description_en": "New Almaden was a key California supplier, but the source mine of every flask exported on the Belgic is not established.",
+    "waypoints": []
+  },
+  {
+    "id": "r_hongkong_guangzhou",
+    "from": "hongkong",
+    "to": "guangzhou",
+    "start": 1850,
+    "end": 1890,
+    "evidence": "contextual",
+    "direction": "inbound",
+    "kind": "material",
+    "source_ids": [
+      "sinn2013",
+      "stclair1994"
+    ],
+    "name_zh": "香港 → 中国内地（转口网络）",
+    "name_en": "Hong Kong → Mainland China (redistribution)",
+    "description_zh": "十九世纪加州水银经香港再销往中国市场，主要用于朱红颜料制造；广州代表近岸市场锚点，不是已核实的最终收货地址。",
+    "description_en": "California quicksilver was redistributed from Hong Kong into China, including use in vermilion manufacture. Canton is a regional anchor, not a verified final destination for each shipment.",
+    "waypoints": []
+  },
+  {
+    "id": "r_hongkong_calcutta",
+    "from": "hongkong",
+    "to": "calcutta",
+    "start": 1852,
+    "end": 1860,
+    "evidence": "contextual",
+    "direction": "transit",
+    "kind": "material",
+    "source_ids": [
+      "sinn2013"
+    ],
+    "name_zh": "香港 → 印度（加州水银再转口）",
+    "name_en": "Hong Kong → India (California re-export)",
+    "description_zh": "Sinn记载香港商人将从旧金山收到的水银再出口至加尔各答、孟买等地；路线在此以加尔各答为代表。",
+    "description_en": "Sinn records Hong Kong re-exports of Californian mercury to Calcutta and Bombay; this edge uses Calcutta as an example, not every voyage.",
+    "waypoints": [
+      [
+        105,
+        12
+      ]
+    ]
+  },
+  {
+    "id": "r_manila_guanajuato_1692",
+    "from": "manila",
+    "to": "guanajuato",
+    "start": 1692,
+    "end": 1692,
+    "evidence": "contextual",
+    "direction": "outbound",
+    "kind": "material",
+    "source_ids": [
+      "schottenhammer2019",
+      "liu2024"
+    ],
+    "name_zh": "1692：运往瓜纳华托试验的中国汞",
+    "name_en": "1692: Chinese mercury tested at Guanajuato",
+    "description_zh": "有记载称中国水银在墨西哥瓜纳华托矿区进行品质试验；内陆运输环节缺乏逐港航线记录，地图作概括连接。",
+    "description_en": "Chinese mercury was reportedly tested in Guanajuato; the inland port-to-mine leg is not reconstructed from a manifest.",
+    "waypoints": [
+      [
+        155,
+        18
+      ],
+      [
+        -132,
+        21
+      ]
+    ]
+  }
 ]

@@ -1,9 +1,170 @@
 [
-  {"id":"journey1613","year":1613,"title_zh":"一滴水银的环球旅行","title_en":"The Journey of a Drop","subtitle_zh":"1613年的复合历史故事：每一步的证据等级不同","subtitle_en":"A composite 1613 story: not all steps carry the same evidence","steps":[
-    {"place_id":"wanshan","route_id":"r_wanshan_guangzhou","title_zh":"01 · 山中朱砂","title_en":"01 · Cinnabar in the mountains","text_zh":"万山拥有悠久矿冶历史。但我们不知道1613年某次抵达美洲的水银是否产自这里。","text_en":"Wanshan has a long mining history. Whether any of the mercury delivered to the Americas in 1613 originated here remains unknown."},
-    {"place_id":"guangzhou","route_id":"r_guangzhou_manila","title_zh":"02 · 中国南部的港口","title_en":"02 · A South China port","text_zh":"水银可能经南方商路转运；这个连接是有待史料进一步检验的研究重建，而不是单笔货运记录。","text_en":"Southern Chinese mercantile routes are plausible, but this reconstruction is not a specific documented shipment."},
-    {"place_id":"manila","route_id":"r_manila_acapulco","title_zh":"03 · 马尼拉的海上网络","title_en":"03 · The Manila exchange","text_zh":"中国水银与西班牙帝国的航运网络在这里发生联系。但单船货物的来源需要继续追查。","text_en":"Chinese mercury entered Spanish imperial maritime circuits, although the provenance of a specific vessel's cargo requires further investigation."},
-    {"place_id":"acapulco","route_id":null,"title_zh":"04 · 1613年阿卡普尔科","title_en":"04 · Acapulco, 1613","text_zh":"这里是可由具体记载锚定的运输终点。请点击紫红色贸易连线，阅读证据卡片。","text_en":"Here the story reaches a documented arrival. Select the solid cinnabar route to read the evidence card."},
-    {"place_id":"pachuca","route_id":"r_acapulco_pachuca","title_zh":"05 · 最终去了哪里？","title_en":"05 · Where did it go next?","text_zh":"水银用于银矿冶炼，但1613年这批货物是否去过帕丘卡尚无证据。故事在问题中结束。","text_en":"Mercury served silver refining, but there is no evidence that the 1613 cargo reached Pachuca. The story ends with a question."}
-  ]}
+  {
+    "id": "journey1613",
+    "year": 1613,
+    "title_zh": "一滴水银的环球旅行",
+    "title_en": "The Journey of a Drop",
+    "subtitle_zh": "1613年的复合历史故事：每一步的证据等级不同",
+    "subtitle_en": "A composite 1613 story: not all steps carry the same evidence",
+    "steps": [
+      {
+        "place_id": "wanshan",
+        "route_id": "r_wanshan_guangzhou",
+        "title_zh": "01 · 山中朱砂",
+        "title_en": "01 · Cinnabar in the mountains",
+        "text_zh": "万山拥有悠久矿冶历史。但我们不知道1613年某次抵达美洲的水银是否产自这里。",
+        "text_en": "Wanshan has a long mining history. Whether any of the mercury delivered to the Americas in 1613 originated here remains unknown."
+      },
+      {
+        "place_id": "guangzhou",
+        "route_id": "r_guangzhou_manila",
+        "title_zh": "02 · 中国南部的港口",
+        "title_en": "02 · A South China port",
+        "text_zh": "水银可能经南方商路转运；这个连接是有待史料进一步检验的研究重建，而不是单笔货运记录。",
+        "text_en": "Southern Chinese mercantile routes are plausible, but this reconstruction is not a specific documented shipment."
+      },
+      {
+        "place_id": "manila",
+        "route_id": "r_manila_acapulco",
+        "title_zh": "03 · 马尼拉的海上网络",
+        "title_en": "03 · The Manila exchange",
+        "text_zh": "中国水银与西班牙帝国的航运网络在这里发生联系。但单船货物的来源需要继续追查。",
+        "text_en": "Chinese mercury entered Spanish imperial maritime circuits, although the provenance of a specific vessel's cargo requires further investigation."
+      },
+      {
+        "place_id": "acapulco",
+        "route_id": null,
+        "title_zh": "04 · 1613年阿卡普尔科",
+        "title_en": "04 · Acapulco, 1613",
+        "text_zh": "1613年1月5日，San Andrés号载200 quintals中国水银抵达阿卡普尔科。",
+        "text_en": "On 5 January 1613, the San Andrés arrived with 200 quintals of Chinese mercury."
+      },
+      {
+        "place_id": "pachuca",
+        "route_id": "r_acapulco_pachuca",
+        "title_zh": "05 · 最终去了哪里？",
+        "title_en": "05 · Where did it go next?",
+        "text_zh": "水银用于银矿冶炼，但1613年这批货物是否去过帕丘卡尚无证据。故事在问题中结束。",
+        "text_en": "Mercury served silver refining, but there is no evidence that the 1613 cargo reached Pachuca. The story ends with a question."
+      }
+    ]
+  },
+  {
+    "id": "journey1704",
+    "year": 1704,
+    "title_zh": "从贵州到伦敦？",
+    "title_en": "From Guizhou to London?",
+    "subtitle_zh": "1704年的真实英国采购与矿源问题",
+    "subtitle_en": "A documented 1704 purchase, with provenance still uncertain",
+    "steps": [
+      {
+        "place_id": "guizhou_region",
+        "route_id": "r_guizhou_canton_1700",
+        "title_zh": "01 · 谁在山中炼汞？",
+        "title_en": "01 · Who produced the mercury?",
+        "text_zh": "贵州是重要生产区，但不能把肯特号货物直接归于某座矿。",
+        "text_en": "Guizhou was an important producer; the Kent cargo cannot be assigned to a particular mine."
+      },
+      {
+        "place_id": "guangzhou",
+        "route_id": "r_canton_london_eic",
+        "title_zh": "02 · 广州的英国订单",
+        "title_en": "02 · An EIC purchase at Canton",
+        "text_zh": "1704年肯特号订购400担、价值17,200两水银。",
+        "text_en": "In 1704 the Kent purchased 400 piculs valued at 17,200 taels."
+      },
+      {
+        "place_id": "london",
+        "route_id": null,
+        "title_zh": "03 · 伦敦的贸易网络",
+        "title_en": "03 · The London market",
+        "text_zh": "本文记载这批水银运往伦敦；真实航迹并未重建。",
+        "text_en": "The article reports London as the destination; the historic track has not been reconstructed."
+      }
+    ]
+  },
+  {
+    "id": "journey1836",
+    "year": 1836,
+    "title_zh": "欧洲水银进入中国",
+    "title_en": "European mercury enters China",
+    "subtitle_zh": "从西班牙矿区到英国转口：1836年的反向网络",
+    "subtitle_en": "Spanish supply and British re-export to China in 1836",
+    "steps": [
+      {
+        "place_id": "almaden",
+        "route_id": "r_almaden_cadiz",
+        "title_zh": "01 · 西班牙的矿山",
+        "title_en": "01 · An Almadén mine",
+        "text_zh": "阿尔马登水银进入欧洲流通网络，但未证明每批运华货物都出自此矿。",
+        "text_en": "Almadén supplied European networks, but not every China-bound flask is sourced to this mine."
+      },
+      {
+        "place_id": "cadiz",
+        "route_id": "r_cadiz_london",
+        "title_zh": "02 · 加的斯转运",
+        "title_en": "02 · Cádiz exports",
+        "text_zh": "加的斯是进入英国转口链条的重要环节。",
+        "text_en": "Cádiz linked Spanish mercury production to the British re-export market."
+      },
+      {
+        "place_id": "london",
+        "route_id": "r_london_china_1836",
+        "title_zh": "03 · 英国转口的3280担",
+        "title_en": "03 · Britain re-exports 3,280 quintals",
+        "text_zh": "Platt统计1836年英国向中国转口3280西班牙担水银。",
+        "text_en": "Platt records 3,280 Spanish quintals re-exported to China in 1836."
+      },
+      {
+        "place_id": "guangzhou",
+        "route_id": null,
+        "title_zh": "04 · 中国市场，卸货港待考",
+        "title_en": "04 · China, landing port uncertain",
+        "text_zh": "1838—39年广州有销售线索；1836年抵华货物不一定在广州卸货。",
+        "text_en": "There are Canton sales records for 1838–39, but the 1836 consignment’s exact landing port is unknown."
+      }
+    ]
+  },
+  {
+    "id": "journey1875",
+    "year": 1875,
+    "title_zh": "加州水银进入中国",
+    "title_en": "California mercury enters China",
+    "subtitle_zh": "1875年旧金山出口与香港转口网络",
+    "subtitle_en": "1875 San Francisco exports and Hong Kong redistribution",
+    "steps": [
+      {
+        "place_id": "new_almaden",
+        "route_id": "r_newalmaden_sanfrancisco",
+        "title_zh": "01 · 加州矿山",
+        "title_en": "01 · California mines",
+        "text_zh": "新阿尔马登是主要生产区，但不能把Belgic装载货物全部归于此处。",
+        "text_en": "New Almaden was a major mine; it is not proven that all Belgic cargo originated there."
+      },
+      {
+        "place_id": "sanfrancisco",
+        "route_id": "r_sf_hongkong",
+        "title_zh": "02 · 旧金山装船",
+        "title_en": "02 · San Francisco loading",
+        "text_zh": "1875年11月，Belgic号水银装货2656瓶，货值133,868美元。",
+        "text_en": "In November 1875 the Belgic loaded 2,656 flasks valued at $133,868."
+      },
+      {
+        "place_id": "hongkong",
+        "route_id": "r_hongkong_guangzhou",
+        "title_zh": "03 · 香港作为“中间地”",
+        "title_en": "03 · Hong Kong as an in-between place",
+        "text_zh": "香港既接收加州水银，也把货物再分配到中国及其他市场。",
+        "text_en": "Hong Kong received Californian mercury and redistributed goods to Chinese and other markets."
+      },
+      {
+        "place_id": "guangzhou",
+        "route_id": null,
+        "title_zh": "04 · 用于朱红颜料？",
+        "title_en": "04 · Mercury for vermilion?",
+        "text_zh": "加州产品在中国用于朱红颜料等用途；具体收货作坊尚无证据。",
+        "text_en": "California mercury served China’s vermilion trade, but the receiving workshop is unverified."
+      }
+    ]
+  }
 ]
